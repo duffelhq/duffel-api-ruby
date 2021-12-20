@@ -6,10 +6,10 @@ orbs:
 jobs:
   test:
     parameters:
-      ruby-version:
+      ruby-image:
         type: string
     docker:
-      - image: cimg/ruby:<< parameters.ruby-version >>
+      - image: << parameters.ruby-image >>
     steps:
       - checkout
       - ruby/install-deps
@@ -23,4 +23,4 @@ workflows:
       - test:
           matrix:
             parameters:
-              ruby-version: ["2.6", "2.7", "2.9", "2.9", "3.0"]
+              ruby-image: ["cimg/ruby:2.6", "cimg/ruby:2.7", "cimg/ruby:3.0"]
