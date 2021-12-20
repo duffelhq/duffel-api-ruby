@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "status": 400,
+        "request_id": "FsJ5mIzW3k3Hfy0AAoKC"
+    },
+    "errors": [
+        {
+            "code": "invalid_order_create_type",
+            "documentation_url": "https://duffel.com/docs/api/overview/errors",
+            "message": "The specified `type` was incorrect.",
+            "title": "Invalid order create type",
+            "type": "invalid_state_error"
+        }
+    ]
+}

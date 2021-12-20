@@ -1,8 +1,30 @@
 # frozen_string_literal: true
 
 require_relative "duffel_api/version"
+require_relative "duffel_api/errors/error"
+require_relative "duffel_api/errors/airline_error"
+require_relative "duffel_api/errors/api_error"
+require_relative "duffel_api/errors/authentication_error"
+require_relative "duffel_api/errors/invalid_request_error"
+require_relative "duffel_api/errors/invalid_state_error"
+require_relative "duffel_api/errors/rate_limit_error"
+require_relative "duffel_api/errors/validation_error"
+require_relative "duffel_api/middlewares/raise_duffel_errors"
+require_relative "duffel_api/resources/aircraft"
+require_relative "duffel_api/resources/airline"
+require_relative "duffel_api/resources/airport"
+require_relative "duffel_api/resources/offer_request"
+require_relative "duffel_api/paginator"
+require_relative "duffel_api/services/base_service"
+require_relative "duffel_api/services/aircraft_service"
+require_relative "duffel_api/services/airlines_service"
+require_relative "duffel_api/services/airports_service"
+require_relative "duffel_api/services/offer_requests_service"
+require_relative "duffel_api/api_response"
+require_relative "duffel_api/api_service"
+require_relative "duffel_api/client"
+require_relative "duffel_api/list_response"
+require_relative "duffel_api/request"
+require_relative "duffel_api/response"
 
-module DuffelApi
-  class Error < StandardError; end
-  # Your code goes here...
-end
+module DuffelAPI; end

@@ -1,0 +1,14 @@
+{
+    "data": {
+        "time_zone": "Africa/Mogadishu",
+        "name": "Aden Adde International Airport",
+        "longitude": 45.304832,
+        "latitude": 2.015817,
+        "id": "arp_mgq_so",
+        "icao_code": "HCMM",
+        "iata_country_code": "SO",
+        "iata_code": "MGQ",
+        "city_name": "Mogadishu",
+        "city": null
+    }
+}

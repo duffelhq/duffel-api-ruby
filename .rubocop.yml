@@ -1,13 +1,13 @@
+require: rubocop-rake
+
+inherit_gem:
+  gc_ruboconfig: rubocop.yml
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.6
+  NewCops: enable
 
-Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
+RSpec/ExampleLength:
+  Max: 20
 
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
-
-Layout/LineLength:
-  Max: 120
+RSpec/MultipleExpectations:
+  Max: 20

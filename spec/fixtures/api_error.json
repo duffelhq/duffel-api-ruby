@@ -1,0 +1,16 @@
+{
+    "meta": {
+        "status": 401,
+        "request_id": "FsJ5lRhA8bGdqKMAA0eh"
+    },
+    "errors": [
+        {
+            "code": "internal_server_error",
+            "documentation_url": "https://duffel.com/docs/api/overview/errors",
+            "message":
+                       "Something went wrong. The order may still have been created on the airline's side. Please contact our support team and attach the `request_id` to your message.",
+            "title": "Internal server error",
+            "type": "api_error"
+        }
+    ]
+}

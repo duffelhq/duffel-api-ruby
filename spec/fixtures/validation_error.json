@@ -1,0 +1,19 @@
+{
+    "meta": {
+        "status": 422,
+        "request_id": "FsJylo0rd-49aeQAAUaB"
+    },
+    "errors": [
+        {
+            "type": "validation_error",
+            "title": "Required field",
+            "source": {
+                "pointer": "/slices",
+                "field": "slices"
+            },
+            "message": "Field 'slices' can't be blank",
+            "documentation_url": "https://duffel.com/docs/api/overview/errors",
+            "code": "validation_required"
+        }
+    ]
+}

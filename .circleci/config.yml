@@ -1,13 +1,26 @@
 version: 2.1
+ 
+orbs:
+  ruby: circleci/ruby@1.2
+ 
 jobs:
-  build:
+  test:
+    parameters:
+      ruby-version:
+        type: string
     docker:
-      - image: ruby:3.0.2
+      - image: cimg/ruby:<< parameters.ruby-version >>
     steps:
       - checkout
-      - run:
-          name: Run the default task
-          command: |
-            gem install bundler -v 2.2.22
-            bundle install
-            bundle exec rake
+      - ruby/install-deps
+      - ruby/rubocop-check
+      - ruby/rspec-test
+ 
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - test:
+          matrix:
+            parameters:
+              ruby-version: ["2.6", "2.7", "2.9", "2.9", "3.0"]

@@ -1,0 +1,17 @@
+{
+    "meta": {
+        "status": 401,
+        "request_id": "FsJ5lRhA8bGdqKMAA0eh"
+    },
+    "errors": [
+        {
+            "code": "airline_unknown",
+            "documentation_url": "https://duffel.com/docs/api/overview/errors",
+            "message":
+               "The airline responded with an unexpected error. Please contact us.",
+            "source": "iberia",
+            "title": "Unexpected Airline Error",
+            "type": "airline_error"
+        }
+    ]
+}

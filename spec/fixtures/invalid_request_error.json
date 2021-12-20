@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "status": 400,
+        "request_id": "FsJ5mIzW3k3Hfy0AAoKC"
+    },
+    "errors": [
+        {
+            "type": "invalid_request_error",
+            "title": "Missing version header",
+            "message": "The 'Duffel-Version' header needs to be set to a valid API version.",
+            "documentation_url": "https://duffel.com/docs/api/overview/errors",
+            "code": "missing_version_header"
+        }
+    ]
+}

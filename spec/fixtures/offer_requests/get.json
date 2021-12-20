@@ -1,0 +1,405 @@
+{
+    "data": {
+        "slices": [
+            {
+                "origin_type": "city",
+                "origin": {
+                    "type": "city",
+                    "time_zone": null,
+                    "name": "Sydney",
+                    "longitude": null,
+                    "latitude": null,
+                    "id": "cit_syd_au",
+                    "icao_code": null,
+                    "iata_country_code": "AU",
+                    "iata_code": "SYD",
+                    "iata_city_code": "SYD",
+                    "city_name": null,
+                    "city": null,
+                    "airports": [
+                        {
+                            "type": "airport",
+                            "time_zone": "Australia/Sydney",
+                            "name": "Sydney Airport",
+                            "longitude": 151.176138,
+                            "latitude": -33.943011,
+                            "id": "arp_syd_au",
+                            "icao_code": "YSSY",
+                            "iata_country_code": "AU",
+                            "iata_code": "SYD",
+                            "iata_city_code": "SYD",
+                            "city_name": "Sydney"
+                        },
+                        {
+                            "type": "airport",
+                            "time_zone": "Australia/Sydney",
+                            "name": "Rose Bay Water Airport",
+                            "longitude": 151.258458,
+                            "latitude": -33.869877,
+                            "id": "arp_rse_au",
+                            "icao_code": null,
+                            "iata_country_code": "AU",
+                            "iata_code": "RSE",
+                            "iata_city_code": "SYD",
+                            "city_name": "Sydney"
+                        },
+                        {
+                            "type": "airport",
+                            "time_zone": "Australia/Sydney",
+                            "name": "Palm Beach Seaplane Base Airport",
+                            "longitude": 151.323889,
+                            "latitude": -33.5875,
+                            "id": "arp_lbh_au",
+                            "icao_code": null,
+                            "iata_country_code": "AU",
+                            "iata_code": "LBH",
+                            "iata_city_code": "SYD",
+                            "city_name": "Sydney"
+                        },
+                        {
+                            "type": "airport",
+                            "time_zone": "Australia/Sydney",
+                            "name": "Bankstown Airport",
+                            "longitude": 150.991461,
+                            "latitude": -33.922523,
+                            "id": "arp_bwu_au",
+                            "icao_code": "YSBK",
+                            "iata_country_code": "AU",
+                            "iata_code": "BWU",
+                            "iata_city_code": "SYD",
+                            "city_name": "Sydney"
+                        }
+                    ]
+                },
+                "destination_type": "airport",
+                "destination": {
+                    "type": "airport",
+                    "time_zone": "Australia/Adelaide",
+                    "name": "Adelaide Airport",
+                    "longitude": 138.532122,
+                    "latitude": -34.945578,
+                    "id": "arp_adl_au",
+                    "icao_code": "YPAD",
+                    "iata_country_code": "AU",
+                    "iata_code": "ADL",
+                    "iata_city_code": "ADL",
+                    "city_name": "Adelaide",
+                    "city": null,
+                    "airports": null
+                },
+                "departure_date": "2021-12-27",
+                "created_at": "2021-12-20T12:11:51.575607Z"
+            }
+        ],
+        "passengers": [
+            {
+                "type": "adult",
+                "loyalty_programme_accounts": [],
+                "id": "pas_0000AEaw0wBYAwGG9tNnm6",
+                "given_name": null,
+                "family_name": null,
+                "age": null
+            }
+        ],
+        "offers": [
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "138.67",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17uyYO8KXxijbc",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "119.17",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "327.13",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17uyYO8KXxijbd",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "307.63",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "138.67",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17vKX4PuZ3t19z",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "119.17",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "138.67",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17vKX4PuZ3t1A0",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "119.17",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "327.13",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17vgVkhUaA3IiE",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "307.63",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "327.13",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17w2UQz4bGDaGR",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "307.63",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "138.67",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17w2UQz4bGDaGY",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "119.17",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "327.13",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17wOT7GecMNrog",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "307.63",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "327.13",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17wOT7GecMNrol",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "307.63",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "327.13",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17wkRnYEdSY9N0",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "307.63",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "138.67",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17wkRnYEdSY9N5",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "119.17",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "138.67",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17wkRnYEdSY9N7",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "119.17",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "138.67",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17x6QTpoeYiQvD",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "119.17",
+                "allowed_passenger_identity_document_types": []
+            },
+            {
+                "updated_at": "2021-12-20T12:11:53.632479Z",
+                "total_emissions_kg": "29",
+                "total_currency": "GBP",
+                "total_amount": "327.13",
+                "tax_currency": "GBP",
+                "tax_amount": "19.50",
+                "payment_requirements": {
+                    "requires_instant_payment": true,
+                    "price_guarantee_expires_at": null,
+                    "payment_required_by": null
+                },
+                "passenger_identity_documents_required": false,
+                "live_mode": false,
+                "id": "off_0000AEaw17xSPA7OfesiTS",
+                "expires_at": "2021-12-20T12:31:53.000000Z",
+                "created_at": "2021-12-20T12:11:53.632479Z",
+                "base_currency": "GBP",
+                "base_amount": "307.63",
+                "allowed_passenger_identity_document_types": []
+            }
+        ],
+        "live_mode": false,
+        "id": "orq_0000AEaw0wBYAwGG9tNnm4",
+        "created_at": "2021-12-20T12:11:51.573119Z",
+        "cabin_class": "economy"
+    }
+}

@@ -1,0 +1,4798 @@
+{
+  "meta": {
+    "limit": 50,
+    "before": null,
+    "after": "g3QAAAACZAACaWRtAAAAGm9ycV8wMDAwQUVhdzEyY1Nucks2NndpblkwZAALaW5zZXJ0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhFGQABGhvdXJhDGQAC21pY3Jvc2Vjb25kaAJiAAqpwGEGZAAGbWludXRlYQtkAAVtb250aGEMZAAGc2Vjb25kYTRkAApzdGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-VkAAl6b25lX2FiYnJtAAAAA1VUQw=="
+  },
+  "data": [
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Mexico City",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_mex_mx",
+            "icao_code": null,
+            "iata_country_code": "MX",
+            "iata_code": "MEX",
+            "iata_city_code": "MEX",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Toluca International Airport",
+                "longitude": -99.567918,
+                "latitude": 19.338024,
+                "id": "arp_tlc_mx",
+                "icao_code": "MMTO",
+                "iata_country_code": "MX",
+                "iata_code": "TLC",
+                "iata_city_code": "MEX",
+                "city_name": "Toluca"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Santa Lucía Airport",
+                "longitude": -99.01683,
+                "latitude": 19.754122,
+                "id": "arp_nlu_mx",
+                "icao_code": "MMSM",
+                "iata_country_code": "MX",
+                "iata_code": "NLU",
+                "iata_city_code": "MEX",
+                "city_name": "Mexico City"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Atizapan De Zaragoza Airport",
+                "longitude": -99.290733,
+                "latitude": 19.573377,
+                "id": "arp_azp_mx",
+                "icao_code": "MMJC",
+                "iata_country_code": "MX",
+                "iata_code": "AZP",
+                "iata_city_code": "MEX",
+                "city_name": "Mexico City"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Benito Juarez International Airport",
+                "longitude": -99.072003,
+                "latitude": 19.436188,
+                "id": "arp_mex_mx",
+                "icao_code": "MMMX",
+                "iata_country_code": "MX",
+                "iata_code": "MEX",
+                "iata_city_code": "MEX",
+                "city_name": "Mexico City"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/Cancun",
+            "name": "Cancún International Airport",
+            "longitude": -86.875331,
+            "latitude": 21.038421,
+            "id": "arp_cun_mx",
+            "icao_code": "MMUN",
+            "iata_country_code": "MX",
+            "iata_code": "CUN",
+            "iata_city_code": "CUN",
+            "city_name": "Cancún",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:22:02.777447Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawvIpViiGgbTeT8i",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawvIp9k1z6aNUBaS",
+      "created_at": "2021-12-20T12:22:02.773536Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Gatwick Airport",
+            "longitude": -0.18617,
+            "latitude": 51.150882,
+            "id": "arp_lgw_gb",
+            "icao_code": "EGKK",
+            "iata_country_code": "GB",
+            "iata_code": "LGW",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/Edmonton",
+            "name": "Calgary International Airport",
+            "longitude": -114.009275,
+            "latitude": 51.119337,
+            "id": "arp_yyc_ca",
+            "icao_code": "CYYC",
+            "iata_country_code": "CA",
+            "iata_code": "YYC",
+            "iata_city_code": "YYC",
+            "city_name": "Calgary",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:22:02.702897Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawvIPJLT04NjETT8",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawvIPJLT04NjETT6",
+      "created_at": "2021-12-20T12:22:02.700355Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "America/Los_Angeles",
+            "name": "San Francisco International Airport",
+            "longitude": -122.376977,
+            "latitude": 37.620156,
+            "id": "arp_sfo_us",
+            "icao_code": "KSFO",
+            "iata_country_code": "US",
+            "iata_code": "SFO",
+            "iata_city_code": "SFO",
+            "city_name": "San Francisco",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Los Angeles",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_lax_us",
+            "icao_code": null,
+            "iata_country_code": "US",
+            "iata_code": "LAX",
+            "iata_city_code": "LAX",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Ontario International Airport",
+                "longitude": -117.599527,
+                "latitude": 34.055988,
+                "id": "arp_ont_us",
+                "icao_code": "KONT",
+                "iata_country_code": "US",
+                "iata_code": "ONT",
+                "iata_city_code": "LAX",
+                "city_name": "Ontario"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Los Angeles International Airport",
+                "longitude": -118.408263,
+                "latitude": 33.942045,
+                "id": "arp_lax_us",
+                "icao_code": "KLAX",
+                "iata_country_code": "US",
+                "iata_code": "LAX",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Van Nuys Airport",
+                "longitude": -118.489719,
+                "latitude": 34.208582,
+                "id": "arp_vny_us",
+                "icao_code": "KVNY",
+                "iata_country_code": "US",
+                "iata_code": "VNY",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Whiteman Airport",
+                "longitude": -118.412713,
+                "latitude": 34.25989,
+                "id": "arp_whp_us",
+                "icao_code": "KWHP",
+                "iata_country_code": "US",
+                "iata_code": "WHP",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:22:01.854787Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawvDYukv3MGi9E5S",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawvDYukv3MGi9E5Q",
+      "created_at": "2021-12-20T12:22:01.851845Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/Madrid",
+            "name": "Barcelona–El Prat Josep Tarradellas Airport",
+            "longitude": 2.080877,
+            "latitude": 41.297273,
+            "id": "arp_bcn_es",
+            "icao_code": "LEBL",
+            "iata_country_code": "ES",
+            "iata_code": "BCN",
+            "iata_city_code": "BCN",
+            "city_name": "Barcelona",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Madrid",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_mad_es",
+            "icao_code": null,
+            "iata_country_code": "ES",
+            "iata_code": "MAD",
+            "iata_city_code": "MAD",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Europe/Madrid",
+                "name": "Madrid–Torrejón Airport",
+                "longitude": -3.457359,
+                "latitude": 40.487654,
+                "id": "arp_toj_es",
+                "icao_code": "LETO",
+                "iata_country_code": "ES",
+                "iata_code": "TOJ",
+                "iata_city_code": "MAD",
+                "city_name": "Madrid"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/Madrid",
+                "name": "Adolfo Suárez Madrid-Barajas Airport",
+                "longitude": -3.567169,
+                "latitude": 40.49923,
+                "id": "arp_mad_es",
+                "icao_code": "LEMD",
+                "iata_country_code": "ES",
+                "iata_code": "MAD",
+                "iata_city_code": "MAD",
+                "city_name": "Madrid"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:22:01.552260Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawvBpVCH8KtZtRfG",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawvBpVCH8KtZtRfE",
+      "created_at": "2021-12-20T12:22:01.549534Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "America/Los_Angeles",
+            "name": "San Francisco International Airport",
+            "longitude": -122.376977,
+            "latitude": 37.620156,
+            "id": "arp_sfo_us",
+            "icao_code": "KSFO",
+            "iata_country_code": "US",
+            "iata_code": "SFO",
+            "iata_city_code": "SFO",
+            "city_name": "San Francisco",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Los Angeles",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_lax_us",
+            "icao_code": null,
+            "iata_country_code": "US",
+            "iata_code": "LAX",
+            "iata_city_code": "LAX",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Ontario International Airport",
+                "longitude": -117.599527,
+                "latitude": 34.055988,
+                "id": "arp_ont_us",
+                "icao_code": "KONT",
+                "iata_country_code": "US",
+                "iata_code": "ONT",
+                "iata_city_code": "LAX",
+                "city_name": "Ontario"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Los Angeles International Airport",
+                "longitude": -118.408263,
+                "latitude": 33.942045,
+                "id": "arp_lax_us",
+                "icao_code": "KLAX",
+                "iata_country_code": "US",
+                "iata_code": "LAX",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Van Nuys Airport",
+                "longitude": -118.489719,
+                "latitude": 34.208582,
+                "id": "arp_vny_us",
+                "icao_code": "KVNY",
+                "iata_country_code": "US",
+                "iata_code": "VNY",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Whiteman Airport",
+                "longitude": -118.412713,
+                "latitude": 34.25989,
+                "id": "arp_whp_us",
+                "icao_code": "KWHP",
+                "iata_country_code": "US",
+                "iata_code": "WHP",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:22:01.180015Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawv9hz5FvoJgMPfU",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawv9hd6ZeEIaC87E",
+      "created_at": "2021-12-20T12:22:01.177606Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "London Luton Airport",
+            "longitude": -0.37004,
+            "latitude": 51.875482,
+            "id": "arp_ltn_gb",
+            "icao_code": "EGGW",
+            "iata_country_code": "GB",
+            "iata_code": "LTN",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/Zurich",
+            "name": "Geneva Airport",
+            "longitude": 6.109053,
+            "latitude": 46.237553,
+            "id": "arp_gva_ch",
+            "icao_code": "LSGG",
+            "iata_country_code": "CH",
+            "iata_code": "GVA",
+            "iata_city_code": "GVA",
+            "city_name": "Geneva",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:22:00.934517Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawv8Hov7NRu5oQF0",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawv8Hov7NRu5oQEv",
+      "created_at": "2021-12-20T12:22:00.930718Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/Lisbon",
+            "name": "Lisbon Portela Airport",
+            "longitude": -9.135643,
+            "latitude": 38.778446,
+            "id": "arp_lis_pt",
+            "icao_code": "LPPT",
+            "iata_country_code": "PT",
+            "iata_code": "LIS",
+            "iata_city_code": "LIS",
+            "city_name": "Lisbon",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/Paris",
+            "name": "Paris-Orly Airport",
+            "longitude": 2.362898,
+            "latitude": 48.726427,
+            "id": "arp_ory_fr",
+            "icao_code": "LFPO",
+            "iata_country_code": "FR",
+            "iata_code": "ORY",
+            "iata_city_code": "PAR",
+            "city_name": "Paris",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "Paris",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_par_fr",
+              "icao_code": null,
+              "iata_country_code": "FR",
+              "iata_code": "PAR",
+              "iata_city_code": "PAR",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:22:00.339270Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawv4tHbEekSd9DFK",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawv4tHbEekSd9DFA",
+      "created_at": "2021-12-20T12:22:00.336617Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Singapore",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_sin_sg",
+            "icao_code": null,
+            "iata_country_code": "SG",
+            "iata_code": "SIN",
+            "iata_city_code": "SIN",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Tengah Air Base",
+                "longitude": 103.708617,
+                "latitude": 1.385789,
+                "id": "arp_tga_sg",
+                "icao_code": "WSAT",
+                "iata_country_code": "SG",
+                "iata_code": "TGA",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Seletar Airport",
+                "longitude": 103.86819,
+                "latitude": 1.416952,
+                "id": "arp_xsp_sg",
+                "icao_code": "WSSL",
+                "iata_country_code": "SG",
+                "iata_code": "XSP",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Paya Lebar Air Base",
+                "longitude": 103.910629,
+                "latitude": 1.359288,
+                "id": "arp_qpg_sg",
+                "icao_code": "WSAP",
+                "iata_country_code": "SG",
+                "iata_code": "QPG",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Singapore Changi Airport",
+                "longitude": 103.985127,
+                "latitude": 1.356115,
+                "id": "arp_sin_sg",
+                "icao_code": "WSSS",
+                "iata_country_code": "SG",
+                "iata_code": "SIN",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              }
+            ]
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Hong Kong",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_hkg_hk",
+            "icao_code": null,
+            "iata_country_code": "HK",
+            "iata_code": "HKG",
+            "iata_city_code": "HKG",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Hong_Kong",
+                "name": "Hong Kong International Airport",
+                "longitude": 113.91732,
+                "latitude": 22.308331,
+                "id": "arp_hkg_hk",
+                "icao_code": "VHHH",
+                "iata_country_code": "HK",
+                "iata_code": "HKG",
+                "iata_city_code": "HKG",
+                "city_name": "Hong Kong"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:59.503704Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawv07UjYOaZuDe2k",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawv07UjYOaZuDe2i",
+      "created_at": "2021-12-20T12:21:59.501350Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Sydney",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_syd_au",
+            "icao_code": null,
+            "iata_country_code": "AU",
+            "iata_code": "SYD",
+            "iata_city_code": "SYD",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Australia/Sydney",
+                "name": "Sydney Airport",
+                "longitude": 151.176138,
+                "latitude": -33.943011,
+                "id": "arp_syd_au",
+                "icao_code": "YSSY",
+                "iata_country_code": "AU",
+                "iata_code": "SYD",
+                "iata_city_code": "SYD",
+                "city_name": "Sydney"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Australia/Sydney",
+                "name": "Rose Bay Water Airport",
+                "longitude": 151.258458,
+                "latitude": -33.869877,
+                "id": "arp_rse_au",
+                "icao_code": null,
+                "iata_country_code": "AU",
+                "iata_code": "RSE",
+                "iata_city_code": "SYD",
+                "city_name": "Sydney"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Australia/Sydney",
+                "name": "Palm Beach Seaplane Base Airport",
+                "longitude": 151.323889,
+                "latitude": -33.5875,
+                "id": "arp_lbh_au",
+                "icao_code": null,
+                "iata_country_code": "AU",
+                "iata_code": "LBH",
+                "iata_city_code": "SYD",
+                "city_name": "Sydney"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Australia/Sydney",
+                "name": "Bankstown Airport",
+                "longitude": 150.991461,
+                "latitude": -33.922523,
+                "id": "arp_bwu_au",
+                "icao_code": "YSBK",
+                "iata_country_code": "AU",
+                "iata_code": "BWU",
+                "iata_city_code": "SYD",
+                "city_name": "Sydney"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Australia/Adelaide",
+            "name": "Adelaide Airport",
+            "longitude": 138.532122,
+            "latitude": -34.945578,
+            "id": "arp_adl_au",
+            "icao_code": "YPAD",
+            "iata_country_code": "AU",
+            "iata_code": "ADL",
+            "iata_city_code": "ADL",
+            "city_name": "Adelaide",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:57.712361Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawuprdPjjglfQFva",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawuprdPjjglfQFvR",
+      "created_at": "2021-12-20T12:21:57.708534Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "London",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_lon_gb",
+            "icao_code": null,
+            "iata_country_code": "GB",
+            "iata_code": "LON",
+            "iata_city_code": "LON",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "London Stansted Airport",
+                "longitude": 0.236933,
+                "latitude": 51.885508,
+                "id": "arp_stn_gb",
+                "icao_code": "EGSS",
+                "iata_country_code": "GB",
+                "iata_code": "STN",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "Heathrow Airport",
+                "longitude": -0.458118,
+                "latitude": 51.470311,
+                "id": "arp_lhr_gb",
+                "icao_code": "EGLL",
+                "iata_country_code": "GB",
+                "iata_code": "LHR",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "London Southend Airport",
+                "longitude": 0.697117,
+                "latitude": 51.571075,
+                "id": "arp_sen_gb",
+                "icao_code": "EGMC",
+                "iata_country_code": "GB",
+                "iata_code": "SEN",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "London City Airport",
+                "longitude": 0.052398,
+                "latitude": 51.505071,
+                "id": "arp_lcy_gb",
+                "icao_code": "EGLC",
+                "iata_country_code": "GB",
+                "iata_code": "LCY",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "London Luton Airport",
+                "longitude": -0.37004,
+                "latitude": 51.875482,
+                "id": "arp_ltn_gb",
+                "icao_code": "EGGW",
+                "iata_country_code": "GB",
+                "iata_code": "LTN",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "Gatwick Airport",
+                "longitude": -0.18617,
+                "latitude": 51.150882,
+                "id": "arp_lgw_gb",
+                "icao_code": "EGKK",
+                "iata_country_code": "GB",
+                "iata_code": "LGW",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "London Biggin Hill Airport",
+                "longitude": 0.030782,
+                "latitude": 51.331399,
+                "id": "arp_bqh_gb",
+                "icao_code": "EGKB",
+                "iata_country_code": "GB",
+                "iata_code": "BQH",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              }
+            ]
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Philadelphia",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_phl_us",
+            "icao_code": null,
+            "iata_country_code": "US",
+            "iata_code": "PHL",
+            "iata_city_code": "PHL",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/New_York",
+                "name": "Wings Field",
+                "longitude": -75.264827,
+                "latitude": 40.136628,
+                "id": "arp_bbx_us",
+                "icao_code": "KLOM",
+                "iata_country_code": "US",
+                "iata_code": "BBX",
+                "iata_city_code": "PHL",
+                "city_name": "Philadelphia"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/New_York",
+                "name": "Philadelphia International Airport",
+                "longitude": -75.241759,
+                "latitude": 39.873147,
+                "id": "arp_phl_us",
+                "icao_code": "KPHL",
+                "iata_country_code": "US",
+                "iata_code": "PHL",
+                "iata_city_code": "PHL",
+                "city_name": "Philadelphia"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/New_York",
+                "name": "Philadelphia Seaplane Base",
+                "longitude": -75.299528,
+                "latitude": 39.859034,
+                "id": "arp_psq_us",
+                "icao_code": null,
+                "iata_country_code": "US",
+                "iata_code": "PSQ",
+                "iata_city_code": "PHL",
+                "city_name": "Philadelphia"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/New_York",
+                "name": "Trenton-Mercer Airport",
+                "longitude": -74.814691,
+                "latitude": 40.27706,
+                "id": "arp_ttn_us",
+                "icao_code": "KTTN",
+                "iata_country_code": "US",
+                "iata_code": "TTN",
+                "iata_city_code": "PHL",
+                "city_name": "Trenton"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/New_York",
+                "name": "Northeast Philadelphia Airport",
+                "longitude": -75.010018,
+                "latitude": 40.079425,
+                "id": "arp_pne_us",
+                "icao_code": "KPNE",
+                "iata_country_code": "US",
+                "iata_code": "PNE",
+                "iata_city_code": "PHL",
+                "city_name": "Philadelphia"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:56.660468Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawujrfAeE0AAgm94",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawujrfAeE0AAgm92",
+      "created_at": "2021-12-20T12:21:56.658329Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "America/Punta_Arenas",
+            "name": "Punta Arenas Airport",
+            "longitude": -70.84883,
+            "latitude": -53.003845,
+            "id": "arp_puq_cl",
+            "icao_code": "SCCI",
+            "iata_country_code": "CL",
+            "iata_code": "PUQ",
+            "iata_city_code": "PUQ",
+            "city_name": "Punta Arenas",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/Santiago",
+            "name": "Comodoro Arturo Merino Benítez International Airport",
+            "longitude": -70.789912,
+            "latitude": -33.393196,
+            "id": "arp_scl_cl",
+            "icao_code": "SCEL",
+            "iata_country_code": "CL",
+            "iata_code": "SCL",
+            "iata_city_code": "SCL",
+            "city_name": "Santiago",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:55.630813Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawudyHdBvLsoROcb",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawudxveVdlriH74Z",
+      "created_at": "2021-12-20T12:21:55.627839Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Madrid",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_mad_es",
+            "icao_code": null,
+            "iata_country_code": "ES",
+            "iata_code": "MAD",
+            "iata_city_code": "MAD",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Europe/Madrid",
+                "name": "Madrid–Torrejón Airport",
+                "longitude": -3.457359,
+                "latitude": 40.487654,
+                "id": "arp_toj_es",
+                "icao_code": "LETO",
+                "iata_country_code": "ES",
+                "iata_code": "TOJ",
+                "iata_city_code": "MAD",
+                "city_name": "Madrid"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/Madrid",
+                "name": "Adolfo Suárez Madrid-Barajas Airport",
+                "longitude": -3.567169,
+                "latitude": 40.49923,
+                "id": "arp_mad_es",
+                "icao_code": "LEMD",
+                "iata_country_code": "ES",
+                "iata_code": "MAD",
+                "iata_city_code": "MAD",
+                "city_name": "Madrid"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/Paris",
+            "name": "Bordeaux-Mérignac Airport",
+            "longitude": -0.71293,
+            "latitude": 44.829447,
+            "id": "arp_bod_fr",
+            "icao_code": "LFBD",
+            "iata_country_code": "FR",
+            "iata_code": "BOD",
+            "iata_city_code": "BOD",
+            "city_name": "Bordeaux",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:55.519729Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawudKpRoOZubHT8a",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawudKpRoOZubHT8S",
+      "created_at": "2021-12-20T12:21:55.517016Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Istanbul",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_ist_tr",
+            "icao_code": null,
+            "iata_country_code": "TR",
+            "iata_code": "IST",
+            "iata_city_code": "IST",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Europe/Istanbul",
+                "name": "Istanbul Airport",
+                "longitude": 28.751944,
+                "latitude": 41.275278,
+                "id": "arp_ist_tr",
+                "icao_code": "LTFM",
+                "iata_country_code": "TR",
+                "iata_code": "IST",
+                "iata_city_code": "IST",
+                "city_name": "Istanbul"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/Istanbul",
+                "name": "Istanbul Atatürk Airport",
+                "longitude": 28.81659,
+                "latitude": 40.978594,
+                "id": "arp_isl_tr",
+                "icao_code": "LTBA",
+                "iata_country_code": "TR",
+                "iata_code": "ISL",
+                "iata_city_code": "IST",
+                "city_name": "Istanbul"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/Istanbul",
+                "name": "Sabiha Gökçen International Airport",
+                "longitude": 29.31303,
+                "latitude": 40.901986,
+                "id": "arp_saw_tr",
+                "icao_code": "LTFJ",
+                "iata_country_code": "TR",
+                "iata_code": "SAW",
+                "iata_city_code": "IST",
+                "city_name": "Istanbul"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:53.572816Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawuSCyoea5P4WXsA",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawuSCyoea5P4WXs8",
+      "created_at": "2021-12-20T12:21:53.570448Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Abu Dhabi",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_auh_ae",
+            "icao_code": null,
+            "iata_country_code": "AE",
+            "iata_code": "AUH",
+            "iata_city_code": "AUH",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Al Dhafra Air Base",
+                "longitude": 54.548251,
+                "latitude": 24.249302,
+                "id": "arp_dhf_ae",
+                "icao_code": "OMAM",
+                "iata_country_code": "AE",
+                "iata_code": "DHF",
+                "iata_city_code": "AUH",
+                "city_name": "Abu Dhabi"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Yas Island Seaplane Base Airport",
+                "longitude": 54.610182,
+                "latitude": 24.464725,
+                "id": "arp_aym_ae",
+                "icao_code": null,
+                "iata_country_code": "AE",
+                "iata_code": "AYM",
+                "iata_city_code": "AUH",
+                "city_name": "Abu Dhabi"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Bateen Airport",
+                "longitude": 54.457014,
+                "latitude": 24.428556,
+                "id": "arp_azi_ae",
+                "icao_code": "OMAD",
+                "iata_country_code": "AE",
+                "iata_code": "AZI",
+                "iata_city_code": "AUH",
+                "city_name": "Abu Dhabi"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Abu Dhabi International Airport",
+                "longitude": 54.650586,
+                "latitude": 24.437469,
+                "id": "arp_auh_ae",
+                "icao_code": "OMAA",
+                "iata_country_code": "AE",
+                "iata_code": "AUH",
+                "iata_city_code": "AUH",
+                "city_name": "Abu Dhabi"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:53.525150Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawuRwJobFmZOjEu2",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawuRvxpuyCYIYxM0",
+      "created_at": "2021-12-20T12:21:53.522652Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Dubai",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_dxb_ae",
+            "icao_code": null,
+            "iata_country_code": "AE",
+            "iata_code": "DXB",
+            "iata_city_code": "DXB",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Jebel Ali Seaplane Base Airport",
+                "longitude": 55.023138,
+                "latitude": 24.989677,
+                "id": "arp_djh_ae",
+                "icao_code": null,
+                "iata_country_code": "AE",
+                "iata_code": "DJH",
+                "iata_city_code": "DXB",
+                "city_name": "Dubai"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Al Maktoum International Airport",
+                "longitude": 55.143777,
+                "latitude": 24.89344,
+                "id": "arp_dwc_ae",
+                "icao_code": "OMDW",
+                "iata_country_code": "AE",
+                "iata_code": "DWC",
+                "iata_city_code": "DXB",
+                "city_name": "Dubai"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Al Minhad Air Base",
+                "longitude": 55.366199,
+                "latitude": 25.0268,
+                "id": "arp_nhd_ae",
+                "icao_code": "OMDM",
+                "iata_country_code": "AE",
+                "iata_code": "NHD",
+                "iata_city_code": "DXB",
+                "city_name": "Dubai"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Dubai Creek Seaplane Base Airport",
+                "longitude": 55.33081,
+                "latitude": 25.242552,
+                "id": "arp_dcg_ae",
+                "icao_code": null,
+                "iata_country_code": "AE",
+                "iata_code": "DCG",
+                "iata_city_code": "DXB",
+                "city_name": "Dubai"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Dubai International Airport",
+                "longitude": 55.365035,
+                "latitude": 25.252987,
+                "id": "arp_dxb_ae",
+                "icao_code": "OMDB",
+                "iata_country_code": "AE",
+                "iata_code": "DXB",
+                "iata_city_code": "DXB",
+                "city_name": "Dubai"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:52.432495Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawuLgFdUnx9frk14",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawuLgFdUnx9frk12",
+      "created_at": "2021-12-20T12:21:52.429757Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Hong Kong",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_hkg_hk",
+            "icao_code": null,
+            "iata_country_code": "HK",
+            "iata_code": "HKG",
+            "iata_city_code": "HKG",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Hong_Kong",
+                "name": "Hong Kong International Airport",
+                "longitude": 113.91732,
+                "latitude": 22.308331,
+                "id": "arp_hkg_hk",
+                "icao_code": "VHHH",
+                "iata_country_code": "HK",
+                "iata_code": "HKG",
+                "iata_city_code": "HKG",
+                "city_name": "Hong Kong"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:51.215537Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawuEjmtsVPcllY48",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawuEjQvCDpbfbGVs",
+      "created_at": "2021-12-20T12:21:51.213218Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Panama City",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_pty_pa",
+            "icao_code": null,
+            "iata_country_code": "PA",
+            "iata_code": "PTY",
+            "iata_city_code": "PTY",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Panama",
+                "name": "Tocumen International Airport",
+                "longitude": -79.38536,
+                "latitude": 9.069099,
+                "id": "arp_pty_pa",
+                "icao_code": "MPTO",
+                "iata_country_code": "PA",
+                "iata_code": "PTY",
+                "iata_city_code": "PTY",
+                "city_name": "Panama City"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Panama",
+                "name": "Panama City International Airport",
+                "longitude": -79.557289,
+                "latitude": 8.971642,
+                "id": "arp_pac_pa",
+                "icao_code": "MPMG",
+                "iata_country_code": "PA",
+                "iata_code": "PAC",
+                "iata_city_code": "PTY",
+                "city_name": "Panama City"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/Costa_Rica",
+            "name": "Juan Santamaria International Airport",
+            "longitude": -84.207967,
+            "latitude": 9.995738,
+            "id": "arp_sjo_cr",
+            "icao_code": "MROC",
+            "iata_country_code": "CR",
+            "iata_code": "SJO",
+            "iata_city_code": "SJO",
+            "city_name": "San Jose",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:51.211663Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawuEepCKXHNNRaKY",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawuEepCKXHNNRaKW",
+      "created_at": "2021-12-20T12:21:51.209183Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Dallas",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_dfw_us",
+            "icao_code": null,
+            "iata_country_code": "US",
+            "iata_code": "DFW",
+            "iata_city_code": "DFW",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Chicago",
+                "name": "Dallas Love Field",
+                "longitude": -96.851502,
+                "latitude": 32.8476,
+                "id": "arp_dal_us",
+                "icao_code": "KDAL",
+                "iata_country_code": "US",
+                "iata_code": "DAL",
+                "iata_city_code": "DFW",
+                "city_name": "Dallas"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Chicago",
+                "name": "Addison Airport",
+                "longitude": -96.836434,
+                "latitude": 32.969286,
+                "id": "arp_ads_us",
+                "icao_code": "KADS",
+                "iata_country_code": "US",
+                "iata_code": "ADS",
+                "iata_city_code": "DFW",
+                "city_name": "Dallas"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Chicago",
+                "name": "Dallas/Fort Worth International Airport",
+                "longitude": -97.039169,
+                "latitude": 32.898305,
+                "id": "arp_dfw_us",
+                "icao_code": "KDFW",
+                "iata_country_code": "US",
+                "iata_code": "DFW",
+                "iata_city_code": "DFW",
+                "city_name": "Dallas"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Chicago",
+                "name": "Dallas Executive Airport",
+                "longitude": -96.867312,
+                "latitude": 32.680303,
+                "id": "arp_rbd_us",
+                "icao_code": "KRBD",
+                "iata_country_code": "US",
+                "iata_code": "RBD",
+                "iata_city_code": "DFW",
+                "city_name": "Dallas"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/New_York",
+            "name": "John F. Kennedy International Airport",
+            "longitude": -73.778519,
+            "latitude": 40.640556,
+            "id": "arp_jfk_us",
+            "icao_code": "KJFK",
+            "iata_country_code": "US",
+            "iata_code": "JFK",
+            "iata_city_code": "NYC",
+            "city_name": "New York",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "New York",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_nyc_us",
+              "icao_code": null,
+              "iata_country_code": "US",
+              "iata_code": "NYC",
+              "iata_city_code": "NYC",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:51.106866Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawuE6tmXMng0GuRM",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawuE6Xnr5Deu6ct8",
+      "created_at": "2021-12-20T12:21:51.104413Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/Athens",
+            "name": "Athens International Airport",
+            "longitude": 23.946458,
+            "latitude": 37.936023,
+            "id": "arp_ath_gr",
+            "icao_code": "LGAV",
+            "iata_country_code": "GR",
+            "iata_code": "ATH",
+            "iata_city_code": "ATH",
+            "city_name": "Athens",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:51.106892Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawuE6Xnr5Deu6ct9",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawuE6Xnr5Deu6ct6",
+      "created_at": "2021-12-20T12:21:51.104245Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "America/New_York",
+            "name": "John F. Kennedy International Airport",
+            "longitude": -73.778519,
+            "latitude": 40.640556,
+            "id": "arp_jfk_us",
+            "icao_code": "KJFK",
+            "iata_country_code": "US",
+            "iata_code": "JFK",
+            "iata_city_code": "NYC",
+            "city_name": "New York",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "New York",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_nyc_us",
+              "icao_code": null,
+              "iata_country_code": "US",
+              "iata_code": "NYC",
+              "iata_city_code": "NYC",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:51.105230Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawuE6RGB1vejM7jW",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawuE6RGB1vejM7jU",
+      "created_at": "2021-12-20T12:21:51.102996Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/New_York",
+            "name": "John F. Kennedy International Airport",
+            "longitude": -73.778519,
+            "latitude": 40.640556,
+            "id": "arp_jfk_us",
+            "icao_code": "KJFK",
+            "iata_country_code": "US",
+            "iata_code": "JFK",
+            "iata_city_code": "NYC",
+            "city_name": "New York",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "New York",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_nyc_us",
+              "icao_code": null,
+              "iata_country_code": "US",
+              "iata_code": "NYC",
+              "iata_city_code": "NYC",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:21:51.104731Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawuE6DsOW0jPnIYM",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawuE6DsOW0jPnIYK",
+      "created_at": "2021-12-20T12:21:51.102758Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Mexico City",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_mex_mx",
+            "icao_code": null,
+            "iata_country_code": "MX",
+            "iata_code": "MEX",
+            "iata_city_code": "MEX",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Toluca International Airport",
+                "longitude": -99.567918,
+                "latitude": 19.338024,
+                "id": "arp_tlc_mx",
+                "icao_code": "MMTO",
+                "iata_country_code": "MX",
+                "iata_code": "TLC",
+                "iata_city_code": "MEX",
+                "city_name": "Toluca"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Santa Lucía Airport",
+                "longitude": -99.01683,
+                "latitude": 19.754122,
+                "id": "arp_nlu_mx",
+                "icao_code": "MMSM",
+                "iata_country_code": "MX",
+                "iata_code": "NLU",
+                "iata_city_code": "MEX",
+                "city_name": "Mexico City"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Atizapan De Zaragoza Airport",
+                "longitude": -99.290733,
+                "latitude": 19.573377,
+                "id": "arp_azp_mx",
+                "icao_code": "MMJC",
+                "iata_country_code": "MX",
+                "iata_code": "AZP",
+                "iata_city_code": "MEX",
+                "city_name": "Mexico City"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Benito Juarez International Airport",
+                "longitude": -99.072003,
+                "latitude": 19.436188,
+                "id": "arp_mex_mx",
+                "icao_code": "MMMX",
+                "iata_country_code": "MX",
+                "iata_code": "MEX",
+                "iata_city_code": "MEX",
+                "city_name": "Mexico City"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/Cancun",
+            "name": "Cancún International Airport",
+            "longitude": -86.875331,
+            "latitude": 21.038421,
+            "id": "arp_cun_mx",
+            "icao_code": "MMUN",
+            "iata_country_code": "MX",
+            "iata_code": "CUN",
+            "iata_city_code": "CUN",
+            "city_name": "Cancún",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:17:10.974805Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawUONOROiBzOy2kX",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawUON2SiQbyInlCG",
+      "created_at": "2021-12-20T12:17:10.967997Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Gatwick Airport",
+            "longitude": -0.18617,
+            "latitude": 51.150882,
+            "id": "arp_lgw_gb",
+            "icao_code": "EGKK",
+            "iata_country_code": "GB",
+            "iata_code": "LGW",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/Edmonton",
+            "name": "Calgary International Airport",
+            "longitude": -114.009275,
+            "latitude": 51.119337,
+            "id": "arp_yyc_ca",
+            "icao_code": "CYYC",
+            "iata_country_code": "CA",
+            "iata_code": "YYC",
+            "iata_city_code": "YYC",
+            "city_name": "Calgary",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:17:08.569285Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawUAeM1bvfPnUoEM",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawUAeM1bvfPnUoEK",
+      "created_at": "2021-12-20T12:17:08.566988Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "America/Los_Angeles",
+            "name": "San Francisco International Airport",
+            "longitude": -122.376977,
+            "latitude": 37.620156,
+            "id": "arp_sfo_us",
+            "icao_code": "KSFO",
+            "iata_country_code": "US",
+            "iata_code": "SFO",
+            "iata_city_code": "SFO",
+            "city_name": "San Francisco",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Los Angeles",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_lax_us",
+            "icao_code": null,
+            "iata_country_code": "US",
+            "iata_code": "LAX",
+            "iata_city_code": "LAX",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Ontario International Airport",
+                "longitude": -117.599527,
+                "latitude": 34.055988,
+                "id": "arp_ont_us",
+                "icao_code": "KONT",
+                "iata_country_code": "US",
+                "iata_code": "ONT",
+                "iata_city_code": "LAX",
+                "city_name": "Ontario"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Los Angeles International Airport",
+                "longitude": -118.408263,
+                "latitude": 33.942045,
+                "id": "arp_lax_us",
+                "icao_code": "KLAX",
+                "iata_country_code": "US",
+                "iata_code": "LAX",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Van Nuys Airport",
+                "longitude": -118.489719,
+                "latitude": 34.208582,
+                "id": "arp_vny_us",
+                "icao_code": "KVNY",
+                "iata_country_code": "US",
+                "iata_code": "VNY",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Whiteman Airport",
+                "longitude": -118.412713,
+                "latitude": 34.25989,
+                "id": "arp_whp_us",
+                "icao_code": "KWHP",
+                "iata_country_code": "US",
+                "iata_code": "WHP",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:17:07.720367Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawU5nQ7otpRyXPKk",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawU5nQ7otpRyXPKi",
+      "created_at": "2021-12-20T12:17:07.718068Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/Madrid",
+            "name": "Barcelona–El Prat Josep Tarradellas Airport",
+            "longitude": 2.080877,
+            "latitude": 41.297273,
+            "id": "arp_bcn_es",
+            "icao_code": "LEBL",
+            "iata_country_code": "ES",
+            "iata_code": "BCN",
+            "iata_city_code": "BCN",
+            "city_name": "Barcelona",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Madrid",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_mad_es",
+            "icao_code": null,
+            "iata_country_code": "ES",
+            "iata_code": "MAD",
+            "iata_city_code": "MAD",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Europe/Madrid",
+                "name": "Madrid–Torrejón Airport",
+                "longitude": -3.457359,
+                "latitude": 40.487654,
+                "id": "arp_toj_es",
+                "icao_code": "LETO",
+                "iata_country_code": "ES",
+                "iata_code": "TOJ",
+                "iata_city_code": "MAD",
+                "city_name": "Madrid"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/Madrid",
+                "name": "Adolfo Suárez Madrid-Barajas Airport",
+                "longitude": -3.567169,
+                "latitude": 40.49923,
+                "id": "arp_mad_es",
+                "icao_code": "LEMD",
+                "iata_country_code": "ES",
+                "iata_code": "MAD",
+                "iata_city_code": "MAD",
+                "city_name": "Madrid"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:17:06.451210Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawTyXmU9ZXs5cyKQ",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawTyXmU9ZXs5cyKO",
+      "created_at": "2021-12-20T12:17:06.448860Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "America/Los_Angeles",
+            "name": "San Francisco International Airport",
+            "longitude": -122.376977,
+            "latitude": 37.620156,
+            "id": "arp_sfo_us",
+            "icao_code": "KSFO",
+            "iata_country_code": "US",
+            "iata_code": "SFO",
+            "iata_city_code": "SFO",
+            "city_name": "San Francisco",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Los Angeles",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_lax_us",
+            "icao_code": null,
+            "iata_country_code": "US",
+            "iata_code": "LAX",
+            "iata_city_code": "LAX",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Ontario International Airport",
+                "longitude": -117.599527,
+                "latitude": 34.055988,
+                "id": "arp_ont_us",
+                "icao_code": "KONT",
+                "iata_country_code": "US",
+                "iata_code": "ONT",
+                "iata_city_code": "LAX",
+                "city_name": "Ontario"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Los Angeles International Airport",
+                "longitude": -118.408263,
+                "latitude": 33.942045,
+                "id": "arp_lax_us",
+                "icao_code": "KLAX",
+                "iata_country_code": "US",
+                "iata_code": "LAX",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Van Nuys Airport",
+                "longitude": -118.489719,
+                "latitude": 34.208582,
+                "id": "arp_vny_us",
+                "icao_code": "KVNY",
+                "iata_country_code": "US",
+                "iata_code": "VNY",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Whiteman Airport",
+                "longitude": -118.412713,
+                "latitude": 34.25989,
+                "id": "arp_whp_us",
+                "icao_code": "KWHP",
+                "iata_country_code": "US",
+                "iata_code": "WHP",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:17:06.029364Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawTw7w1Lg6NCDiks",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawTw7w1Lg6NCDikq",
+      "created_at": "2021-12-20T12:17:06.027228Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "London Luton Airport",
+            "longitude": -0.37004,
+            "latitude": 51.875482,
+            "id": "arp_ltn_gb",
+            "icao_code": "EGGW",
+            "iata_country_code": "GB",
+            "iata_code": "LTN",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/Zurich",
+            "name": "Geneva Airport",
+            "longitude": 6.109053,
+            "latitude": 46.237553,
+            "id": "arp_gva_ch",
+            "icao_code": "LSGG",
+            "iata_country_code": "CH",
+            "iata_code": "GVA",
+            "iata_city_code": "GVA",
+            "city_name": "Geneva",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:17:05.604815Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawTthJ6isZvXaM8g",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawTthJ6isZvXaM8e",
+      "created_at": "2021-12-20T12:17:05.602453Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/Lisbon",
+            "name": "Lisbon Portela Airport",
+            "longitude": -9.135643,
+            "latitude": 38.778446,
+            "id": "arp_lis_pt",
+            "icao_code": "LPPT",
+            "iata_country_code": "PT",
+            "iata_code": "LIS",
+            "iata_city_code": "LIS",
+            "city_name": "Lisbon",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/Paris",
+            "name": "Paris-Orly Airport",
+            "longitude": 2.362898,
+            "latitude": 48.726427,
+            "id": "arp_ory_fr",
+            "icao_code": "LFPO",
+            "iata_country_code": "FR",
+            "iata_code": "ORY",
+            "iata_city_code": "PAR",
+            "city_name": "Paris",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "Paris",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_par_fr",
+              "icao_code": null,
+              "iata_country_code": "FR",
+              "iata_code": "PAR",
+              "iata_city_code": "PAR",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:17:05.073580Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawTqfHmMp1R34quo",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawTqfHmMp1R34qum",
+      "created_at": "2021-12-20T12:17:05.070954Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Singapore",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_sin_sg",
+            "icao_code": null,
+            "iata_country_code": "SG",
+            "iata_code": "SIN",
+            "iata_city_code": "SIN",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Tengah Air Base",
+                "longitude": 103.708617,
+                "latitude": 1.385789,
+                "id": "arp_tga_sg",
+                "icao_code": "WSAT",
+                "iata_country_code": "SG",
+                "iata_code": "TGA",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Seletar Airport",
+                "longitude": 103.86819,
+                "latitude": 1.416952,
+                "id": "arp_xsp_sg",
+                "icao_code": "WSSL",
+                "iata_country_code": "SG",
+                "iata_code": "XSP",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Paya Lebar Air Base",
+                "longitude": 103.910629,
+                "latitude": 1.359288,
+                "id": "arp_qpg_sg",
+                "icao_code": "WSAP",
+                "iata_country_code": "SG",
+                "iata_code": "QPG",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Singapore Changi Airport",
+                "longitude": 103.985127,
+                "latitude": 1.356115,
+                "id": "arp_sin_sg",
+                "icao_code": "WSSS",
+                "iata_country_code": "SG",
+                "iata_code": "SIN",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              }
+            ]
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Hong Kong",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_hkg_hk",
+            "icao_code": null,
+            "iata_country_code": "HK",
+            "iata_code": "HKG",
+            "iata_city_code": "HKG",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Hong_Kong",
+                "name": "Hong Kong International Airport",
+                "longitude": 113.91732,
+                "latitude": 22.308331,
+                "id": "arp_hkg_hk",
+                "icao_code": "VHHH",
+                "iata_country_code": "HK",
+                "iata_code": "HKG",
+                "iata_city_code": "HKG",
+                "city_name": "Hong Kong"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:17:04.641677Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawToC8xkK3m5QYDK",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawToC8xkK3m5QYDI",
+      "created_at": "2021-12-20T12:17:04.639082Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Sydney",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_syd_au",
+            "icao_code": null,
+            "iata_country_code": "AU",
+            "iata_code": "SYD",
+            "iata_city_code": "SYD",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Australia/Sydney",
+                "name": "Sydney Airport",
+                "longitude": 151.176138,
+                "latitude": -33.943011,
+                "id": "arp_syd_au",
+                "icao_code": "YSSY",
+                "iata_country_code": "AU",
+                "iata_code": "SYD",
+                "iata_city_code": "SYD",
+                "city_name": "Sydney"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Australia/Sydney",
+                "name": "Rose Bay Water Airport",
+                "longitude": 151.258458,
+                "latitude": -33.869877,
+                "id": "arp_rse_au",
+                "icao_code": null,
+                "iata_country_code": "AU",
+                "iata_code": "RSE",
+                "iata_city_code": "SYD",
+                "city_name": "Sydney"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Australia/Sydney",
+                "name": "Palm Beach Seaplane Base Airport",
+                "longitude": 151.323889,
+                "latitude": -33.5875,
+                "id": "arp_lbh_au",
+                "icao_code": null,
+                "iata_country_code": "AU",
+                "iata_code": "LBH",
+                "iata_city_code": "SYD",
+                "city_name": "Sydney"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Australia/Sydney",
+                "name": "Bankstown Airport",
+                "longitude": 150.991461,
+                "latitude": -33.922523,
+                "id": "arp_bwu_au",
+                "icao_code": "YSBK",
+                "iata_country_code": "AU",
+                "iata_code": "BWU",
+                "iata_city_code": "SYD",
+                "city_name": "Sydney"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Australia/Adelaide",
+            "name": "Adelaide Airport",
+            "longitude": 138.532122,
+            "latitude": -34.945578,
+            "id": "arp_adl_au",
+            "icao_code": "YPAD",
+            "iata_country_code": "AU",
+            "iata_code": "ADL",
+            "iata_city_code": "ADL",
+            "city_name": "Adelaide",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:17:03.377503Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawTgxqRvNqR4Dsby",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawTgxqRvNqR4Dsbw",
+      "created_at": "2021-12-20T12:17:03.375176Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "London",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_lon_gb",
+            "icao_code": null,
+            "iata_country_code": "GB",
+            "iata_code": "LON",
+            "iata_city_code": "LON",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "London Stansted Airport",
+                "longitude": 0.236933,
+                "latitude": 51.885508,
+                "id": "arp_stn_gb",
+                "icao_code": "EGSS",
+                "iata_country_code": "GB",
+                "iata_code": "STN",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "Heathrow Airport",
+                "longitude": -0.458118,
+                "latitude": 51.470311,
+                "id": "arp_lhr_gb",
+                "icao_code": "EGLL",
+                "iata_country_code": "GB",
+                "iata_code": "LHR",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "London Southend Airport",
+                "longitude": 0.697117,
+                "latitude": 51.571075,
+                "id": "arp_sen_gb",
+                "icao_code": "EGMC",
+                "iata_country_code": "GB",
+                "iata_code": "SEN",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "London City Airport",
+                "longitude": 0.052398,
+                "latitude": 51.505071,
+                "id": "arp_lcy_gb",
+                "icao_code": "EGLC",
+                "iata_country_code": "GB",
+                "iata_code": "LCY",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "London Luton Airport",
+                "longitude": -0.37004,
+                "latitude": 51.875482,
+                "id": "arp_ltn_gb",
+                "icao_code": "EGGW",
+                "iata_country_code": "GB",
+                "iata_code": "LTN",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "Gatwick Airport",
+                "longitude": -0.18617,
+                "latitude": 51.150882,
+                "id": "arp_lgw_gb",
+                "icao_code": "EGKK",
+                "iata_country_code": "GB",
+                "iata_code": "LGW",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/London",
+                "name": "London Biggin Hill Airport",
+                "longitude": 0.030782,
+                "latitude": 51.331399,
+                "id": "arp_bqh_gb",
+                "icao_code": "EGKB",
+                "iata_country_code": "GB",
+                "iata_code": "BQH",
+                "iata_city_code": "LON",
+                "city_name": "London"
+              }
+            ]
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Philadelphia",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_phl_us",
+            "icao_code": null,
+            "iata_country_code": "US",
+            "iata_code": "PHL",
+            "iata_city_code": "PHL",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/New_York",
+                "name": "Wings Field",
+                "longitude": -75.264827,
+                "latitude": 40.136628,
+                "id": "arp_bbx_us",
+                "icao_code": "KLOM",
+                "iata_country_code": "US",
+                "iata_code": "BBX",
+                "iata_city_code": "PHL",
+                "city_name": "Philadelphia"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/New_York",
+                "name": "Philadelphia International Airport",
+                "longitude": -75.241759,
+                "latitude": 39.873147,
+                "id": "arp_phl_us",
+                "icao_code": "KPHL",
+                "iata_country_code": "US",
+                "iata_code": "PHL",
+                "iata_city_code": "PHL",
+                "city_name": "Philadelphia"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/New_York",
+                "name": "Philadelphia Seaplane Base",
+                "longitude": -75.299528,
+                "latitude": 39.859034,
+                "id": "arp_psq_us",
+                "icao_code": null,
+                "iata_country_code": "US",
+                "iata_code": "PSQ",
+                "iata_city_code": "PHL",
+                "city_name": "Philadelphia"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/New_York",
+                "name": "Trenton-Mercer Airport",
+                "longitude": -74.814691,
+                "latitude": 40.27706,
+                "id": "arp_ttn_us",
+                "icao_code": "KTTN",
+                "iata_country_code": "US",
+                "iata_code": "TTN",
+                "iata_city_code": "PHL",
+                "city_name": "Trenton"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/New_York",
+                "name": "Northeast Philadelphia Airport",
+                "longitude": -75.010018,
+                "latitude": 40.079425,
+                "id": "arp_pne_us",
+                "icao_code": "KPNE",
+                "iata_country_code": "US",
+                "iata_code": "PNE",
+                "iata_city_code": "PHL",
+                "city_name": "Philadelphia"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:58.397450Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawTETiJ0xH004Uan",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawTETMKKfgytuD2q",
+      "created_at": "2021-12-20T12:16:58.394126Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "America/Punta_Arenas",
+            "name": "Punta Arenas Airport",
+            "longitude": -70.84883,
+            "latitude": -53.003845,
+            "id": "arp_puq_cl",
+            "icao_code": "SCCI",
+            "iata_country_code": "CL",
+            "iata_code": "PUQ",
+            "iata_city_code": "PUQ",
+            "city_name": "Punta Arenas",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/Santiago",
+            "name": "Comodoro Arturo Merino Benítez International Airport",
+            "longitude": -70.789912,
+            "latitude": -33.393196,
+            "id": "arp_scl_cl",
+            "icao_code": "SCEL",
+            "iata_country_code": "CL",
+            "iata_code": "SCL",
+            "iata_city_code": "SCL",
+            "city_name": "Santiago",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:56.695790Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawT4l6Uqc3wXyATa",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawT4l6Uqc3wXyATY",
+      "created_at": "2021-12-20T12:16:56.693478Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Madrid",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_mad_es",
+            "icao_code": null,
+            "iata_country_code": "ES",
+            "iata_code": "MAD",
+            "iata_city_code": "MAD",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Europe/Madrid",
+                "name": "Madrid–Torrejón Airport",
+                "longitude": -3.457359,
+                "latitude": 40.487654,
+                "id": "arp_toj_es",
+                "icao_code": "LETO",
+                "iata_country_code": "ES",
+                "iata_code": "TOJ",
+                "iata_city_code": "MAD",
+                "city_name": "Madrid"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/Madrid",
+                "name": "Adolfo Suárez Madrid-Barajas Airport",
+                "longitude": -3.567169,
+                "latitude": 40.49923,
+                "id": "arp_mad_es",
+                "icao_code": "LEMD",
+                "iata_country_code": "ES",
+                "iata_code": "MAD",
+                "iata_city_code": "MAD",
+                "city_name": "Madrid"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/Paris",
+            "name": "Bordeaux-Mérignac Airport",
+            "longitude": -0.71293,
+            "latitude": 44.829447,
+            "id": "arp_bod_fr",
+            "icao_code": "LFBD",
+            "iata_country_code": "FR",
+            "iata_code": "BOD",
+            "iata_city_code": "BOD",
+            "city_name": "Bordeaux",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:56.593900Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawT4BA34Cj3ic7IO",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawT4Ao4Nv92cRpkN",
+      "created_at": "2021-12-20T12:16:56.590833Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Istanbul",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_ist_tr",
+            "icao_code": null,
+            "iata_country_code": "TR",
+            "iata_code": "IST",
+            "iata_city_code": "IST",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Europe/Istanbul",
+                "name": "Istanbul Airport",
+                "longitude": 28.751944,
+                "latitude": 41.275278,
+                "id": "arp_ist_tr",
+                "icao_code": "LTFM",
+                "iata_country_code": "TR",
+                "iata_code": "IST",
+                "iata_city_code": "IST",
+                "city_name": "Istanbul"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/Istanbul",
+                "name": "Istanbul Atatürk Airport",
+                "longitude": 28.81659,
+                "latitude": 40.978594,
+                "id": "arp_isl_tr",
+                "icao_code": "LTBA",
+                "iata_country_code": "TR",
+                "iata_code": "ISL",
+                "iata_city_code": "IST",
+                "city_name": "Istanbul"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/Istanbul",
+                "name": "Sabiha Gökçen International Airport",
+                "longitude": 29.31303,
+                "latitude": 40.901986,
+                "id": "arp_saw_tr",
+                "icao_code": "LTFJ",
+                "iata_country_code": "TR",
+                "iata_code": "SAW",
+                "iata_city_code": "IST",
+                "city_name": "Istanbul"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:55.928027Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawT0MUqOYKJ4QSZ8",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawT0MUqOYKJ4QSZ6",
+      "created_at": "2021-12-20T12:16:55.924207Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Abu Dhabi",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_auh_ae",
+            "icao_code": null,
+            "iata_country_code": "AE",
+            "iata_code": "AUH",
+            "iata_city_code": "AUH",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Al Dhafra Air Base",
+                "longitude": 54.548251,
+                "latitude": 24.249302,
+                "id": "arp_dhf_ae",
+                "icao_code": "OMAM",
+                "iata_country_code": "AE",
+                "iata_code": "DHF",
+                "iata_city_code": "AUH",
+                "city_name": "Abu Dhabi"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Yas Island Seaplane Base Airport",
+                "longitude": 54.610182,
+                "latitude": 24.464725,
+                "id": "arp_aym_ae",
+                "icao_code": null,
+                "iata_country_code": "AE",
+                "iata_code": "AYM",
+                "iata_city_code": "AUH",
+                "city_name": "Abu Dhabi"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Bateen Airport",
+                "longitude": 54.457014,
+                "latitude": 24.428556,
+                "id": "arp_azi_ae",
+                "icao_code": "OMAD",
+                "iata_country_code": "AE",
+                "iata_code": "AZI",
+                "iata_city_code": "AUH",
+                "city_name": "Abu Dhabi"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Abu Dhabi International Airport",
+                "longitude": 54.650586,
+                "latitude": 24.437469,
+                "id": "arp_auh_ae",
+                "icao_code": "OMAA",
+                "iata_country_code": "AE",
+                "iata_code": "AUH",
+                "iata_city_code": "AUH",
+                "city_name": "Abu Dhabi"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:54.038744Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawSpZCynBWpJHxLs",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawSpYr06twoD7fnc",
+      "created_at": "2021-12-20T12:16:54.036284Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Dubai",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_dxb_ae",
+            "icao_code": null,
+            "iata_country_code": "AE",
+            "iata_code": "DXB",
+            "iata_city_code": "DXB",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Jebel Ali Seaplane Base Airport",
+                "longitude": 55.023138,
+                "latitude": 24.989677,
+                "id": "arp_djh_ae",
+                "icao_code": null,
+                "iata_country_code": "AE",
+                "iata_code": "DJH",
+                "iata_city_code": "DXB",
+                "city_name": "Dubai"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Al Maktoum International Airport",
+                "longitude": 55.143777,
+                "latitude": 24.89344,
+                "id": "arp_dwc_ae",
+                "icao_code": "OMDW",
+                "iata_country_code": "AE",
+                "iata_code": "DWC",
+                "iata_city_code": "DXB",
+                "city_name": "Dubai"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Al Minhad Air Base",
+                "longitude": 55.366199,
+                "latitude": 25.0268,
+                "id": "arp_nhd_ae",
+                "icao_code": "OMDM",
+                "iata_country_code": "AE",
+                "iata_code": "NHD",
+                "iata_city_code": "DXB",
+                "city_name": "Dubai"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Dubai Creek Seaplane Base Airport",
+                "longitude": 55.33081,
+                "latitude": 25.242552,
+                "id": "arp_dcg_ae",
+                "icao_code": null,
+                "iata_country_code": "AE",
+                "iata_code": "DCG",
+                "iata_city_code": "DXB",
+                "city_name": "Dubai"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Dubai",
+                "name": "Dubai International Airport",
+                "longitude": 55.365035,
+                "latitude": 25.252987,
+                "id": "arp_dxb_ae",
+                "icao_code": "OMDB",
+                "iata_country_code": "AE",
+                "iata_code": "DXB",
+                "iata_city_code": "DXB",
+                "city_name": "Dubai"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:53.061425Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawSjz58GesQSoBgw",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawSjz58GesQSoBgu",
+      "created_at": "2021-12-20T12:16:53.058865Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Hong Kong",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_hkg_hk",
+            "icao_code": null,
+            "iata_country_code": "HK",
+            "iata_code": "HKG",
+            "iata_city_code": "HKG",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Hong_Kong",
+                "name": "Hong Kong International Airport",
+                "longitude": 113.91732,
+                "latitude": 22.308331,
+                "id": "arp_hkg_hk",
+                "icao_code": "VHHH",
+                "iata_country_code": "HK",
+                "iata_code": "HKG",
+                "iata_city_code": "HKG",
+                "city_name": "Hong Kong"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:51.804728Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawScnEPzzM7WuXju",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawScnEPzzM7WuXjs",
+      "created_at": "2021-12-20T12:16:51.802177Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Panama City",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_pty_pa",
+            "icao_code": null,
+            "iata_country_code": "PA",
+            "iata_code": "PTY",
+            "iata_city_code": "PTY",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Panama",
+                "name": "Tocumen International Airport",
+                "longitude": -79.38536,
+                "latitude": 9.069099,
+                "id": "arp_pty_pa",
+                "icao_code": "MPTO",
+                "iata_country_code": "PA",
+                "iata_code": "PTY",
+                "iata_city_code": "PTY",
+                "city_name": "Panama City"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Panama",
+                "name": "Panama City International Airport",
+                "longitude": -79.557289,
+                "latitude": 8.971642,
+                "id": "arp_pac_pa",
+                "icao_code": "MPMG",
+                "iata_country_code": "PA",
+                "iata_code": "PAC",
+                "iata_city_code": "PTY",
+                "city_name": "Panama City"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/Costa_Rica",
+            "name": "Juan Santamaria International Airport",
+            "longitude": -84.207967,
+            "latitude": 9.995738,
+            "id": "arp_sjo_cr",
+            "icao_code": "MROC",
+            "iata_country_code": "CR",
+            "iata_code": "SJO",
+            "iata_city_code": "SJO",
+            "city_name": "San Jose",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:51.792584Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawScj0j2Ikzwm6KI",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawScj0j2Ikzwm6KG",
+      "created_at": "2021-12-20T12:16:51.790404Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Dallas",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_dfw_us",
+            "icao_code": null,
+            "iata_country_code": "US",
+            "iata_code": "DFW",
+            "iata_city_code": "DFW",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Chicago",
+                "name": "Dallas Love Field",
+                "longitude": -96.851502,
+                "latitude": 32.8476,
+                "id": "arp_dal_us",
+                "icao_code": "KDAL",
+                "iata_country_code": "US",
+                "iata_code": "DAL",
+                "iata_city_code": "DFW",
+                "city_name": "Dallas"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Chicago",
+                "name": "Addison Airport",
+                "longitude": -96.836434,
+                "latitude": 32.969286,
+                "id": "arp_ads_us",
+                "icao_code": "KADS",
+                "iata_country_code": "US",
+                "iata_code": "ADS",
+                "iata_city_code": "DFW",
+                "city_name": "Dallas"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Chicago",
+                "name": "Dallas/Fort Worth International Airport",
+                "longitude": -97.039169,
+                "latitude": 32.898305,
+                "id": "arp_dfw_us",
+                "icao_code": "KDFW",
+                "iata_country_code": "US",
+                "iata_code": "DFW",
+                "iata_city_code": "DFW",
+                "city_name": "Dallas"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Chicago",
+                "name": "Dallas Executive Airport",
+                "longitude": -96.867312,
+                "latitude": 32.680303,
+                "id": "arp_rbd_us",
+                "icao_code": "KRBD",
+                "iata_country_code": "US",
+                "iata_code": "RBD",
+                "iata_city_code": "DFW",
+                "city_name": "Dallas"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/New_York",
+            "name": "John F. Kennedy International Airport",
+            "longitude": -73.778519,
+            "latitude": 40.640556,
+            "id": "arp_jfk_us",
+            "icao_code": "KJFK",
+            "iata_country_code": "US",
+            "iata_code": "JFK",
+            "iata_city_code": "NYC",
+            "city_name": "New York",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "New York",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_nyc_us",
+              "icao_code": null,
+              "iata_country_code": "US",
+              "iata_code": "NYC",
+              "iata_city_code": "NYC",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:51.689709Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawSc8iIZbq61Flb9",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawSc8iIZbq61Flav",
+      "created_at": "2021-12-20T12:16:51.687291Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/Athens",
+            "name": "Athens International Airport",
+            "longitude": 23.946458,
+            "latitude": 37.936023,
+            "id": "arp_ath_gr",
+            "icao_code": "LGAV",
+            "iata_country_code": "GR",
+            "iata_code": "ATH",
+            "iata_city_code": "ATH",
+            "city_name": "Athens",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:51.681700Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawSc61416r30WxXv",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawSc5f5KpH1uMfzh",
+      "created_at": "2021-12-20T12:16:51.679585Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "America/New_York",
+            "name": "John F. Kennedy International Airport",
+            "longitude": -73.778519,
+            "latitude": 40.640556,
+            "id": "arp_jfk_us",
+            "icao_code": "KJFK",
+            "iata_country_code": "US",
+            "iata_code": "JFK",
+            "iata_city_code": "NYC",
+            "city_name": "New York",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "New York",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_nyc_us",
+              "icao_code": null,
+              "iata_country_code": "US",
+              "iata_code": "NYC",
+              "iata_city_code": "NYC",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:51.682136Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawSc61416r30WxXy",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawSc61416r30WxXu",
+      "created_at": "2021-12-20T12:16:51.679535Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Heathrow Airport",
+            "longitude": -0.458118,
+            "latitude": 51.470311,
+            "id": "arp_lhr_gb",
+            "icao_code": "EGLL",
+            "iata_country_code": "GB",
+            "iata_code": "LHR",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/New_York",
+            "name": "John F. Kennedy International Airport",
+            "longitude": -73.778519,
+            "latitude": 40.640556,
+            "id": "arp_jfk_us",
+            "icao_code": "KJFK",
+            "iata_country_code": "US",
+            "iata_code": "JFK",
+            "iata_city_code": "NYC",
+            "city_name": "New York",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "New York",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_nyc_us",
+              "icao_code": null,
+              "iata_country_code": "US",
+              "iata_code": "NYC",
+              "iata_city_code": "NYC",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:16:51.681584Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEawSc5f5KpH1uMfzf",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEawSc5f5KpH1uMfzc",
+      "created_at": "2021-12-20T12:16:51.679503Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Mexico City",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_mex_mx",
+            "icao_code": null,
+            "iata_country_code": "MX",
+            "iata_code": "MEX",
+            "iata_city_code": "MEX",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Toluca International Airport",
+                "longitude": -99.567918,
+                "latitude": 19.338024,
+                "id": "arp_tlc_mx",
+                "icao_code": "MMTO",
+                "iata_country_code": "MX",
+                "iata_code": "TLC",
+                "iata_city_code": "MEX",
+                "city_name": "Toluca"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Santa Lucía Airport",
+                "longitude": -99.01683,
+                "latitude": 19.754122,
+                "id": "arp_nlu_mx",
+                "icao_code": "MMSM",
+                "iata_country_code": "MX",
+                "iata_code": "NLU",
+                "iata_city_code": "MEX",
+                "city_name": "Mexico City"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Atizapan De Zaragoza Airport",
+                "longitude": -99.290733,
+                "latitude": 19.573377,
+                "id": "arp_azp_mx",
+                "icao_code": "MMJC",
+                "iata_country_code": "MX",
+                "iata_code": "AZP",
+                "iata_city_code": "MEX",
+                "city_name": "Mexico City"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Mexico_City",
+                "name": "Benito Juarez International Airport",
+                "longitude": -99.072003,
+                "latitude": 19.436188,
+                "id": "arp_mex_mx",
+                "icao_code": "MMMX",
+                "iata_country_code": "MX",
+                "iata_code": "MEX",
+                "iata_city_code": "MEX",
+                "city_name": "Mexico City"
+              }
+            ]
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/Cancun",
+            "name": "Cancún International Airport",
+            "longitude": -86.875331,
+            "latitude": 21.038421,
+            "id": "arp_cun_mx",
+            "icao_code": "MMUN",
+            "iata_country_code": "MX",
+            "iata_code": "CUN",
+            "iata_city_code": "CUN",
+            "city_name": "Cancún",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:11:59.229170Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEaw1dwVUEN7rygPR4",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEaw1dwVUEN7rygPR2",
+      "created_at": "2021-12-20T12:11:59.226698Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "Gatwick Airport",
+            "longitude": -0.18617,
+            "latitude": 51.150882,
+            "id": "arp_lgw_gb",
+            "icao_code": "EGKK",
+            "iata_country_code": "GB",
+            "iata_code": "LGW",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "America/Edmonton",
+            "name": "Calgary International Airport",
+            "longitude": -114.009275,
+            "latitude": 51.119337,
+            "id": "arp_yyc_ca",
+            "icao_code": "CYYC",
+            "iata_country_code": "CA",
+            "iata_code": "YYC",
+            "iata_city_code": "YYC",
+            "city_name": "Calgary",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:11:55.766493Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEaw1K91hOA1YMvTKU",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEaw1K91hOA1YMvTKS",
+      "created_at": "2021-12-20T12:11:55.763991Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "America/Los_Angeles",
+            "name": "San Francisco International Airport",
+            "longitude": -122.376977,
+            "latitude": 37.620156,
+            "id": "arp_sfo_us",
+            "icao_code": "KSFO",
+            "iata_country_code": "US",
+            "iata_code": "SFO",
+            "iata_city_code": "SFO",
+            "city_name": "San Francisco",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Los Angeles",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_lax_us",
+            "icao_code": null,
+            "iata_country_code": "US",
+            "iata_code": "LAX",
+            "iata_city_code": "LAX",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Ontario International Airport",
+                "longitude": -117.599527,
+                "latitude": 34.055988,
+                "id": "arp_ont_us",
+                "icao_code": "KONT",
+                "iata_country_code": "US",
+                "iata_code": "ONT",
+                "iata_city_code": "LAX",
+                "city_name": "Ontario"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Los Angeles International Airport",
+                "longitude": -118.408263,
+                "latitude": 33.942045,
+                "id": "arp_lax_us",
+                "icao_code": "KLAX",
+                "iata_country_code": "US",
+                "iata_code": "LAX",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Van Nuys Airport",
+                "longitude": -118.489719,
+                "latitude": 34.208582,
+                "id": "arp_vny_us",
+                "icao_code": "KVNY",
+                "iata_country_code": "US",
+                "iata_code": "VNY",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Whiteman Airport",
+                "longitude": -118.412713,
+                "latitude": 34.25989,
+                "id": "arp_whp_us",
+                "icao_code": "KWHP",
+                "iata_country_code": "US",
+                "iata_code": "WHP",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:11:55.747304Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEaw1K2I6QlzDTm5pa",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEaw1K2I6QlzDTm5pY",
+      "created_at": "2021-12-20T12:11:55.744753Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/Madrid",
+            "name": "Barcelona–El Prat Josep Tarradellas Airport",
+            "longitude": 2.080877,
+            "latitude": 41.297273,
+            "id": "arp_bcn_es",
+            "icao_code": "LEBL",
+            "iata_country_code": "ES",
+            "iata_code": "BCN",
+            "iata_city_code": "BCN",
+            "city_name": "Barcelona",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Madrid",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_mad_es",
+            "icao_code": null,
+            "iata_country_code": "ES",
+            "iata_code": "MAD",
+            "iata_city_code": "MAD",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Europe/Madrid",
+                "name": "Madrid–Torrejón Airport",
+                "longitude": -3.457359,
+                "latitude": 40.487654,
+                "id": "arp_toj_es",
+                "icao_code": "LETO",
+                "iata_country_code": "ES",
+                "iata_code": "TOJ",
+                "iata_city_code": "MAD",
+                "city_name": "Madrid"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Europe/Madrid",
+                "name": "Adolfo Suárez Madrid-Barajas Airport",
+                "longitude": -3.567169,
+                "latitude": 40.49923,
+                "id": "arp_mad_es",
+                "icao_code": "LEMD",
+                "iata_country_code": "ES",
+                "iata_code": "MAD",
+                "iata_city_code": "MAD",
+                "city_name": "Madrid"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:11:54.370249Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEaw1C9nOe1SmRDyQD",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEaw1C9nOe1SmRDyQ6",
+      "created_at": "2021-12-20T12:11:54.367586Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "America/Los_Angeles",
+            "name": "San Francisco International Airport",
+            "longitude": -122.376977,
+            "latitude": 37.620156,
+            "id": "arp_sfo_us",
+            "icao_code": "KSFO",
+            "iata_country_code": "US",
+            "iata_code": "SFO",
+            "iata_city_code": "SFO",
+            "city_name": "San Francisco",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Los Angeles",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_lax_us",
+            "icao_code": null,
+            "iata_country_code": "US",
+            "iata_code": "LAX",
+            "iata_city_code": "LAX",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Ontario International Airport",
+                "longitude": -117.599527,
+                "latitude": 34.055988,
+                "id": "arp_ont_us",
+                "icao_code": "KONT",
+                "iata_country_code": "US",
+                "iata_code": "ONT",
+                "iata_city_code": "LAX",
+                "city_name": "Ontario"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Los Angeles International Airport",
+                "longitude": -118.408263,
+                "latitude": 33.942045,
+                "id": "arp_lax_us",
+                "icao_code": "KLAX",
+                "iata_country_code": "US",
+                "iata_code": "LAX",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Van Nuys Airport",
+                "longitude": -118.489719,
+                "latitude": 34.208582,
+                "id": "arp_vny_us",
+                "icao_code": "KVNY",
+                "iata_country_code": "US",
+                "iata_code": "VNY",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              },
+              {
+                "type": "airport",
+                "time_zone": "America/Los_Angeles",
+                "name": "Whiteman Airport",
+                "longitude": -118.412713,
+                "latitude": 34.25989,
+                "id": "arp_whp_us",
+                "icao_code": "KWHP",
+                "iata_country_code": "US",
+                "iata_code": "WHP",
+                "iata_city_code": "LAX",
+                "city_name": "Los Angeles"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:11:54.150469Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEaw1Atm1NvHmwsjdi",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEaw1Atm1NvHmwsjdg",
+      "created_at": "2021-12-20T12:11:54.147820Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/London",
+            "name": "London Luton Airport",
+            "longitude": -0.37004,
+            "latitude": 51.875482,
+            "id": "arp_ltn_gb",
+            "icao_code": "EGGW",
+            "iata_country_code": "GB",
+            "iata_code": "LTN",
+            "iata_city_code": "LON",
+            "city_name": "London",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "London",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_lon_gb",
+              "icao_code": null,
+              "iata_country_code": "GB",
+              "iata_code": "LON",
+              "iata_city_code": "LON",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/Zurich",
+            "name": "Geneva Airport",
+            "longitude": 6.109053,
+            "latitude": 46.237553,
+            "id": "arp_gva_ch",
+            "icao_code": "LSGG",
+            "iata_country_code": "CH",
+            "iata_code": "GVA",
+            "iata_city_code": "GVA",
+            "city_name": "Geneva",
+            "city": null,
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:11:53.694389Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEaw18Hnmw3Am6wJLQ",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEaw18Hnmw3Am6wJLH",
+      "created_at": "2021-12-20T12:11:53.690993Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "airport",
+          "origin": {
+            "type": "airport",
+            "time_zone": "Europe/Lisbon",
+            "name": "Lisbon Portela Airport",
+            "longitude": -9.135643,
+            "latitude": 38.778446,
+            "id": "arp_lis_pt",
+            "icao_code": "LPPT",
+            "iata_country_code": "PT",
+            "iata_code": "LIS",
+            "iata_city_code": "LIS",
+            "city_name": "Lisbon",
+            "city": null,
+            "airports": null
+          },
+          "destination_type": "airport",
+          "destination": {
+            "type": "airport",
+            "time_zone": "Europe/Paris",
+            "name": "Paris-Orly Airport",
+            "longitude": 2.362898,
+            "latitude": 48.726427,
+            "id": "arp_ory_fr",
+            "icao_code": "LFPO",
+            "iata_country_code": "FR",
+            "iata_code": "ORY",
+            "iata_city_code": "PAR",
+            "city_name": "Paris",
+            "city": {
+              "type": "city",
+              "time_zone": null,
+              "name": "Paris",
+              "longitude": null,
+              "latitude": null,
+              "id": "cit_par_fr",
+              "icao_code": null,
+              "iata_country_code": "FR",
+              "iata_code": "PAR",
+              "iata_city_code": "PAR",
+              "city_name": null
+            },
+            "airports": null
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:11:53.569367Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEaw17ZqQMt8ZmNCpG",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEaw17ZqQMt8ZmNCpE",
+      "created_at": "2021-12-20T12:11:53.566381Z",
+      "cabin_class": "economy"
+    },
+    {
+      "slices": [
+        {
+          "origin_type": "city",
+          "origin": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Singapore",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_sin_sg",
+            "icao_code": null,
+            "iata_country_code": "SG",
+            "iata_code": "SIN",
+            "iata_city_code": "SIN",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Tengah Air Base",
+                "longitude": 103.708617,
+                "latitude": 1.385789,
+                "id": "arp_tga_sg",
+                "icao_code": "WSAT",
+                "iata_country_code": "SG",
+                "iata_code": "TGA",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Seletar Airport",
+                "longitude": 103.86819,
+                "latitude": 1.416952,
+                "id": "arp_xsp_sg",
+                "icao_code": "WSSL",
+                "iata_country_code": "SG",
+                "iata_code": "XSP",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Paya Lebar Air Base",
+                "longitude": 103.910629,
+                "latitude": 1.359288,
+                "id": "arp_qpg_sg",
+                "icao_code": "WSAP",
+                "iata_country_code": "SG",
+                "iata_code": "QPG",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              },
+              {
+                "type": "airport",
+                "time_zone": "Asia/Singapore",
+                "name": "Singapore Changi Airport",
+                "longitude": 103.985127,
+                "latitude": 1.356115,
+                "id": "arp_sin_sg",
+                "icao_code": "WSSS",
+                "iata_country_code": "SG",
+                "iata_code": "SIN",
+                "iata_city_code": "SIN",
+                "city_name": "Singapore"
+              }
+            ]
+          },
+          "destination_type": "city",
+          "destination": {
+            "type": "city",
+            "time_zone": null,
+            "name": "Hong Kong",
+            "longitude": null,
+            "latitude": null,
+            "id": "cit_hkg_hk",
+            "icao_code": null,
+            "iata_country_code": "HK",
+            "iata_code": "HKG",
+            "iata_city_code": "HKG",
+            "city_name": null,
+            "city": null,
+            "airports": [
+              {
+                "type": "airport",
+                "time_zone": "Asia/Hong_Kong",
+                "name": "Hong Kong International Airport",
+                "longitude": 113.91732,
+                "latitude": 22.308331,
+                "id": "arp_hkg_hk",
+                "icao_code": "VHHH",
+                "iata_country_code": "HK",
+                "iata_code": "HKG",
+                "iata_city_code": "HKG",
+                "city_name": "Hong Kong"
+              }
+            ]
+          },
+          "departure_date": "2021-12-27",
+          "created_at": "2021-12-20T12:11:52.700683Z"
+        }
+      ],
+      "passengers": [
+        {
+          "type": "adult",
+          "loyalty_programme_accounts": [],
+          "id": "pas_0000AEaw12cSnrK66winY2",
+          "given_name": null,
+          "family_name": null,
+          "age": null
+        }
+      ],
+      "live_mode": false,
+      "id": "orq_0000AEaw12cSnrK66winY0",
+      "created_at": "2021-12-20T12:11:52.698816Z",
+      "cabin_class": "economy"
+    }
+  ]
+}
