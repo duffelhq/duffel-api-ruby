@@ -12,7 +12,12 @@ jobs:
       - image: << parameters.ruby-image >>
     steps:
       - checkout
-      - ruby/install-deps
+      - run:
+          name: Install bundler gem
+          command: gem install bundler --version '~> 2.2'
+      - run:
+          name: Install Ruby dependencies
+          command: bundle check || bundle install
       - ruby/rubocop-check
       - ruby/rspec-test
  
