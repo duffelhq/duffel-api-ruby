@@ -30,7 +30,7 @@ module DuffelAPI
       {
         default_headers: {
           "Duffel-Version" => API_VERSION,
-          "User-Agent" => "duffel_api_ruby/#{DuffelAPI::VERSION}",
+          "User-Agent" => "Duffel/#{API_VERSION} duffel_api_ruby/#{DuffelAPI::VERSION}",
           "Content-Type" => "application/json",
         },
       }
