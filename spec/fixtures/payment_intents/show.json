@@ -1,0 +1,21 @@
+{
+    "data": {
+        "amount": "100.00",
+        "card_country_code": null,
+        "card_last_four_digits": "4242",
+        "card_network": "visa",
+        "client_token": null,
+        "confirmed_at": "2021-12-21T22:02:41.518874Z",
+        "created_at": "2021-12-21T22:02:41.194906Z",
+        "currency": "GBP",
+        "fees_amount": null,
+        "fees_currency": null,
+        "id": "pit_0000AEdrFygFx3lVWJtI00",
+        "live_mode": false,
+        "net_amount": null,
+        "net_currency": null,
+        "refunds": [],
+        "status": "succeeded",
+        "updated_at": "2021-12-21T22:02:41.194906Z"
+    }
+}

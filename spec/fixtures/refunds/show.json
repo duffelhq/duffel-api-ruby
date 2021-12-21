@@ -1,0 +1,16 @@
+{
+    "data": {
+        "amount": "100.00",
+        "arrival": "Credit approximately 5-10 business days later, depending upon the bank.",
+        "created_at": "2021-12-21T22:02:41.194906Z",
+        "currency": "GBP",
+        "destination": "original_form_of_payment",
+        "id": "ref_0000AEdrOAv2KjQtnGiGZ6",
+        "live_mode": false,
+        "net_amount": "100.00",
+        "net_currency": "GBP",
+        "payment_intent_id": "pit_0000AEdrOAmsp2uXNytkrA",
+        "status": "succeeded",
+        "updated_at": "2021-12-21T22:02:41.194906Z"
+    }
+}

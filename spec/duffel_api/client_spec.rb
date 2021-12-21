@@ -28,7 +28,13 @@ describe DuffelAPI::Client do
   end
 
   its(:orders) { is_expected.to be_a(DuffelAPI::Services::OrdersService) }
+
+  its(:payment_intents) do
+    is_expected.to be_a(DuffelAPI::Services::PaymentIntentsService)
+  end
+
   its(:payments) { is_expected.to be_a(DuffelAPI::Services::PaymentsService) }
+  its(:refunds) { is_expected.to be_a(DuffelAPI::Services::RefundsService) }
   its(:seat_maps) { is_expected.to be_a(DuffelAPI::Services::SeatMapsService) }
   its(:webhooks) { is_expected.to be_a(DuffelAPI::Services::WebhooksService) }
 end

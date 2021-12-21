@@ -48,8 +48,16 @@ module DuffelAPI
       @orders ||= Services::OrdersService.new(@api_service)
     end
 
+    def payment_intents
+      @payment_intents ||= Services::PaymentIntentsService.new(@api_service)
+    end
+
     def payments
       @payments ||= Services::PaymentsService.new(@api_service)
+    end
+
+    def refunds
+      @refunds ||= Services::RefundsService.new(@api_service)
     end
 
     def seat_maps
