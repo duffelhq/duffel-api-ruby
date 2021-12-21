@@ -9,7 +9,7 @@ module DuffelAPI
       @resource_class = options.fetch(:resource_class)
       @unenveloped_body = options.fetch(:unenveloped_body)
 
-      @records = @unenveloped_body.map { |item| @resource_class.new(item) }
+      @records = @unenveloped_body.map { |item| @resource_class.new(item, api_response) }
     end
 
     def api_response
