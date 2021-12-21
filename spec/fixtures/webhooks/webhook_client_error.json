@@ -1,0 +1,15 @@
+{
+    "meta": {
+        "status": 422,
+        "request_id": "FsLhrbY-YyyNNL4AGfbl"
+    },
+    "errors": [
+        {
+            "type": "invalid_state_error",
+            "title": "Webhook failed to receive event",
+            "message": "",
+            "documentation_url": "https://duffel.com/docs/api/overview/errors",
+            "code": "webhook_client_error"
+        }
+    ]
+}

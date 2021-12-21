@@ -14,12 +14,12 @@ module DuffelAPI
           response = make_request(:post, path, options)
 
           # Response doesn't raise any errors until #body is called
-          response.tap(&:body)
+          response.tap(&:raw_body)
         end
 
-        return if response.body.nil?
+        return if response.raw_body.nil?
 
-        Resources::Order.new(unenvelope_body(response.body), response)
+        Resources::Order.new(unenvelope_body(response.parsed_body), response)
       end
 
       def update(id, options = {})
@@ -33,12 +33,12 @@ module DuffelAPI
           response = make_request(:patch, path, options)
 
           # Response doesn't raise any errors until #body is called
-          response.tap(&:body)
+          response.tap(&:raw_body)
         end
 
-        return if response.body.nil?
+        return if response.raw_body.nil?
 
-        Resources::Order.new(unenvelope_body(response.body), response)
+        Resources::Order.new(unenvelope_body(response.parsed_body), response)
       end
 
       def list(options = {})
@@ -48,7 +48,7 @@ module DuffelAPI
 
         ListResponse.new(
           response: response,
-          unenveloped_body: unenvelope_body(response.body),
+          unenveloped_body: unenvelope_body(response.parsed_body),
           resource_class: Resources::Order,
         )
       end
@@ -65,9 +65,9 @@ module DuffelAPI
 
         response = make_request(:get, path, options)
 
-        return if response.body.nil?
+        return if response.raw_body.nil?
 
-        Resources::Order.new(unenvelope_body(response.body), response)
+        Resources::Order.new(unenvelope_body(response.parsed_body), response)
       end
     end
   end

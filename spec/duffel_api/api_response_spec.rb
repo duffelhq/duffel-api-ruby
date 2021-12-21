@@ -22,12 +22,10 @@ describe DuffelAPI::APIResponse do
     end
     let(:test) { Faraday.new { |builder| builder.adapter :test, stubbed } }
 
-    specify { expect(api_response.status_code).to be(200) }
-
-    specify do
-      expect(api_response.headers).to eql("Content-Type" => content_type)
-    end
-
-    specify { expect(api_response.body).to eql("test" => true) }
+    its(:status_code) { is_expected.to eq(200) }
+    its(:headers) { is_expected.to eq("Content-Type" => content_type) }
+    its(:parsed_body) { is_expected.to eq("test" => true) }
+    its(:raw_body) { is_expected.to eq("{\"test\":true}") }
+    its(:meta) { is_expected.to eq({}) }
   end
 end

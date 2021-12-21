@@ -14,12 +14,12 @@ module DuffelAPI
           response = make_request(:post, path, options)
 
           # Response doesn't raise any errors until #body is called
-          response.tap(&:body)
+          response.tap(&:raw_body)
         end
 
-        return if response.body.nil?
+        return if response.raw_body.nil?
 
-        Resources::OrderChange.new(unenvelope_body(response.body), response)
+        Resources::OrderChange.new(unenvelope_body(response.parsed_body), response)
       end
 
       def confirm(id, options = {})
@@ -34,12 +34,12 @@ module DuffelAPI
           response = make_request(:post, path, options)
 
           # Response doesn't raise any errors until #body is called
-          response.tap(&:body)
+          response.tap(&:raw_body)
         end
 
-        return if response.body.nil?
+        return if response.raw_body.nil?
 
-        Resources::OrderChange.new(unenvelope_body(response.body), response)
+        Resources::OrderChange.new(unenvelope_body(response.parsed_body), response)
       end
 
       def get(id, options = {})
@@ -47,9 +47,9 @@ module DuffelAPI
 
         response = make_request(:get, path, options)
 
-        return if response.body.nil?
+        return if response.raw_body.nil?
 
-        Resources::OrderChange.new(unenvelope_body(response.body), response)
+        Resources::OrderChange.new(unenvelope_body(response.parsed_body), response)
       end
     end
   end

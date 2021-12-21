@@ -56,6 +56,10 @@ module DuffelAPI
       @seat_maps ||= Services::SeatMapsService.new(@api_service)
     end
 
+    def webhooks
+      @webhooks ||= Services::WebhooksService.new(@api_service)
+    end
+
     private
 
     def default_options

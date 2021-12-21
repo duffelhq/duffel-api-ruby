@@ -11,7 +11,8 @@ module DuffelAPI
       # rubocop:disable Metrics/AbcSize
       def on_complete(env)
         if !json?(env) || API_ERROR_STATUSES.include?(env.status)
-          raise DuffelAPI::Errors::Error, generate_error_data(env)
+          response = Response.new(env.response)
+          raise DuffelAPI::Errors::Error.new(generate_error_data(env), response)
         end
 
         if CLIENT_ERROR_STATUSES.include?(env.status)
@@ -21,7 +22,9 @@ module DuffelAPI
 
           error_class = error_class_for_type(error_type)
 
-          raise(error_class, error)
+          response = Response.new(env.response)
+
+          raise error_class.new(error, response)
         end
       end
       # rubocop:enable Metrics/AbcSize

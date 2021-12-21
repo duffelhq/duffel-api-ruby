@@ -32,19 +32,33 @@ describe DuffelAPI::Response do
     }
   end
 
-  describe "#body" do
-    subject(:body) { response.body }
+  describe "#parsed_body" do
+    subject(:parsed_body) { response.parsed_body }
 
     it "returns the body parsed into a hash" do
-      expect(body["data"]["id"]).to eq("orq_0000AEatBgHzrn02B7WwEa")
+      expect(parsed_body["data"]["id"]).to eq("orq_0000AEatBgHzrn02B7WwEa")
     end
 
     context "when the response is empty" do
       let(:response_body) { "" }
 
       it "returns nil" do
-        expect(body).to be_nil
+        expect(parsed_body).to be_nil
       end
+    end
+
+    context "when the response contains invalid JSON" do
+      let(:response_body) { "{\"}" }
+
+      it "returns the raw body" do
+        expect { parsed_body }.to raise_error(JSON::ParserError)
+      end
+    end
+  end
+
+  describe "#raw_body" do
+    it "returns the raw body from the response" do
+      expect(response.raw_body).to eq(response_body)
     end
   end
 
@@ -71,6 +85,14 @@ describe DuffelAPI::Response do
     end
 
     context "without meta data returned in the response" do
+      it "returns an empty hash" do
+        expect(response.meta).to eq({})
+      end
+    end
+
+    context "with a non-JSON response" do
+      let(:response_body) { "{}" }
+
       it "returns an empty hash" do
         expect(response.meta).to eq({})
       end

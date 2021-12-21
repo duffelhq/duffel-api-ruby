@@ -17,11 +17,11 @@ module DuffelAPI
     end
 
     def before
-      @response.body["meta"]["before"]
+      @response.parsed_body["meta"]["before"]
     end
 
     def after
-      @response.body["meta"]["after"]
+      @response.parsed_body["meta"]["after"]
     end
   end
 end

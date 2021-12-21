@@ -11,14 +11,20 @@ module DuffelAPI
       @response = response
     end
 
+    def raw_body
+      @response.body
+    end
+
     # Return the body of parsed JSON body of the API response
-    def body
-      JSON.parse(@response.body) unless @response.body.empty?
+    def parsed_body
+      JSON.parse(raw_body) unless raw_body.empty?
     end
 
     # Returns the meta hash of the response
     def meta
-      body.fetch("meta", {})
+      parsed_body.fetch("meta", {})
+    rescue JSON::ParserError
+      {}
     end
 
     # Returns the request ID from the response headers
@@ -31,5 +37,7 @@ module DuffelAPI
     def normalised_headers
       headers.transform_keys(&:downcase)
     end
+
+    def json?; end
   end
 end

@@ -10,7 +10,8 @@ module DuffelAPI
     end
 
     def_delegator :@response, :headers
-    def_delegator :@response, :body
+    def_delegator :@response, :raw_body
+    def_delegator :@response, :parsed_body
     def_delegator :@response, :status_code
     def_delegator :@response, :meta
   end

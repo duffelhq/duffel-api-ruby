@@ -30,4 +30,5 @@ describe DuffelAPI::Client do
   its(:orders) { is_expected.to be_a(DuffelAPI::Services::OrdersService) }
   its(:payments) { is_expected.to be_a(DuffelAPI::Services::PaymentsService) }
   its(:seat_maps) { is_expected.to be_a(DuffelAPI::Services::SeatMapsService) }
+  its(:webhooks) { is_expected.to be_a(DuffelAPI::Services::WebhooksService) }
 end

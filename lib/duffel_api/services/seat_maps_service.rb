@@ -10,7 +10,7 @@ module DuffelAPI
 
         ListResponse.new(
           response: response,
-          unenveloped_body: unenvelope_body(response.body),
+          unenveloped_body: unenvelope_body(response.parsed_body),
           resource_class: Resources::SeatMap,
         )
       end

@@ -1,0 +1,15 @@
+{
+    "meta": null,
+    "data": {
+        "url": "https://localhost:4567/webhooks",
+        "secret": "XRcsu65YS0sJ9T0ZUF3pwA==",
+        "live_mode": false,
+        "id": "sev_0000AEdmUJKCvFK45qMFBg",
+        "events": [
+            "order.created",
+            "order.updated"
+        ],
+        "created_at": "2021-12-21T21:09:15.107792Z",
+        "active": true
+    }
+}
