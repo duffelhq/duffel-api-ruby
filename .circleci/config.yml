@@ -20,6 +20,9 @@ jobs:
           command: bundle check || bundle install
       - ruby/rubocop-check
       - ruby/rspec-test
+      - store_artifacts:
+          path: coverage
+          destination: coverage
  
 workflows:
   version: 2
