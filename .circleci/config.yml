@@ -20,6 +20,24 @@ jobs:
           command: bundle check || bundle install
       - ruby/rubocop-check
       - ruby/rspec-test
+  coverage:
+    docker:
+      - image: cimg/ruby:3.0
+    environment:
+      COVERAGE: true
+    steps:
+      - checkout
+      - run:
+          name: Install bundler gem
+          command: gem install bundler --version '~> 2.2'
+      - run:
+          name: Install Ruby dependencies
+          command: bundle check || bundle install
+      - run:
+          name: Run tests with Simplecov enabled
+          command: bundle exec rspec spec
+      - store_artifacts:
+          path: coverage
  
 workflows:
   version: 2
@@ -29,3 +47,4 @@ workflows:
           matrix:
             parameters:
               ruby-image: ["cimg/ruby:2.6", "cimg/ruby:2.7", "cimg/ruby:3.0", "ruby:3.1.0-preview1"]
+      - coverage

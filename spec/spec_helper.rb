@@ -1,5 +1,13 @@
 # frozen_string_literal: true
 
+require "simplecov"
+
+if ENV["COVERAGE"]
+  SimpleCov.start do
+    enable_coverage :branch
+  end
+end
+
 require "webmock/rspec"
 require "rspec/its"
 require_relative "../lib/duffel_api"
