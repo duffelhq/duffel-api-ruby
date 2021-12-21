@@ -230,7 +230,7 @@ describe DuffelAPI::Services::OfferRequestsService do
         )
     end
 
-    let(:response_body) { load_fixture("offer_requests/get.json") }
+    let(:response_body) { load_fixture("offer_requests/show.json") }
 
     it "makes the expected request to the Duffel API" do
       get_response

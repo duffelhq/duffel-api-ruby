@@ -47,7 +47,7 @@ describe DuffelAPI::Services::OrdersService do
       }
     end
 
-    let(:response_body) { load_fixture("orders/get.json") }
+    let(:response_body) { load_fixture("orders/show.json") }
 
     let!(:stub) do
       stub_request(:post, "https://api.duffel.com/air/orders").
@@ -129,7 +129,7 @@ describe DuffelAPI::Services::OrdersService do
       }
     end
 
-    let(:response_body) { load_fixture("orders/get.json") }
+    let(:response_body) { load_fixture("orders/show.json") }
 
     let!(:stub) do
       stub_request(:patch, "https://api.duffel.com/air/orders/ord_0000AEdJFxag2IaNxbrlY1").
@@ -405,7 +405,7 @@ describe DuffelAPI::Services::OrdersService do
         )
     end
 
-    let(:response_body) { load_fixture("orders/get.json") }
+    let(:response_body) { load_fixture("orders/show.json") }
 
     it "makes the expected request to the Duffel API" do
       get_response

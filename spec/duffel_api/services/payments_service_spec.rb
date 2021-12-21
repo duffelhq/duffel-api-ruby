@@ -30,7 +30,7 @@ describe DuffelAPI::Services::PaymentsService do
       }
     end
 
-    let(:response_body) { load_fixture("payments/get.json") }
+    let(:response_body) { load_fixture("payments/show.json") }
 
     let!(:stub) do
       stub_request(:post, "https://api.duffel.com/air/payments").

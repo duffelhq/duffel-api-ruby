@@ -133,7 +133,7 @@ describe DuffelAPI::Services::AirlinesService do
         )
     end
 
-    let(:response_body) { load_fixture("airlines/get.json") }
+    let(:response_body) { load_fixture("airlines/show.json") }
 
     it "makes the expected request to the Duffel API" do
       get_response
