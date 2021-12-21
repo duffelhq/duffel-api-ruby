@@ -32,6 +32,8 @@ describe DuffelAPI::Response do
     }
   end
 
+  its(:request_id) { is_expected.to eq("FsJz79144I4JjDwAA6TB") }
+
   describe "#parsed_body" do
     subject(:parsed_body) { response.parsed_body }
 

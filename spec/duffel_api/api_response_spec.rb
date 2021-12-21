@@ -11,21 +11,27 @@ describe DuffelAPI::APIResponse do
       )
     end
 
-    let(:content_type) { "application/json" }
+    let(:response_headers) do
+      {
+        "Content-Type" => "application/json",
+        "X-Request-Id" => "FsJz79144I4JjDwAA6TB",
+      }
+    end
 
     let(:stubbed) do
       Faraday::Adapter::Test::Stubs.new do |stub|
         stub.get("/testing") do |_env|
-          [200, { "Content-Type" => content_type }, { test: true }.to_json]
+          [200, response_headers, { test: true }.to_json]
         end
       end
     end
     let(:test) { Faraday.new { |builder| builder.adapter :test, stubbed } }
 
     its(:status_code) { is_expected.to eq(200) }
-    its(:headers) { is_expected.to eq("Content-Type" => content_type) }
+    its(:headers) { is_expected.to eq(response_headers) }
     its(:parsed_body) { is_expected.to eq("test" => true) }
     its(:raw_body) { is_expected.to eq("{\"test\":true}") }
     its(:meta) { is_expected.to eq({}) }
+    its(:request_id) { is_expected.to eq("FsJz79144I4JjDwAA6TB") }
   end
 end
