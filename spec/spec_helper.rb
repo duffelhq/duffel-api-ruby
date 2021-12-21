@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require "simplecov"
+SimpleCov.start
+
 require "webmock/rspec"
 require "rspec/its"
 require_relative "../lib/duffel_api"
