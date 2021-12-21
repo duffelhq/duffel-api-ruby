@@ -40,6 +40,10 @@ module DuffelAPI
       @order_change_requests ||= Services::OrderChangeRequestsService.new(@api_service)
     end
 
+    def order_changes
+      @order_changes ||= Services::OrderChangesService.new(@api_service)
+    end
+
     def orders
       @orders ||= Services::OrdersService.new(@api_service)
     end

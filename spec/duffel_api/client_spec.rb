@@ -23,6 +23,10 @@ describe DuffelAPI::Client do
     is_expected.to be_a(DuffelAPI::Services::OrderChangeRequestsService)
   end
 
+  its(:order_changes) do
+    is_expected.to be_a(DuffelAPI::Services::OrderChangesService)
+  end
+
   its(:orders) { is_expected.to be_a(DuffelAPI::Services::OrdersService) }
   its(:payments) { is_expected.to be_a(DuffelAPI::Services::PaymentsService) }
   its(:seat_maps) { is_expected.to be_a(DuffelAPI::Services::SeatMapsService) }
