@@ -25,7 +25,7 @@ describe DuffelAPI::Services::PaymentsService do
         payment: {
           type: "balance",
           amount: "967.79",
-          currency: "GBIt's Thursday rightP",
+          currency: "GBP",
         },
       }
     end
