@@ -45,7 +45,7 @@ module DuffelAPI
     def request_body
       if @method == :get
         nil
-      elsif %i[post put delete].include?(@method)
+      elsif %i[post put delete patch].include?(@method)
         @given_options.fetch(:params, {})
       else
         raise "Unknown request method #{@method}"

@@ -24,6 +24,26 @@ module DuffelAPI
       @offer_requests ||= Services::OfferRequestsService.new(@api_service)
     end
 
+    def offers
+      @offers ||= Services::OffersService.new(@api_service)
+    end
+
+    def order_cancellations
+      @order_cancellations ||= Services::OrderCancellationsService.new(@api_service)
+    end
+
+    def orders
+      @orders ||= Services::OrdersService.new(@api_service)
+    end
+
+    def payments
+      @payments ||= Services::PaymentsService.new(@api_service)
+    end
+
+    def seat_maps
+      @seat_maps ||= Services::SeatMapsService.new(@api_service)
+    end
+
     private
 
     def default_options

@@ -1,0 +1,387 @@
+{
+    "data":
+        {
+            "total_currency": "GBP",
+            "total_amount": "1016.15",
+            "tax_currency": "GBP",
+            "tax_amount": "155.01",
+            "synced_at": "2021-12-21T15:41:42Z",
+            "slices": [
+                {
+                    "segments": [
+                        {
+                            "passengers": [
+                                {
+                                    "passenger_id": "pas_0000AEdJFJSX3Q17VeEU0R",
+                                    "cabin_class_marketing_name": "Economy",
+                                    "cabin_class": "economy",
+                                    "baggages": [
+                                        {
+                                            "type": "checked",
+                                            "quantity": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "origin_terminal": "2",
+                            "origin": {
+                                "type": "airport",
+                                "time_zone": "Europe/London",
+                                "name": "Heathrow Airport",
+                                "longitude": -0.458118,
+                                "latitude": 51.470311,
+                                "id": "arp_lhr_gb",
+                                "icao_code": "EGLL",
+                                "iata_country_code": "GB",
+                                "iata_code": "LHR",
+                                "iata_city_code": "LON",
+                                "city_name": "London",
+                                "city": {
+                                    "type": "city",
+                                    "time_zone": null,
+                                    "name": "London",
+                                    "longitude": null,
+                                    "latitude": null,
+                                    "id": "cit_lon_gb",
+                                    "icao_code": null,
+                                    "iata_country_code": "GB",
+                                    "iata_code": "LON",
+                                    "iata_city_code": "LON",
+                                    "city_name": null
+                                }
+                            },
+                            "operating_carrier_flight_number": "6586",
+                            "operating_carrier": {
+                                "name": "Duffel Airways",
+                                "id": "arl_00009VME7D6ivUu8dn35WK",
+                                "iata_code": "ZZ"
+                            },
+                            "marketing_carrier_flight_number": "6586",
+                            "marketing_carrier": {
+                                "name": "Duffel Airways",
+                                "id": "arl_00009VME7D6ivUu8dn35WK",
+                                "iata_code": "ZZ"
+                            },
+                            "id": "seg_0000AEdJFJfeGeVcAKMxS2",
+                            "duration": "PT8H8M",
+                            "distance": "5666.39351516012",
+                            "destination_terminal": "1",
+                            "destination": {
+                                "type": "airport",
+                                "time_zone": "America/New_York",
+                                "name": "John F. Kennedy International Airport",
+                                "longitude": -73.778519,
+                                "latitude": 40.640556,
+                                "id": "arp_jfk_us",
+                                "icao_code": "KJFK",
+                                "iata_country_code": "US",
+                                "iata_code": "JFK",
+                                "iata_city_code": "NYC",
+                                "city_name": "New York",
+                                "city": {
+                                    "type": "city",
+                                    "time_zone": null,
+                                    "name": "New York",
+                                    "longitude": null,
+                                    "latitude": null,
+                                    "id": "cit_nyc_us",
+                                    "icao_code": null,
+                                    "iata_country_code": "US",
+                                    "iata_code": "NYC",
+                                    "iata_city_code": "NYC",
+                                    "city_name": null
+                                }
+                            },
+                            "departure_terminal": "2",
+                            "departure_datetime": "2022-12-16T23:00:00",
+                            "departing_at": "2022-12-16T23:00:00",
+                            "arriving_at": "2022-12-17T07:08:00",
+                            "arrival_terminal": "1",
+                            "arrival_datetime": "2022-12-17T07:08:00",
+                            "aircraft": {
+                                "name": "Boeing 777-300",
+                                "id": "arc_00009VMF8AhXSSRnQDI6HE",
+                                "iata_code": "773"
+                            }
+                        }
+                    ],
+                    "origin_type": "airport",
+                    "origin": {
+                        "type": "airport",
+                        "time_zone": "Europe/London",
+                        "name": "Heathrow Airport",
+                        "longitude": -0.458118,
+                        "latitude": 51.470311,
+                        "id": "arp_lhr_gb",
+                        "icao_code": "EGLL",
+                        "iata_country_code": "GB",
+                        "iata_code": "LHR",
+                        "iata_city_code": "LON",
+                        "city_name": "London",
+                        "city": {
+                            "type": "city",
+                            "time_zone": null,
+                            "name": "London",
+                            "longitude": null,
+                            "latitude": null,
+                            "id": "cit_lon_gb",
+                            "icao_code": null,
+                            "iata_country_code": "GB",
+                            "iata_code": "LON",
+                            "iata_city_code": "LON",
+                            "city_name": null
+                        }
+                    },
+                    "id": "sli_0000AEdJFxag2IaNxbrlYI",
+                    "duration": "PT8H8M",
+                    "destination_type": "airport",
+                    "destination": {
+                        "type": "airport",
+                        "time_zone": "America/New_York",
+                        "name": "John F. Kennedy International Airport",
+                        "longitude": -73.778519,
+                        "latitude": 40.640556,
+                        "id": "arp_jfk_us",
+                        "icao_code": "KJFK",
+                        "iata_country_code": "US",
+                        "iata_code": "JFK",
+                        "iata_city_code": "NYC",
+                        "city_name": "New York",
+                        "city": {
+                            "type": "city",
+                            "time_zone": null,
+                            "name": "New York",
+                            "longitude": null,
+                            "latitude": null,
+                            "id": "cit_nyc_us",
+                            "icao_code": null,
+                            "iata_country_code": "US",
+                            "iata_code": "NYC",
+                            "iata_city_code": "NYC",
+                            "city_name": null
+                        }
+                    },
+                    "conditions": {
+                        "change_before_departure": {
+                            "penalty_currency": null,
+                            "penalty_amount": null,
+                            "allowed": false
+                        }
+                    },
+                    "changeable": null
+                },
+                {
+                    "segments": [
+                        {
+                            "passengers": [
+                                {
+                                    "passenger_id": "pas_0000AEdJFJSX3Q17VeEU0R",
+                                    "cabin_class_marketing_name": "Economy",
+                                    "cabin_class": "economy",
+                                    "baggages": [
+                                        {
+                                            "type": "checked",
+                                            "quantity": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "origin_terminal": "2",
+                            "origin": {
+                                "type": "airport",
+                                "time_zone": "America/New_York",
+                                "name": "John F. Kennedy International Airport",
+                                "longitude": -73.778519,
+                                "latitude": 40.640556,
+                                "id": "arp_jfk_us",
+                                "icao_code": "KJFK",
+                                "iata_country_code": "US",
+                                "iata_code": "JFK",
+                                "iata_city_code": "NYC",
+                                "city_name": "New York",
+                                "city": {
+                                    "type": "city",
+                                    "time_zone": null,
+                                    "name": "New York",
+                                    "longitude": null,
+                                    "latitude": null,
+                                    "id": "cit_nyc_us",
+                                    "icao_code": null,
+                                    "iata_country_code": "US",
+                                    "iata_code": "NYC",
+                                    "iata_city_code": "NYC",
+                                    "city_name": null
+                                }
+                            },
+                            "operating_carrier_flight_number": "6586",
+                            "operating_carrier": {
+                                "name": "Duffel Airways",
+                                "id": "arl_00009VME7D6ivUu8dn35WK",
+                                "iata_code": "ZZ"
+                            },
+                            "marketing_carrier_flight_number": "6586",
+                            "marketing_carrier": {
+                                "name": "Duffel Airways",
+                                "id": "arl_00009VME7D6ivUu8dn35WK",
+                                "iata_code": "ZZ"
+                            },
+                            "id": "seg_0000AEdJFJg0FKnCBQXF0D",
+                            "duration": "PT8H8M",
+                            "distance": "5666.39351516012",
+                            "destination_terminal": "1",
+                            "destination": {
+                                "type": "airport",
+                                "time_zone": "Europe/London",
+                                "name": "Heathrow Airport",
+                                "longitude": -0.458118,
+                                "latitude": 51.470311,
+                                "id": "arp_lhr_gb",
+                                "icao_code": "EGLL",
+                                "iata_country_code": "GB",
+                                "iata_code": "LHR",
+                                "iata_city_code": "LON",
+                                "city_name": "London",
+                                "city": {
+                                    "type": "city",
+                                    "time_zone": null,
+                                    "name": "London",
+                                    "longitude": null,
+                                    "latitude": null,
+                                    "id": "cit_lon_gb",
+                                    "icao_code": null,
+                                    "iata_country_code": "GB",
+                                    "iata_code": "LON",
+                                    "iata_city_code": "LON",
+                                    "city_name": null
+                                }
+                            },
+                            "departure_terminal": "2",
+                            "departure_datetime": "2022-12-21T23:00:00",
+                            "departing_at": "2022-12-21T23:00:00",
+                            "arriving_at": "2022-12-22T07:08:00",
+                            "arrival_terminal": "1",
+                            "arrival_datetime": "2022-12-22T07:08:00",
+                            "aircraft": {
+                                "name": "Boeing 777-300",
+                                "id": "arc_00009VMF8AhXSSRnQDI6HE",
+                                "iata_code": "773"
+                            }
+                        }
+                    ],
+                    "origin_type": "airport",
+                    "origin": {
+                        "type": "airport",
+                        "time_zone": "America/New_York",
+                        "name": "John F. Kennedy International Airport",
+                        "longitude": -73.778519,
+                        "latitude": 40.640556,
+                        "id": "arp_jfk_us",
+                        "icao_code": "KJFK",
+                        "iata_country_code": "US",
+                        "iata_code": "JFK",
+                        "iata_city_code": "NYC",
+                        "city_name": "New York",
+                        "city": {
+                            "type": "city",
+                            "time_zone": null,
+                            "name": "New York",
+                            "longitude": null,
+                            "latitude": null,
+                            "id": "cit_nyc_us",
+                            "icao_code": null,
+                            "iata_country_code": "US",
+                            "iata_code": "NYC",
+                            "iata_city_code": "NYC",
+                            "city_name": null
+                        }
+                    },
+                    "id": "sli_0000AEdJFxag2IaNxbrlYP",
+                    "duration": "PT8H8M",
+                    "destination_type": "airport",
+                    "destination": {
+                        "type": "airport",
+                        "time_zone": "Europe/London",
+                        "name": "Heathrow Airport",
+                        "longitude": -0.458118,
+                        "latitude": 51.470311,
+                        "id": "arp_lhr_gb",
+                        "icao_code": "EGLL",
+                        "iata_country_code": "GB",
+                        "iata_code": "LHR",
+                        "iata_city_code": "LON",
+                        "city_name": "London",
+                        "city": {
+                            "type": "city",
+                            "time_zone": null,
+                            "name": "London",
+                            "longitude": null,
+                            "latitude": null,
+                            "id": "cit_lon_gb",
+                            "icao_code": null,
+                            "iata_country_code": "GB",
+                            "iata_code": "LON",
+                            "iata_city_code": "LON",
+                            "city_name": null
+                        }
+                    },
+                    "conditions": {
+                        "change_before_departure": {
+                            "penalty_currency": null,
+                            "penalty_amount": null,
+                            "allowed": false
+                        }
+                    },
+                    "changeable": null
+                }
+            ],
+            "services": [],
+            "payment_status": {
+                "price_guarantee_expires_at": null,
+                "payment_required_by": null,
+                "awaiting_payment": false
+            },
+            "passengers": [
+                {
+                    "type": "adult",
+                    "title": "mr",
+                    "infant_passenger_id": null,
+                    "id": "pas_0000AEdJFJSX3Q17VeEU0R",
+                    "given_name": "John",
+                    "gender": "m",
+                    "family_name": "Smith",
+                    "born_on": "1995-05-05"
+                }
+            ],
+            "owner": {
+                "name": "Duffel Airways",
+                "id": "arl_00009VME7D6ivUu8dn35WK",
+                "iata_code": "ZZ"
+            },
+            "metadata": null,
+            "live_mode": false,
+            "id": "ord_0000AEdJFxag2IaNxbrlY1",
+            "documents": [
+                {
+                    "unique_identifier": "1",
+                    "type": "electronic_ticket"
+                }
+            ],
+            "created_at": "2021-12-21T15:41:42.765467Z",
+            "conditions": {
+                "refund_before_departure": {
+                    "penalty_currency": "GBP",
+                    "penalty_amount": "170.00",
+                    "allowed": true
+                },
+                "change_before_departure": {
+                    "penalty_currency": null,
+                    "penalty_amount": null,
+                    "allowed": false
+                }
+            },
+            "cancelled_at": null,
+            "booking_reference": "GAIRBB",
+            "base_currency": "GBP",
+            "base_amount": "861.14"
+        }
+    }

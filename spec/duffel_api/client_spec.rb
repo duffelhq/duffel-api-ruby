@@ -9,4 +9,8 @@ describe DuffelAPI::Client do
   its(:airlines) { is_expected.to be_a(DuffelAPI::Services::AirlinesService) }
   its(:airports) { is_expected.to be_a(DuffelAPI::Services::AirportsService) }
   its(:offer_requests) { is_expected.to be_a(DuffelAPI::Services::OfferRequestsService) }
+  its(:offers) { is_expected.to be_a(DuffelAPI::Services::OffersService) }
+  its(:orders) { is_expected.to be_a(DuffelAPI::Services::OrdersService) }
+  its(:payments) { is_expected.to be_a(DuffelAPI::Services::PaymentsService) }
+  its(:seat_maps) { is_expected.to be_a(DuffelAPI::Services::SeatMapsService) }
 end

@@ -1,0 +1,10 @@
+{
+    "meta": null,
+    "data": {
+        "type": "balance",
+        "id": "pay_0000AEdLTLasItzU4tTCS0",
+        "currency": "GBP",
+        "created_at": "2021-12-21T16:06:32.531661Z",
+        "amount": "967.79"
+    }
+}

@@ -19,7 +19,7 @@ module DuffelAPI
 
           @options[:params] ||= {}
           @options[:params] = @options[:params].merge(after: after_cursor)
-          response = @service.list(@options.merge(after: after_cursor))
+          response = @service.list(@options)
         end
       end.lazy
     end

@@ -1,0 +1,301 @@
+{
+    "data": {
+        "updated_at": "2021-10-18T10:48:24.571463Z",
+        "total_emissions_kg": "116",
+        "total_currency": "GBP",
+        "total_amount": "351.30",
+        "tax_currency": "GBP",
+        "tax_amount": "40.30",
+        "slices": [
+            {
+                "segments": [
+                    {
+                        "passengers": [
+                            {
+                                "passenger_id": "pas_0000ACUEAjR7TOZFVTCfy6",
+                                "fare_basis_code": "K0AIZRU1",
+                                "cabin_class_marketing_name": "Economy",
+                                "cabin_class": "economy",
+                                "baggages": [
+                                    {
+                                        "type": "carry_on",
+                                        "quantity": 2
+                                    }
+                                ]
+                            }
+                        ],
+                        "origin_terminal": "3",
+                        "origin": {
+                            "type": "airport",
+                            "time_zone": "America/Chicago",
+                            "name": "O'Hare International Airport",
+                            "longitude": -87.90606,
+                            "latitude": 41.976381,
+                            "id": "arp_ord_us",
+                            "icao_code": "KORD",
+                            "iata_country_code": "US",
+                            "iata_code": "ORD",
+                            "iata_city_code": "CHI",
+                            "city_name": "Chicago",
+                            "city": {
+                                "type": "city",
+                                "time_zone": null,
+                                "name": "Chicago",
+                                "longitude": null,
+                                "latitude": null,
+                                "id": "cit_chi_us",
+                                "icao_code": null,
+                                "iata_country_code": "US",
+                                "iata_code": "CHI",
+                                "iata_city_code": "CHI",
+                                "city_name": null
+                            },
+                            "airports": null
+                        },
+                        "operating_carrier_flight_number": "3010",
+                        "operating_carrier": {
+                            "name": "American Airlines",
+                            "id": "arl_00009VME7DAGiJjwomhv32",
+                            "iata_code": "AA"
+                        },
+                        "marketing_carrier_flight_number": "3010",
+                        "marketing_carrier": {
+                            "name": "American Airlines",
+                            "id": "arl_00009VME7DAGiJjwomhv32",
+                            "iata_code": "AA"
+                        },
+                        "id": "ost_0000ACUEAvkaT36t0YT4Wu",
+                        "duration": "PT02H05M",
+                        "distance": "1113.66328",
+                        "destination_terminal": null,
+                        "destination": {
+                            "type": "airport",
+                            "time_zone": "America/Chicago",
+                            "name": "Will Rogers World Airport",
+                            "longitude": -97.600628,
+                            "latitude": 35.393078,
+                            "id": "arp_okc_us",
+                            "icao_code": "KOKC",
+                            "iata_country_code": "US",
+                            "iata_code": "OKC",
+                            "iata_city_code": "OKC",
+                            "city_name": "Oklahoma City",
+                            "city": {
+                                "type": "city",
+                                "time_zone": null,
+                                "name": "Oklahoma City",
+                                "longitude": null,
+                                "latitude": null,
+                                "id": "cit_okc_us",
+                                "icao_code": null,
+                                "iata_country_code": "US",
+                                "iata_code": "OKC",
+                                "iata_city_code": "OKC",
+                                "city_name": null
+                            },
+                            "airports": null
+                        },
+                        "departing_at": "2022-05-22T13:15:00",
+                        "arriving_at": "2022-05-22T15:20:00",
+                        "aircraft": {
+                            "name": "Canadair (Bombardier) Regional Jet 700 and Challenger 870",
+                            "id": "arc_00009VMF8AhtR8jNRJSNpe",
+                            "iata_code": "CR7"
+                        }
+                    },
+                    {
+                        "passengers": [
+                            {
+                                "passenger_id": "pas_0000ACUEAjR7TOZFVTCfy6",
+                                "fare_basis_code": "K0AIZRU1",
+                                "cabin_class_marketing_name": "Economy",
+                                "cabin_class": "economy",
+                                "baggages": [
+                                    {
+                                        "type": "carry_on",
+                                        "quantity": 2
+                                    }
+                                ]
+                            }
+                        ],
+                        "origin_terminal": null,
+                        "origin": {
+                            "type": "airport",
+                            "time_zone": "America/Chicago",
+                            "name": "Will Rogers World Airport",
+                            "longitude": -97.600628,
+                            "latitude": 35.393078,
+                            "id": "arp_okc_us",
+                            "icao_code": "KOKC",
+                            "iata_country_code": "US",
+                            "iata_code": "OKC",
+                            "iata_city_code": "OKC",
+                            "city_name": "Oklahoma City",
+                            "city": {
+                                "type": "city",
+                                "time_zone": null,
+                                "name": "Oklahoma City",
+                                "longitude": null,
+                                "latitude": null,
+                                "id": "cit_okc_us",
+                                "icao_code": null,
+                                "iata_country_code": "US",
+                                "iata_code": "OKC",
+                                "iata_city_code": "OKC",
+                                "city_name": null
+                            },
+                            "airports": null
+                        },
+                        "operating_carrier_flight_number": "3251",
+                        "operating_carrier": {
+                            "name": "American Airlines",
+                            "id": "arl_00009VME7DAGiJjwomhv32",
+                            "iata_code": "AA"
+                        },
+                        "marketing_carrier_flight_number": "3251",
+                        "marketing_carrier": {
+                            "name": "American Airlines",
+                            "id": "arl_00009VME7DAGiJjwomhv32",
+                            "iata_code": "AA"
+                        },
+                        "id": "ost_0000ACUEAvkaT36t0YT4Wv",
+                        "duration": "PT02H59M",
+                        "distance": "1905.45856",
+                        "destination_terminal": null,
+                        "destination": {
+                            "type": "airport",
+                            "time_zone": "America/Los_Angeles",
+                            "name": "Los Angeles International Airport",
+                            "longitude": -118.408263,
+                            "latitude": 33.942045,
+                            "id": "arp_lax_us",
+                            "icao_code": "KLAX",
+                            "iata_country_code": "US",
+                            "iata_code": "LAX",
+                            "iata_city_code": "LAX",
+                            "city_name": "Los Angeles",
+                            "city": {
+                                "type": "city",
+                                "time_zone": null,
+                                "name": "Los Angeles",
+                                "longitude": null,
+                                "latitude": null,
+                                "id": "cit_lax_us",
+                                "icao_code": null,
+                                "iata_country_code": "US",
+                                "iata_code": "LAX",
+                                "iata_city_code": "LAX",
+                                "city_name": null
+                            },
+                            "airports": null
+                        },
+                        "departing_at": "2022-05-22T16:01:00",
+                        "arriving_at": "2022-05-22T17:00:00",
+                        "aircraft": {
+                            "name": "Canadair (Bombardier) Regional Jet 700 and Challenger 870",
+                            "id": "arc_00009VMF8AhtR8jNRJSNpe",
+                            "iata_code": "CR7"
+                        }
+                    }
+                ],
+                "origin_type": "airport",
+                "origin": {
+                    "type": "airport",
+                    "time_zone": "America/Chicago",
+                    "name": "O'Hare International Airport",
+                    "longitude": -87.90606,
+                    "latitude": 41.976381,
+                    "id": "arp_ord_us",
+                    "icao_code": "KORD",
+                    "iata_country_code": "US",
+                    "iata_code": "ORD",
+                    "iata_city_code": "CHI",
+                    "city_name": "Chicago",
+                    "city": {
+                        "type": "city",
+                        "time_zone": null,
+                        "name": "Chicago",
+                        "longitude": null,
+                        "latitude": null,
+                        "id": "cit_chi_us",
+                        "icao_code": null,
+                        "iata_country_code": "US",
+                        "iata_code": "CHI",
+                        "iata_city_code": "CHI",
+                        "city_name": null
+                    },
+                    "airports": null
+                },
+                "id": "ose_0000ACUEAvbj001MZ4Jzin",
+                "fare_brand_name": "Main Cabin Flexible",
+                "duration": "PT5H4M",
+                "destination_type": "airport",
+                "destination": {
+                    "type": "airport",
+                    "time_zone": "America/Los_Angeles",
+                    "name": "Los Angeles International Airport",
+                    "longitude": -118.408263,
+                    "latitude": 33.942045,
+                    "id": "arp_lax_us",
+                    "icao_code": "KLAX",
+                    "iata_country_code": "US",
+                    "iata_code": "LAX",
+                    "iata_city_code": "LAX",
+                    "city_name": "Los Angeles",
+                    "city": {
+                        "type": "city",
+                        "time_zone": null,
+                        "name": "Los Angeles",
+                        "longitude": null,
+                        "latitude": null,
+                        "id": "cit_lax_us",
+                        "icao_code": null,
+                        "iata_country_code": "US",
+                        "iata_code": "LAX",
+                        "iata_city_code": "LAX",
+                        "city_name": null
+                    },
+                    "airports": null
+                },
+                "conditions": {
+                    "change_before_departure": null
+                }
+            }
+        ],
+        "payment_requirements": {
+            "requires_instant_payment": false,
+            "price_guarantee_expires_at": "2021-10-19T22:59:00Z",
+            "payment_required_by": "2021-10-19T22:59:00Z"
+        },
+        "passengers": [
+            {
+                "type": "adult",
+                "loyalty_programme_accounts": [],
+                "id": "pas_0000ACUEAjR7TOZFVTCfy6",
+                "given_name": null,
+                "family_name": null,
+                "age": null
+            }
+        ],
+        "passenger_identity_documents_required": false,
+        "owner": {
+            "name": "American Airlines",
+            "id": "arl_00009VME7DAGiJjwomhv32",
+            "iata_code": "AA"
+        },
+        "live_mode": false,
+        "id": "off_0000ACUEAwiy4LZKiaec5s",
+        "expires_at": "2021-10-18T11:18:23.000000Z",
+        "created_at": "2021-10-18T10:48:10.625784Z",
+        "conditions": {
+            "refund_before_departure": null,
+            "change_before_departure": null
+        },
+        "base_currency": "GBP",
+        "base_amount": "311.00",
+        "available_services": [],
+        "allowed_passenger_identity_document_types": [
+            "passport"
+        ]
+    }
+}
