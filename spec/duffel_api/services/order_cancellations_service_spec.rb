@@ -16,6 +16,52 @@ describe DuffelAPI::Services::OrderCancellationsService do
     }
   end
 
+  describe "#create" do
+    subject(:post_create_response) { client.order_cancellations.create(params: params) }
+
+    let(:params) do
+      {
+        order_id: "ord_0000AEMtG5Awt5i1RDfCUa",
+      }
+    end
+
+    let(:response_body) { load_fixture("order_cancellations/show.json") }
+
+    let!(:stub) do
+      stub_request(:post, "https://api.duffel.com/air/order_cancellations").
+        with(
+          body: {
+            data: params,
+          },
+        ).
+        to_return(
+          body: response_body,
+          headers: response_headers,
+        )
+    end
+
+    it "makes the expected request to the Duffel API" do
+      post_create_response
+      expect(stub).to have_been_requested
+    end
+
+    it "creates and returns the resource" do
+      order_cancellation = post_create_response
+
+      expect(order_cancellation).to be_a(DuffelAPI::Resources::OrderCancellation)
+
+      expect(order_cancellation.confirmed_at).to eq("2021-12-17T14:42:46.367082Z")
+      expect(order_cancellation.created_at).to eq("2021-12-17T14:40:23.924929Z")
+      expect(order_cancellation.expires_at).to be_nil
+      expect(order_cancellation.id).to eq("ore_0000AEUvjGoJlav2j6FDlZ")
+      expect(order_cancellation.live_mode).to be(false)
+      expect(order_cancellation.order_id).to eq("ord_0000AEMtG5Awt5i1RDfCUa")
+      expect(order_cancellation.refund_amount).to eq("177.80")
+      expect(order_cancellation.refund_currency).to eq("GBP")
+      expect(order_cancellation.refund_to).to eq("balance")
+    end
+  end
+
   describe "#list" do
     subject(:get_list_response) do
       client.order_cancellations.list
