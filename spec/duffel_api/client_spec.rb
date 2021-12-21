@@ -15,6 +15,10 @@ describe DuffelAPI::Client do
     is_expected.to be_a(DuffelAPI::Services::OrderCancellationsService)
   end
 
+  its(:order_change_offers) do
+    is_expected.to be_a(DuffelAPI::Services::OrderChangeOffersService)
+  end
+
   its(:order_change_requests) do
     is_expected.to be_a(DuffelAPI::Services::OrderChangeRequestsService)
   end
