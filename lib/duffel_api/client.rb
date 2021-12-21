@@ -32,6 +32,10 @@ module DuffelAPI
       @order_cancellations ||= Services::OrderCancellationsService.new(@api_service)
     end
 
+    def order_change_requests
+      @order_change_requests ||= Services::OrderChangeRequestsService.new(@api_service)
+    end
+
     def orders
       @orders ||= Services::OrdersService.new(@api_service)
     end

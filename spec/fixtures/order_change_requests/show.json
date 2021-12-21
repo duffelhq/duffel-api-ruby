@@ -1,0 +1,24 @@
+{
+    "meta": null,
+    "data": {
+        "updated_at": "2021-12-21T16:51:06.627745Z",
+        "slices": {
+            "remove": [
+                {
+                    "slice_id": "sli_0000AEdLCwAsr3d8ceyMwz"
+                }
+            ],
+            "add": [
+                {
+                    "origin": "LHR",
+                    "destination": "JFK",
+                    "departure_date": "2021-12-18",
+                    "cabin_class": "economy"
+                }
+            ]
+        },
+        "live_mode": false,
+        "id": "ocr_0000AEdPRxCTitEvxq8Oum",
+        "created_at": "2021-12-21T16:51:06.627745Z"
+    }
+}
