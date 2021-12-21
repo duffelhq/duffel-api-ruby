@@ -12,8 +12,10 @@ offer_request = client.offer_requests.create(params: {
     age: 28,
   }],
   slices: [{
+    # We use a non-sensical route to make sure we get speedy, reliable Duffel Airways
+    # resullts.
     origin: "LHR",
-    destination: "NYC",
+    destination: "STN",
     departure_date: "2022-12-31",
   }],
   # This attribute is sent as a query parameter rather than in the body like the others.
@@ -25,16 +27,16 @@ puts "Created offer request: #{offer_request.id}"
 
 offers = client.offers.all(params: { offer_request_id: offer_request.id })
 
-puts "Got #{offers.length} offers"
+puts "Got #{offers.count} offers"
 
 selected_offer = offers.first
 
-puts "Selected offer #{offer.id} to book"
+puts "Selected offer #{selected_offer.id} to book"
 
 priced_offer = client.offers.get(selected_offer.id)
 
-puts "The final price for offer #{offer.id} is #{offer.total_amount} " \
-     "#{offer.total_currency}"
+puts "The final price for offer #{priced_offer.id} is #{priced_offer.total_amount} " \
+     "#{priced_offer.total_currency}"
 
 order = client.orders.create(params: {
   selected_offers: [priced_offer.id],
@@ -47,7 +49,9 @@ order = client.orders.create(params: {
   ],
   passengers: [
     {
-      id: priced_offer.passengers.first.id,
+      id: priced_offer.passengers.first["id"],
+      title: "mr",
+      gender: "m",
       given_name: "Tim",
       family_name: "Rogers",
       born_on: "1993-04-01",
