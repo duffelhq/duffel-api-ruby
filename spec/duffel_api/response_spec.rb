@@ -99,5 +99,13 @@ describe DuffelAPI::Response do
         expect(response.meta).to eq({})
       end
     end
+
+    context "with an empty response" do
+      let(:response_body) { "" }
+
+      it "returns an empty hash" do
+        expect(response.meta).to eq({})
+      end
+    end
   end
 end

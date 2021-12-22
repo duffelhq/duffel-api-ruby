@@ -183,7 +183,7 @@ In general, these action methods return the record you've acted on.
 
 Watch out! There is one action in the API which doesn't return the record you've acted on.
 
-When you ping a webhook with `client.webhooks.ping("sev_0000AEdmUJKCvFK45qMFBg")`, it'll return `true` if successful, or otherwise it'll raise an error.
+When you ping a webhook with `client.webhooks.ping("sev_0000AEdmUJKCvFK45qMFBg")`, it'll return a `DuffelAPI::Services::WebhooksService::PingResult` if successful, or otherwise it'll raise an error.
 
 ### Handling errors
 
