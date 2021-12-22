@@ -59,7 +59,21 @@ describe DuffelAPI::Services::AirportsService do
       end
 
       it "exposes the API response" do
-        expect(get_list_response.api_response).to be_a(DuffelAPI::APIResponse)
+        api_response = get_list_response.api_response
+
+        expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+        expect(api_response.headers).to eq(response_headers)
+        expect(api_response.raw_body).to be_a(String)
+        expect(api_response.parsed_body).to be_a(Hash)
+        expect(api_response.status_code).to eq(200)
+        expect(api_response.meta).to eq({
+          "after" => "g3QAAAACZAACaWRtAAAACmFycF9hZGxfYXVkAARuYW1lbQAAABBBZGVsYWlkZSBB" \
+                     "aXJwb3J0",
+          "before" => nil,
+          "limit" => 50,
+        })
+        expect(api_response.request_id).to eq(response_headers["x-request-id"])
       end
     end
 
@@ -130,6 +144,25 @@ describe DuffelAPI::Services::AirportsService do
       expect(airport.name).to eq("Aachen Merzbrück Airfield")
       expect(airport.time_zone).to eq("Europe/Berlin")
     end
+
+    it "exposes the API response" do
+      records = client.airports.all.to_a
+      api_response = records.first.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({
+        "after" => "g3QAAAACZAACaWRtAAAACmFycF9hZGxfYXVkAARuYW1lbQAAABBBZGVsYWlkZSBB" \
+                   "aXJwb3J0",
+        "before" => nil,
+        "limit" => 50,
+      })
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 
   describe "#get" do
@@ -165,6 +198,19 @@ describe DuffelAPI::Services::AirportsService do
       expect(get_response.longitude).to eq(45.304832)
       expect(get_response.name).to eq("Aden Adde International Airport")
       expect(get_response.time_zone).to eq("Africa/Mogadishu")
+    end
+
+    it "exposes the API response" do
+      api_response = get_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
 end

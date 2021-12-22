@@ -53,7 +53,21 @@ describe DuffelAPI::Services::AirlinesService do
       end
 
       it "exposes the API response" do
-        expect(get_list_response.api_response).to be_a(DuffelAPI::APIResponse)
+        api_response = get_list_response.api_response
+
+        expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+        expect(api_response.headers).to eq(response_headers)
+        expect(api_response.raw_body).to be_a(String)
+        expect(api_response.parsed_body).to be_a(Hash)
+        expect(api_response.status_code).to eq(200)
+        expect(api_response.meta).to eq({
+          "after" => "g3QAAAACZAACaWRtAAAAGmFybF8wMDAwOVZNRTdEQUdpSmp3b21odjM1ZAAEbmFt" \
+                     "ZW0AAAARQWZyaXFpeWFoIEFpcndheXM=",
+          "before" => nil,
+          "limit" => 50,
+        })
+        expect(api_response.request_id).to eq(response_headers["x-request-id"])
       end
     end
 
@@ -118,6 +132,25 @@ describe DuffelAPI::Services::AirlinesService do
       expect(airline.id).to eq("arl_00009VME7DEWSV8v1yhJgK")
       expect(airline.name).to eq("12 North")
     end
+
+    it "exposes the API response on resources" do
+      records = client.airlines.all.to_a
+      api_response = records.first.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({
+        "after" => "g3QAAAACZAACaWRtAAAAGmFybF8wMDAwOVZNRTdEQUdpSmp3b21odjM1ZAAEbmFt" \
+                   "ZW0AAAARQWZyaXFpeWFoIEFpcndheXM=",
+        "before" => nil,
+        "limit" => 50,
+      })
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 
   describe "#get" do
@@ -146,6 +179,19 @@ describe DuffelAPI::Services::AirlinesService do
       expect(get_response.iata_code).to eq("12")
       expect(get_response.id).to eq("arl_00009VME7DEWSV8v1yhJgK")
       expect(get_response.name).to eq("12 North")
+    end
+
+    it "exposes the API response" do
+      api_response = get_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
 end

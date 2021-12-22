@@ -114,10 +114,23 @@ describe DuffelAPI::Services::OrdersService do
       expect(order.total_amount).to eq("1016.15")
       expect(order.total_currency).to eq("GBP")
     end
+
+    it "exposes the API response" do
+      api_response = post_create_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 
   describe "#update" do
-    subject(:post_create_response) do
+    subject(:update_response) do
       client.orders.update("ord_0000AEdJFxag2IaNxbrlY1", params: params)
     end
 
@@ -145,12 +158,12 @@ describe DuffelAPI::Services::OrdersService do
     end
 
     it "makes the expected request to the Duffel API" do
-      post_create_response
+      update_response
       expect(stub).to have_been_requested
     end
 
     it "returns the updated resource" do
-      order = post_create_response
+      order = update_response
 
       expect(order).to be_a(DuffelAPI::Resources::Order)
 
@@ -195,6 +208,19 @@ describe DuffelAPI::Services::OrdersService do
       expect(order.tax_currency).to eq("GBP")
       expect(order.total_amount).to eq("1016.15")
       expect(order.total_currency).to eq("GBP")
+    end
+
+    it "exposes the API response" do
+      api_response = update_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
 
@@ -280,7 +306,29 @@ describe DuffelAPI::Services::OrdersService do
       end
 
       it "exposes the API response" do
-        expect(get_list_response.api_response).to be_a(DuffelAPI::APIResponse)
+        api_response = get_list_response.api_response
+
+        expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+        expect(api_response.headers).to eq(response_headers)
+        expect(api_response.raw_body).to be_a(String)
+        expect(api_response.parsed_body).to be_a(Hash)
+        expect(api_response.status_code).to eq(200)
+        expect(api_response.meta).to eq({
+          "after" => "g3QAAAACZAACaWRtAAAAGm9yZF8wMDAwQUQ0MEZ" \
+                     "PQW1STHloRTNLWGo2ZAALaW5zZXJ0ZWRfYXR0AA" \
+                     "AADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0Z" \
+                     "VRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxl" \
+                     "bmRhci5JU09kAANkYXlhBGQABGhvdXJhEWQAC21" \
+                     "pY3Jvc2Vjb25kaAJiAAA5HGEGZAAGbWludXRlYQ" \
+                     "FkAAVtb250aGELZAAGc2Vjb25kYStkAApzdGRfb" \
+                     "2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9V" \
+                     "VENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-V" \
+                     "kAAl6b25lX2FiYnJtAAAAA1VUQw==",
+          "before" => nil,
+          "limit" => 50,
+        })
+        expect(api_response.request_id).to eq(response_headers["x-request-id"])
       end
     end
 
@@ -390,6 +438,33 @@ describe DuffelAPI::Services::OrdersService do
       expect(order.total_amount).to eq("1016.15")
       expect(order.total_currency).to eq("GBP")
     end
+
+    it "exposes the API response on the resources" do
+      records = client.orders.all
+      api_response = records.first.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({
+        "after" => "g3QAAAACZAACaWRtAAAAGm9yZF8wMDAwQUQ0MEZ" \
+                   "PQW1STHloRTNLWGo2ZAALaW5zZXJ0ZWRfYXR0AA" \
+                   "AADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0Z" \
+                   "VRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxl" \
+                   "bmRhci5JU09kAANkYXlhBGQABGhvdXJhEWQAC21" \
+                   "pY3Jvc2Vjb25kaAJiAAA5HGEGZAAGbWludXRlYQ" \
+                   "FkAAVtb250aGELZAAGc2Vjb25kYStkAApzdGRfb" \
+                   "2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9V" \
+                   "VENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-V" \
+                   "kAAl6b25lX2FiYnJtAAAAA1VUQw==",
+        "before" => nil,
+        "limit" => 50,
+      })
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 
   describe "#get" do
@@ -458,6 +533,19 @@ describe DuffelAPI::Services::OrdersService do
       expect(order.tax_currency).to eq("GBP")
       expect(order.total_amount).to eq("1016.15")
       expect(order.total_currency).to eq("GBP")
+    end
+
+    it "exposes the API response" do
+      api_response = get_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
 end

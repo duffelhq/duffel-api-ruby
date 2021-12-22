@@ -59,6 +59,19 @@ describe DuffelAPI::Services::WebhooksService do
       expect(webhook.secret).to eq("XRcsu65YS0sJ9T0ZUF3pwA==")
       expect(webhook.url).to eq("https://localhost:4567/webhooks")
     end
+
+    it "exposes the API response" do
+      api_response = post_create_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to be_nil
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 
   describe "#update" do
@@ -104,6 +117,19 @@ describe DuffelAPI::Services::WebhooksService do
       expect(webhook.live_mode).to be(false)
       expect(webhook.secret).to eq("XRcsu65YS0sJ9T0ZUF3pwA==")
       expect(webhook.url).to eq("https://localhost:4567/webhooks")
+    end
+
+    it "exposes the API response" do
+      api_response = patch_update.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to be_nil
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
 

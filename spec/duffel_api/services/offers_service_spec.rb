@@ -90,7 +90,21 @@ describe DuffelAPI::Services::OffersService do
     end
 
     it "exposes the API response" do
-      expect(get_list_response.api_response).to be_a(DuffelAPI::APIResponse)
+      api_response = get_list_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({
+        "after" => "g3QAAAABZAACaWRtAAAAGm9mZl8wMDAwQUVkR1J" \
+                   "ra2lUVHpOVHdiZGdj",
+        "before" => nil,
+        "limit" => 50,
+      })
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
 
@@ -177,6 +191,26 @@ describe DuffelAPI::Services::OffersService do
       expect(offer.total_emissions_kg).to eq("312")
       expect(offer.updated_at).to eq("2021-12-21T15:10:13.263399Z")
     end
+
+    it "exposes the API response on the resources" do
+      records = client.offers.
+        all(params: { offer_request_id: "orq_0000AEdGRPso4CyykxEIsa" }).to_a
+      api_response = records.first.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({
+        "after" => "g3QAAAABZAACaWRtAAAAGm9mZl8wMDAwQUVkR1J" \
+                   "ra2lUVHpOVHdiZGdj",
+        "before" => nil,
+        "limit" => 50,
+      })
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 
   describe "#get" do
@@ -242,6 +276,19 @@ describe DuffelAPI::Services::OffersService do
       expect(offer.total_currency).to eq("GBP")
       expect(offer.total_emissions_kg).to eq("116")
       expect(offer.updated_at).to eq("2021-10-18T10:48:24.571463Z")
+    end
+
+    it "exposes the API response" do
+      api_response = get_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
 
     context "with parameters" do
