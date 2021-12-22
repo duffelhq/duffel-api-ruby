@@ -4,6 +4,9 @@
 module DuffelAPI
   module Resources
     class OrderChangeRequest < BaseResource
+      # TODO: Add `created_at` to the API reference - it's in the serializer but not
+      # documented
+      attr_reader :created_at
       attr_reader :id
       attr_reader :live_mode
       attr_reader :order_change_offers
@@ -11,15 +14,20 @@ module DuffelAPI
       # the API and uncomment this, or fix the docs and remove this.
       # attr_reader :order_id
       attr_reader :slices
+      # TODO: Add `updated_at` to the API reference - it's in the serializer but not
+      # documented
+      attr_reader :updated_at
 
       def initialize(object, response = nil)
         @object = object
 
+        @created_at = object["created_at"]
         @id = object["id"]
         @live_mode = object["live_mode"]
         @order_change_offers = object["order_change_offers"]
         # @order_id = object["order_id"]
         @slices = object["slices"]
+        @updated_at = object["updated_at"]
 
         super(object, response)
       end

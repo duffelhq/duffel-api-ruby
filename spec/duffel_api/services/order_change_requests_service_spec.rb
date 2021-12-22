@@ -65,6 +65,7 @@ describe DuffelAPI::Services::OrderChangeRequestsService do
 
       expect(order_change_request).to be_a(DuffelAPI::Resources::OrderChangeRequest)
 
+      expect(order_change_request.created_at).to eq("2021-12-21T16:51:06.627745Z")
       expect(order_change_request.id).to eq("ocr_0000AEdPRxCTitEvxq8Oum")
       expect(order_change_request.live_mode).to be(false)
       expect(order_change_request.order_change_offers).to be_nil
@@ -83,6 +84,7 @@ describe DuffelAPI::Services::OrderChangeRequestsService do
           },
         ],
       })
+      expect(order_change_request.updated_at).to eq("2021-12-21T16:51:06.627745Z")
     end
   end
 
@@ -111,6 +113,7 @@ describe DuffelAPI::Services::OrderChangeRequestsService do
 
       expect(order_change_request).to be_a(DuffelAPI::Resources::OrderChangeRequest)
 
+      expect(order_change_request.created_at).to eq("2021-12-21T16:51:06.627745Z")
       expect(order_change_request.id).to eq("ocr_0000AEdPRxCTitEvxq8Oum")
       expect(order_change_request.live_mode).to be(false)
       expect(order_change_request.order_change_offers).to be_nil
@@ -129,6 +132,7 @@ describe DuffelAPI::Services::OrderChangeRequestsService do
           },
         ],
       })
+      expect(order_change_request.updated_at).to eq("2021-12-21T16:51:06.627745Z")
     end
   end
 end
