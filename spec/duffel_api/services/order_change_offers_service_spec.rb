@@ -52,8 +52,8 @@ describe DuffelAPI::Services::OrderChangeOffersService do
       expect(order_change_offer.new_total_amount).to eq("1067.79")
       expect(order_change_offer.new_total_currency).to eq("GBP")
       expect(order_change_offer.order_change_id).to be_nil
-      expect(order_change_offer.penalty_amount).to be_nil
-      expect(order_change_offer.penalty_currency).to be_nil
+      expect(order_change_offer.penalty_total_amount).to eq("25.00")
+      expect(order_change_offer.penalty_total_currency).to eq("GBP")
       expect(order_change_offer.refund_to).to eq("original_form_of_payment")
       expect(order_change_offer.slices.length).to eq(2)
       expect(order_change_offer.updated_at).to eq("2021-12-21T16:51:06.650804Z")
@@ -122,8 +122,8 @@ describe DuffelAPI::Services::OrderChangeOffersService do
       expect(order_change_offer.new_total_amount).to eq("1067.79")
       expect(order_change_offer.new_total_currency).to eq("GBP")
       expect(order_change_offer.order_change_id).to be_nil
-      expect(order_change_offer.penalty_amount).to be_nil
-      expect(order_change_offer.penalty_currency).to be_nil
+      expect(order_change_offer.penalty_total_amount).to eq("25.00")
+      expect(order_change_offer.penalty_total_currency).to eq("GBP")
       expect(order_change_offer.refund_to).to eq("original_form_of_payment")
       expect(order_change_offer.slices.length).to eq(2)
       expect(order_change_offer.updated_at).to eq("2021-12-21T16:51:06.650804Z")
@@ -163,8 +163,8 @@ describe DuffelAPI::Services::OrderChangeOffersService do
       expect(order_change_offer.new_total_amount).to eq("1067.79")
       expect(order_change_offer.new_total_currency).to eq("GBP")
       expect(order_change_offer.order_change_id).to be_nil
-      expect(order_change_offer.penalty_amount).to be_nil
-      expect(order_change_offer.penalty_currency).to be_nil
+      expect(order_change_offer.penalty_total_amount).to eq("25.00")
+      expect(order_change_offer.penalty_total_currency).to eq("GBP")
       expect(order_change_offer.refund_to).to eq("original_form_of_payment")
       expect(order_change_offer.slices.length).to eq(2)
       expect(order_change_offer.updated_at).to eq("2021-12-21T16:51:06.650804Z")

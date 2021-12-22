@@ -12,8 +12,11 @@ module DuffelAPI
       attr_reader :new_total_amount
       attr_reader :new_total_currency
       attr_reader :order_change_id
-      attr_reader :penalty_amount
-      attr_reader :penalty_currency
+      # TODO: Change `penalty_amount` and `penalty_currency` in the API reference to
+      # `penalty_total_amount` and `penalty_total_currency` respectively to match what
+      # the API actually returns
+      attr_reader :penalty_total_amount
+      attr_reader :penalty_total_currency
       attr_reader :refund_to
       attr_reader :slices
       attr_reader :updated_at
@@ -30,8 +33,8 @@ module DuffelAPI
         @new_total_amount = object["new_total_amount"]
         @new_total_currency = object["new_total_currency"]
         @order_change_id = object["order_change_id"]
-        @penalty_amount = object["penalty_amount"]
-        @penalty_currency = object["penalty_currency"]
+        @penalty_total_amount = object["penalty_total_amount"]
+        @penalty_total_currency = object["penalty_total_currency"]
         @refund_to = object["refund_to"]
         @slices = object["slices"]
         @updated_at = object["updated_at"]
