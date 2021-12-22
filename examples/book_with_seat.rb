@@ -13,9 +13,9 @@ offer_request = client.offer_requests.create(params: {
   }],
   slices: [{
     # We use a non-sensical route to make sure we get speedy, reliable Duffel Airways
-    # resullts.
-    origin: "LHR",
-    destination: "STN",
+    # results.
+    origin: "LGA",
+    destination: "JFK",
     departure_date: "2022-12-31",
   }],
   # This attribute is sent as a query parameter rather than in the body like the others.
@@ -39,17 +39,29 @@ priced_offer = client.offers.get(selected_offer.id,
 puts "The final price for offer #{priced_offer.id} is #{priced_offer.total_amount} " \
      "#{priced_offer.total_currency}"
 
-available_service = priced_offer.available_services.first
+seat_maps = client.seat_maps.list(params: { offer_id: priced_offer.id })
 
-puts "Adding an extra bag with service #{available_service['id']}, " \
-     "costing #{available_service['total_amount']} #{available_service['total_currency']}"
+available_seat = seat_maps.records.first.cabins.
+  first["rows"].
+  flat_map { |row| row["sections"] }.
+  flat_map { |section| section["elements"] }.
+  find do |element|
+  element["type"] == "seat" && element["available_services"].any?
+end
 
-total_amount = priced_offer.total_amount.to_f + available_service["total_amount"].to_f
+available_seat_service = available_seat["available_services"].first
+
+puts "Adding seat #{available_seat['designator']} costing " \
+     "#{available_seat_service['total_amount']} " \
+     "#{available_seat_service['total_currency']}"
+
+total_amount = priced_offer.total_amount.to_f +
+  available_seat_service["total_amount"].to_f
 
 order = client.orders.create(params: {
   selected_offers: [priced_offer.id],
   services: [{
-    id: available_service["id"],
+    id: available_seat_service["id"],
     quantity: 1,
   }],
   payments: [
@@ -74,15 +86,3 @@ order = client.orders.create(params: {
 })
 
 puts "Created order #{order.id} with booking reference #{order.booking_reference}"
-
-order_cancellation = client.order_cancellations.create(params: {
-  order_id: order.id,
-})
-
-puts "Requested refund quote for order #{order.id} - " \
-     "#{order_cancellation.refund_amount} #{order_cancellation.refund_currency} is " \
-     "available"
-
-client.order_cancellations.confirm(order_cancellation.id)
-
-puts "Confirmed refund quote for order #{order.id}"
