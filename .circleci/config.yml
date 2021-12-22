@@ -38,7 +38,33 @@ jobs:
           command: bundle exec rspec spec
       - store_artifacts:
           path: coverage
- 
+  code_examples:
+    docker:
+      - image: cimg/ruby:3.0
+    resource_class: small
+    steps:
+      - checkout
+      - run:
+          name: Install bundler gem
+          command: gem install bundler --version '~> 2.2'
+      - run:
+          name: Install Ruby dependencies
+          command: bundle check || bundle install
+      - run:
+          name: Run "search and book" example
+          command: bundle exec ruby examples/search_and_book.rb
+      - run:
+          name: Run "hold and pay later" example
+          command: bundle exec ruby examples/hold_and_pay_later.rb
+      - run:
+          name: Run "exploring data" example
+          command: bundle exec ruby examples/exploring_data.rb
+      - run:
+          name: Run "book with seat" example
+          command: bundle exec ruby examples/book_with_seat.rb
+      - run:
+          name: Run "book and change" example
+          command: bundle exec ruby examples/book_and_change.rb
 workflows:
   version: 2
   build_and_test:
@@ -48,3 +74,6 @@ workflows:
             parameters:
               ruby-image: ["cimg/ruby:2.6", "cimg/ruby:2.7", "cimg/ruby:3.0", "ruby:3.1.0-preview1"]
       - coverage
+      - code_examples:
+          requires:
+            - test

@@ -6,6 +6,9 @@ client = DuffelAPI::Client.new(
   access_token: ENV["DUFFEL_ACCESS_TOKEN"],
 )
 
+# 365 days from now
+departure_date = (Time.now + (60 * 60 * 24 * 365)).strftime("%Y-%m-%d")
+
 offer_request = client.offer_requests.create(params: {
   cabin_class: "economy",
   passengers: [{
@@ -16,7 +19,7 @@ offer_request = client.offer_requests.create(params: {
     # results.
     origin: "LHR",
     destination: "STN",
-    departure_date: (Time.now + (60 * 60 * 24 * 365)).strftime('%Y-%m-%d'), # 365 days from now
+    departure_date: departure_date,
   }],
   # This attribute is sent as a query parameter rather than in the body like the others.
   # Worry not! The library handles this complexity for you.
