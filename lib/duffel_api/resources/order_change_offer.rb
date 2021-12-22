@@ -9,6 +9,9 @@ module DuffelAPI
       attr_reader :created_at
       attr_reader :expires_at
       attr_reader :id
+      # TODO: Add `live_mode` to the API reference - it's in the serializer but not
+      # documented
+      attr_reader :live_mode
       attr_reader :new_total_amount
       attr_reader :new_total_currency
       attr_reader :order_change_id
@@ -30,6 +33,7 @@ module DuffelAPI
         @created_at = object["created_at"]
         @expires_at = object["expires_at"]
         @id = object["id"]
+        @live_mode = object["live_mode"]
         @new_total_amount = object["new_total_amount"]
         @new_total_currency = object["new_total_currency"]
         @order_change_id = object["order_change_id"]
