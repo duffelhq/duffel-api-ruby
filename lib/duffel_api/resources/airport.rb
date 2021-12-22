@@ -15,7 +15,6 @@ module DuffelAPI
       attr_reader :name
       attr_reader :time_zone
 
-      # rubocop:disable Metrics/AbcSize
       def initialize(object, response = nil)
         @object = object
 
@@ -27,13 +26,11 @@ module DuffelAPI
         @id = object["id"]
         @latitude = object["latitude"]
         @longitude = object["longitude"]
-        @longitude = object["longitude"]
         @name = object["name"]
         @time_zone = object["time_zone"]
 
         @response = response
       end
-      # rubocop:enable Metrics/AbcSize
 
       def api_response
         APIResponse.new(@response)
