@@ -34,10 +34,8 @@ describe DuffelAPI::Middlewares::RaiseDuffelErrors do
       expect(e.api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(e.api_response.headers).to eq({ "content-type" => "text/html" })
-      expect(e.api_response.raw_body).to eq(body)
-      expect { e.api_response.parsed_body }.to raise_error(JSON::ParserError)
+      expect(e.api_response.body).to eq(body)
       expect(e.api_response.status_code).to eq(514)
-      expect(e.api_response.meta).to eq({})
     end
   end
 
@@ -56,10 +54,8 @@ describe DuffelAPI::Middlewares::RaiseDuffelErrors do
       expect(e.api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(e.api_response.headers).to eq({ "content-type" => "application/json" })
-      expect(e.api_response.raw_body).to eq(body)
-      expect(e.api_response.parsed_body).to eq(JSON.parse(body))
+      expect(e.api_response.body).to eq(body)
       expect(e.api_response.status_code).to eq(503)
-      expect(e.api_response.meta).to eq({})
     end
   end
 
@@ -88,13 +84,8 @@ describe DuffelAPI::Middlewares::RaiseDuffelErrors do
         expect(e.api_response).to be_a(DuffelAPI::APIResponse)
 
         expect(e.api_response.headers).to eq({ "content-type" => "application/json" })
-        expect(e.api_response.raw_body).to eq(body)
-        expect(e.api_response.parsed_body).to eq(JSON.parse(body))
+        expect(e.api_response.body).to eq(body)
         expect(e.api_response.status_code).to eq(400)
-        expect(e.api_response.meta).to eq({
-          "request_id" => "FsJ5mIzW3k3Hfy0AAoKC",
-          "status" => 400,
-        })
       end
     end
 

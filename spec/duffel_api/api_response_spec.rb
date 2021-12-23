@@ -29,9 +29,7 @@ describe DuffelAPI::APIResponse do
 
     its(:status_code) { is_expected.to eq(200) }
     its(:headers) { is_expected.to eq(response_headers) }
-    its(:parsed_body) { is_expected.to eq("test" => true) }
-    its(:raw_body) { is_expected.to eq("{\"test\":true}") }
-    its(:meta) { is_expected.to eq({}) }
+    its(:body) { is_expected.to eq("{\"test\":true}") }
     its(:request_id) { is_expected.to eq("FsJz79144I4JjDwAA6TB") }
   end
 end
