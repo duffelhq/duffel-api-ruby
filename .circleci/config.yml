@@ -1,5 +1,15 @@
 version: 2.1
- 
+
+commands:
+  setup_ruby:
+    steps:
+      - run:
+          name: Install bundler gem
+          command: gem install bundler --version '~> 2.2'
+      - run:
+          name: Install Ruby dependencies
+          command: bundle check || bundle install
+
 orbs:
   ruby: circleci/ruby@1.2
  
@@ -13,12 +23,7 @@ jobs:
     resource_class: small
     steps:
       - checkout
-      - run:
-          name: Install bundler gem
-          command: gem install bundler --version '~> 2.2'
-      - run:
-          name: Install Ruby dependencies
-          command: bundle check || bundle install
+      - setup_ruby
       - ruby/rubocop-check
       - ruby/rspec-test
   coverage:
@@ -29,12 +34,7 @@ jobs:
       COVERAGE: true
     steps:
       - checkout
-      - run:
-          name: Install bundler gem
-          command: gem install bundler --version '~> 2.2'
-      - run:
-          name: Install Ruby dependencies
-          command: bundle check || bundle install
+      - setup_ruby
       - run:
           name: Run tests with Simplecov enabled
           command: bundle exec rspec spec
@@ -46,12 +46,7 @@ jobs:
     resource_class: small
     steps:
       - checkout
-      - run:
-          name: Install bundler gem
-          command: gem install bundler --version '~> 2.2'
-      - run:
-          name: Install Ruby dependencies
-          command: bundle check || bundle install
+      - setup_ruby
       - run:
           name: Run "search and book" example
           command: bundle exec ruby examples/search_and_book.rb
