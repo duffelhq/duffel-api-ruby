@@ -16,7 +16,7 @@ offer_request = client.offer_requests.create(params: {
   }],
   slices: [{
     # We use a non-sensical route to make sure we get speedy, reliable Duffel Airways
-    # resullts.
+    # results.
     origin: "LHR",
     destination: "STN",
     departure_date: departure_date,
@@ -42,26 +42,9 @@ priced_offer = client.offers.get(selected_offer.id,
 puts "The final price for offer #{priced_offer.id} is #{priced_offer.total_amount} " \
      "#{priced_offer.total_currency}"
 
-available_service = priced_offer.available_services.first
-
-puts "Adding an extra bag with service #{available_service['id']}, " \
-     "costing #{available_service['total_amount']} #{available_service['total_currency']}"
-
-total_amount = priced_offer.total_amount.to_f + available_service["total_amount"].to_f
-
 order = client.orders.create(params: {
+  type: "hold",
   selected_offers: [priced_offer.id],
-  services: [{
-    id: available_service["id"],
-    quantity: 1,
-  }],
-  payments: [
-    {
-      type: "balance",
-      amount: total_amount,
-      currency: priced_offer.total_currency,
-    },
-  ],
   passengers: [
     {
       id: priced_offer.passengers.first["id"],
@@ -76,16 +59,24 @@ order = client.orders.create(params: {
   ],
 })
 
-puts "Created order #{order.id} with booking reference #{order.booking_reference}"
+puts "Created hold order #{order.id} with booking reference #{order.booking_reference}"
 
-order_cancellation = client.order_cancellations.create(params: {
+updated_order = client.orders.get(order.id)
+
+puts "Retrieved order and up-to-date price is #{updated_order.total_amount} " \
+     "#{updated_order.total_currency}"
+
+payment = client.payments.create(params: {
   order_id: order.id,
+  payment: {
+    type: "balance",
+    amount: updated_order.total_amount,
+    currency: updated_order.total_currency,
+  },
 })
 
-puts "Requested refund quote for order #{order.id} - " \
-     "#{order_cancellation.refund_amount} #{order_cancellation.refund_currency} is " \
-     "available"
+puts "Paid for order #{order.id} with payment #{payment.id}"
 
-client.order_cancellations.confirm(order_cancellation.id)
+paid_order = client.orders.get(order.id)
 
-puts "Confirmed refund quote for order #{order.id}"
+puts "After payment, order has #{paid_order.documents.length} documents"

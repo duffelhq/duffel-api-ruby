@@ -16,7 +16,7 @@ offer_request = client.offer_requests.create(params: {
   }],
   slices: [{
     # We use a non-sensical route to make sure we get speedy, reliable Duffel Airways
-    # resullts.
+    # results.
     origin: "LHR",
     destination: "STN",
     departure_date: departure_date,
@@ -36,29 +36,17 @@ selected_offer = offers.first
 
 puts "Selected offer #{selected_offer.id} to book"
 
-priced_offer = client.offers.get(selected_offer.id,
-                                 params: { return_available_services: true })
+priced_offer = client.offers.get(selected_offer.id)
 
 puts "The final price for offer #{priced_offer.id} is #{priced_offer.total_amount} " \
      "#{priced_offer.total_currency}"
 
-available_service = priced_offer.available_services.first
-
-puts "Adding an extra bag with service #{available_service['id']}, " \
-     "costing #{available_service['total_amount']} #{available_service['total_currency']}"
-
-total_amount = priced_offer.total_amount.to_f + available_service["total_amount"].to_f
-
 order = client.orders.create(params: {
   selected_offers: [priced_offer.id],
-  services: [{
-    id: available_service["id"],
-    quantity: 1,
-  }],
   payments: [
     {
       type: "balance",
-      amount: total_amount,
+      amount: priced_offer.total_amount,
       currency: priced_offer.total_currency,
     },
   ],
@@ -78,14 +66,41 @@ order = client.orders.create(params: {
 
 puts "Created order #{order.id} with booking reference #{order.booking_reference}"
 
-order_cancellation = client.order_cancellations.create(params: {
+order_change_request = client.order_change_requests.create(params: {
+  order_id: order.id,
+  slices: {
+    add: [{
+      cabin_class: "economy",
+      departure_date: "2022-12-25",
+      origin: "LHR",
+      destination: "STN",
+    }],
+    remove: [{
+      slice_id: order.slices.first["id"],
+    }],
+  },
+})
+
+order_change_offers = client.order_change_offers.
+  all(params: { order_change_request_id: order_change_request.id })
+
+puts "Got #{order_change_offers.count} options for changing the order; picking first " \
+     "option"
+
+order_change = client.order_changes.create(params: {
+  selected_order_change_offer: order_change_offers.first.id,
   order_id: order.id,
 })
 
-puts "Requested refund quote for order #{order.id} - " \
-     "#{order_cancellation.refund_amount} #{order_cancellation.refund_currency} is " \
-     "available"
+puts "Created order change #{order_change.id}, confirming..."
 
-client.order_cancellations.confirm(order_cancellation.id)
+client.order_changes.confirm(order_change.id, params: {
+  payment: {
+    type: "balance",
+    amount: order_change.change_total_amount,
+    currency: order_change.change_total_currency,
+  },
+})
 
-puts "Confirmed refund quote for order #{order.id}"
+puts "Processed change to order #{order.id} costing " \
+     "#{order_change.change_total_amount} #{order_change.change_total_currency}"
