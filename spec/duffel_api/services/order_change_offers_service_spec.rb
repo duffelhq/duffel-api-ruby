@@ -49,11 +49,12 @@ describe DuffelAPI::Services::OrderChangeOffersService do
       expect(order_change_offer.created_at).to eq("2021-12-21T16:51:06.650804Z")
       expect(order_change_offer.expires_at).to eq("2021-12-24T16:51:06Z")
       expect(order_change_offer.id).to eq("oco_0000AEdPRxDtdcNG2EnX7o")
+      expect(order_change_offer.live_mode).to be(false)
       expect(order_change_offer.new_total_amount).to eq("1067.79")
       expect(order_change_offer.new_total_currency).to eq("GBP")
       expect(order_change_offer.order_change_id).to be_nil
-      expect(order_change_offer.penalty_amount).to be_nil
-      expect(order_change_offer.penalty_currency).to be_nil
+      expect(order_change_offer.penalty_total_amount).to eq("25.00")
+      expect(order_change_offer.penalty_total_currency).to eq("GBP")
       expect(order_change_offer.refund_to).to eq("original_form_of_payment")
       expect(order_change_offer.slices.length).to eq(2)
       expect(order_change_offer.updated_at).to eq("2021-12-21T16:51:06.650804Z")
@@ -133,11 +134,12 @@ describe DuffelAPI::Services::OrderChangeOffersService do
       expect(order_change_offer.created_at).to eq("2021-12-21T16:51:06.650804Z")
       expect(order_change_offer.expires_at).to eq("2021-12-24T16:51:06Z")
       expect(order_change_offer.id).to eq("oco_0000AEdPRxDtdcNG2EnX7o")
+      expect(order_change_offer.live_mode).to be(false)
       expect(order_change_offer.new_total_amount).to eq("1067.79")
       expect(order_change_offer.new_total_currency).to eq("GBP")
       expect(order_change_offer.order_change_id).to be_nil
-      expect(order_change_offer.penalty_amount).to be_nil
-      expect(order_change_offer.penalty_currency).to be_nil
+      expect(order_change_offer.penalty_total_amount).to eq("25.00")
+      expect(order_change_offer.penalty_total_currency).to eq("GBP")
       expect(order_change_offer.refund_to).to eq("original_form_of_payment")
       expect(order_change_offer.slices.length).to eq(2)
       expect(order_change_offer.updated_at).to eq("2021-12-21T16:51:06.650804Z")
@@ -194,11 +196,12 @@ describe DuffelAPI::Services::OrderChangeOffersService do
       expect(order_change_offer.created_at).to eq("2021-12-21T16:51:06.650804Z")
       expect(order_change_offer.expires_at).to eq("2021-12-24T16:51:06Z")
       expect(order_change_offer.id).to eq("oco_0000AEdPRxDtdcNG2EnX7o")
+      expect(order_change_offer.live_mode).to be(false)
       expect(order_change_offer.new_total_amount).to eq("1067.79")
       expect(order_change_offer.new_total_currency).to eq("GBP")
       expect(order_change_offer.order_change_id).to be_nil
-      expect(order_change_offer.penalty_amount).to be_nil
-      expect(order_change_offer.penalty_currency).to be_nil
+      expect(order_change_offer.penalty_total_amount).to eq("25.00")
+      expect(order_change_offer.penalty_total_currency).to eq("GBP")
       expect(order_change_offer.refund_to).to eq("original_form_of_payment")
       expect(order_change_offer.slices.length).to eq(2)
       expect(order_change_offer.updated_at).to eq("2021-12-21T16:51:06.650804Z")

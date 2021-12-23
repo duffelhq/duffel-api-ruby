@@ -60,8 +60,8 @@ describe DuffelAPI::Services::OrderChangesService do
       expect(order_change.new_total_amount).to eq("1067.79")
       expect(order_change.new_total_currency).to eq("GBP")
       expect(order_change.order_id).to eq("ord_0000AEdLCwAsr3d8ceyMwy")
-      expect(order_change.penalty_amount).to be_nil
-      expect(order_change.penalty_currency).to be_nil
+      expect(order_change.penalty_total_amount).to eq("25.00")
+      expect(order_change.penalty_total_currency).to eq("GBP")
       expect(order_change.refund_to).to be_nil
       expect(order_change.slices.length).to eq(2)
     end
@@ -115,8 +115,8 @@ describe DuffelAPI::Services::OrderChangesService do
       expect(order_change.new_total_amount).to eq("1067.79")
       expect(order_change.new_total_currency).to eq("GBP")
       expect(order_change.order_id).to eq("ord_0000AEdLCwAsr3d8ceyMwy")
-      expect(order_change.penalty_amount).to be_nil
-      expect(order_change.penalty_currency).to be_nil
+      expect(order_change.penalty_total_amount).to eq("25.00")
+      expect(order_change.penalty_total_currency).to eq("GBP")
       expect(order_change.refund_to).to be_nil
       expect(order_change.slices.length).to eq(2)
     end
@@ -181,8 +181,8 @@ describe DuffelAPI::Services::OrderChangesService do
       expect(order_change.new_total_amount).to eq("1067.79")
       expect(order_change.new_total_currency).to eq("GBP")
       expect(order_change.order_id).to eq("ord_0000AEdLCwAsr3d8ceyMwy")
-      expect(order_change.penalty_amount).to be_nil
-      expect(order_change.penalty_currency).to be_nil
+      expect(order_change.penalty_total_amount).to eq("25.00")
+      expect(order_change.penalty_total_currency).to eq("GBP")
       expect(order_change.refund_to).to be_nil
       expect(order_change.slices.length).to eq(2)
     end
