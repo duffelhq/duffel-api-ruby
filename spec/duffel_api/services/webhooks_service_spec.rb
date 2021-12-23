@@ -130,8 +130,22 @@ describe DuffelAPI::Services::WebhooksService do
       expect(stub).to have_been_requested
     end
 
-    it "returns true if the ping was successful" do
-      expect(ping_webhook).to be(true)
+    it "returns a PingResult if the ping was successful" do
+      expect(ping_webhook).to be_a(described_class::PingResult)
+      expect(ping_webhook.succeeded).to be(true)
+    end
+
+    it "exposes the API response on the PingResult" do
+      api_response = ping_webhook.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_nil
+      expect(api_response.status_code).to eq(204)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
 
     context "when the ping fails" do

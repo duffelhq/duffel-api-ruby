@@ -22,6 +22,8 @@ module DuffelAPI
 
     # Returns the meta hash of the response
     def meta
+      return {} if parsed_body.nil?
+
       parsed_body.fetch("meta", {})
     rescue JSON::ParserError
       {}
