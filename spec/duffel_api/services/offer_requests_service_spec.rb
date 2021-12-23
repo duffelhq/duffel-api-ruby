@@ -76,9 +76,10 @@ describe DuffelAPI::Services::OfferRequestsService do
 
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
+      expect(api_response.body).to be_a(String)
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.status_code).to eq(200)
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
+      expect(api_response.status_code).to eq(200)
     end
 
     context "asking for offers not to be returned using the `return_offers` parameter" do
@@ -154,9 +155,10 @@ describe DuffelAPI::Services::OfferRequestsService do
 
         expect(api_response).to be_a(DuffelAPI::APIResponse)
 
+        expect(api_response.body).to be_a(String)
         expect(api_response.headers).to eq(response_headers)
-        expect(api_response.status_code).to eq(200)
         expect(api_response.request_id).to eq(response_headers["x-request-id"])
+        expect(api_response.status_code).to eq(200)
       end
     end
 
@@ -238,9 +240,10 @@ describe DuffelAPI::Services::OfferRequestsService do
 
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
+      expect(api_response.body).to be_a(String)
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.status_code).to eq(200)
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
+      expect(api_response.status_code).to eq(200)
     end
   end
 
@@ -282,9 +285,10 @@ describe DuffelAPI::Services::OfferRequestsService do
 
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
+      expect(api_response.body).to be_a(String)
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.status_code).to eq(200)
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
+      expect(api_response.status_code).to eq(200)
     end
   end
 end
