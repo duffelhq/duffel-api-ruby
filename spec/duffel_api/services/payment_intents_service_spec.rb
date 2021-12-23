@@ -69,6 +69,19 @@ describe DuffelAPI::Services::PaymentIntentsService do
       expect(payment_intent.status).to eq("succeeded")
       expect(payment_intent.updated_at).to eq("2021-12-21T22:02:41.194906Z")
     end
+
+    it "exposes the API response" do
+      api_response = post_create_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 
   describe "#get" do
@@ -114,6 +127,19 @@ describe DuffelAPI::Services::PaymentIntentsService do
       expect(payment_intent.status).to eq("succeeded")
       expect(payment_intent.updated_at).to eq("2021-12-21T22:02:41.194906Z")
     end
+
+    it "exposes the API response" do
+      api_response = get_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 
   describe "#confirm" do
@@ -158,6 +184,19 @@ describe DuffelAPI::Services::PaymentIntentsService do
       expect(payment_intent.refunds).to eq([])
       expect(payment_intent.status).to eq("succeeded")
       expect(payment_intent.updated_at).to eq("2021-12-21T22:02:41.194906Z")
+    end
+
+    it "exposes the API response" do
+      api_response = confirm_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
 end

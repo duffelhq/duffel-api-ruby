@@ -71,6 +71,19 @@ describe DuffelAPI::Services::OfferRequestsService do
       expect(offer_request.offers.length).to eq(68)
     end
 
+    it "exposes the API response" do
+      api_response = post_create_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
+
     context "asking for offers not to be returned using the `return_offers` parameter" do
       let!(:stub) do
         stub_request(:post, "https://api.duffel.com/air/offer_requests").
@@ -140,7 +153,29 @@ describe DuffelAPI::Services::OfferRequestsService do
       end
 
       it "exposes the API response" do
-        expect(get_list_response.api_response).to be_a(DuffelAPI::APIResponse)
+        api_response = get_list_response.api_response
+
+        expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+        expect(api_response.headers).to eq(response_headers)
+        expect(api_response.raw_body).to be_a(String)
+        expect(api_response.parsed_body).to be_a(Hash)
+        expect(api_response.status_code).to eq(200)
+        expect(api_response.meta).to eq({
+          "after" => "g3QAAAACZAACaWRtAAAAGm9ycV8wMDAwQUVhdzE" \
+                     "yY1Nucks2NndpblkwZAALaW5zZXJ0ZWRfYXR0AA" \
+                     "AADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0Z" \
+                     "VRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxl" \
+                     "bmRhci5JU09kAANkYXlhFGQABGhvdXJhDGQAC21" \
+                     "pY3Jvc2Vjb25kaAJiAAqpwGEGZAAGbWludXRlYQ" \
+                     "tkAAVtb250aGEMZAAGc2Vjb25kYTRkAApzdGRfb" \
+                     "2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9V" \
+                     "VENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-V" \
+                     "kAAl6b25lX2FiYnJtAAAAA1VUQw==",
+          "before" => nil,
+          "limit" => 50,
+        })
+        expect(api_response.request_id).to eq(response_headers["x-request-id"])
       end
     end
 
@@ -215,6 +250,33 @@ describe DuffelAPI::Services::OfferRequestsService do
       expect(offer_request.created_at).to eq("2021-12-20T12:22:02.773536Z")
       expect(offer_request.cabin_class).to eq("economy")
     end
+
+    it "exposes the API response" do
+      records = client.offer_requests.all
+      api_response = records.first.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({
+        "after" => "g3QAAAACZAACaWRtAAAAGm9ycV8wMDAwQUVhdzE" \
+                   "yY1Nucks2NndpblkwZAALaW5zZXJ0ZWRfYXR0AA" \
+                   "AADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0Z" \
+                   "VRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxl" \
+                   "bmRhci5JU09kAANkYXlhFGQABGhvdXJhDGQAC21" \
+                   "pY3Jvc2Vjb25kaAJiAAqpwGEGZAAGbWludXRlYQ" \
+                   "tkAAVtb250aGEMZAAGc2Vjb25kYTRkAApzdGRfb" \
+                   "2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9V" \
+                   "VENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-V" \
+                   "kAAl6b25lX2FiYnJtAAAAA1VUQw==",
+        "before" => nil,
+        "limit" => 50,
+      })
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 
   describe "#get" do
@@ -248,6 +310,19 @@ describe DuffelAPI::Services::OfferRequestsService do
       expect(offer_request.id).to eq("orq_0000AEaw0wBYAwGG9tNnm4")
       expect(offer_request.created_at).to eq("2021-12-20T12:11:51.573119Z")
       expect(offer_request.cabin_class).to eq("economy")
+    end
+
+    it "exposes the API response" do
+      api_response = get_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
 end

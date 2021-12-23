@@ -66,7 +66,21 @@ describe DuffelAPI::Services::OrderChangeOffersService do
     end
 
     it "exposes the API response" do
-      expect(get_list_response.api_response).to be_a(DuffelAPI::APIResponse)
+      api_response = get_list_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({
+        "after" => "g3QAAAABZAACaWRtAAAAGm9mZl8wMDAwQUVkR1Jra" \
+                   "2lUVHpOVHdiZGdj",
+        "before" => nil,
+        "limit" => 50,
+      })
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
 
@@ -128,6 +142,26 @@ describe DuffelAPI::Services::OrderChangeOffersService do
       expect(order_change_offer.slices.length).to eq(2)
       expect(order_change_offer.updated_at).to eq("2021-12-21T16:51:06.650804Z")
     end
+
+    it "exposes the API response on the resources" do
+      records = client.order_change_offers.
+        all(params: { order_change_request_id: "ocr_0000AEdPRxCTitEvxq8Oum" })
+      api_response = records.first.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({
+        "after" => "g3QAAAABZAACaWRtAAAAGm9mZl8wMDAwQUVkR1Jra" \
+                   "2lUVHpOVHdiZGdj",
+        "before" => nil,
+        "limit" => 50,
+      })
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 
   describe "#get" do
@@ -168,6 +202,19 @@ describe DuffelAPI::Services::OrderChangeOffersService do
       expect(order_change_offer.refund_to).to eq("original_form_of_payment")
       expect(order_change_offer.slices.length).to eq(2)
       expect(order_change_offer.updated_at).to eq("2021-12-21T16:51:06.650804Z")
+    end
+
+    it "exposes the API response" do
+      api_response = get_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to eq({})
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
 end

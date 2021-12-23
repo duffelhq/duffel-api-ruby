@@ -61,5 +61,18 @@ describe DuffelAPI::Services::PaymentsService do
       expect(payment.id).to eq("pay_0000AEdLTLasItzU4tTCS0")
       expect(payment.type).to eq("balance")
     end
+
+    it "exposes the API response" do
+      api_response = post_create_response.api_response
+
+      expect(api_response).to be_a(DuffelAPI::APIResponse)
+
+      expect(api_response.headers).to eq(response_headers)
+      expect(api_response.raw_body).to be_a(String)
+      expect(api_response.parsed_body).to be_a(Hash)
+      expect(api_response.status_code).to eq(200)
+      expect(api_response.meta).to be_nil
+      expect(api_response.request_id).to eq(response_headers["x-request-id"])
+    end
   end
 end
