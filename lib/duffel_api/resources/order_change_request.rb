@@ -23,7 +23,7 @@ module DuffelAPI
         @id = object["id"]
         @live_mode = object["live_mode"]
         @order_change_offers = object["order_change_offers"]
-        # @order_id = object["order_id"]
+        @order_id = object["order_id"]
         @slices = object["slices"]
         @updated_at = object["updated_at"]
 
