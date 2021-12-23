@@ -10,9 +10,7 @@ module DuffelAPI
       attr_reader :id
       attr_reader :live_mode
       attr_reader :order_change_offers
-      # TODO: The docs say that we'll return an `order_id`, but we don't. We should fix
-      # the API and uncomment this, or fix the docs and remove this.
-      # attr_reader :order_id
+      attr_reader :order_id
       attr_reader :slices
       # TODO: Add `updated_at` to the API reference - it's in the serializer but not
       # documented
