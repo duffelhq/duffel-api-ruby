@@ -67,10 +67,7 @@ describe DuffelAPI::Services::OrderCancellationsService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({})
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
@@ -132,23 +129,7 @@ describe DuffelAPI::Services::OrderCancellationsService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({
-        "after" => "g3QAAAACZAACaWRtAAAAGm9yZV8wMDAwQThMNDhZT" \
-                   "VlYVGlnVmlLZFpnZAALaW5zZXJ0ZWRfYXR0AAAADW" \
-                   "QACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWV" \
-                   "kAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5J" \
-                   "U09kAANkYXlhEGQABGhvdXJhCWQAC21pY3Jvc2Vjb" \
-                   "25kaAJiAAP8J2EGZAAGbWludXRlYQ5kAAVtb250aG" \
-                   "EGZAAGc2Vjb25kYTVkAApzdGRfb2Zmc2V0YQBkAAl" \
-                   "0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zm" \
-                   "c2V0YQBkAAR5ZWFyYgAAB-VkAAl6b25lX2FiYnJtA" \
-                   "AAAA1VUQw==",
-        "before" => nil,
-        "limit" => 50,
-      })
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
@@ -215,23 +196,7 @@ describe DuffelAPI::Services::OrderCancellationsService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({
-        "after" => "g3QAAAACZAACaWRtAAAAGm9yZV8wMDAwQThMNDhZT" \
-                   "VlYVGlnVmlLZFpnZAALaW5zZXJ0ZWRfYXR0AAAADW" \
-                   "QACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWV" \
-                   "kAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5J" \
-                   "U09kAANkYXlhEGQABGhvdXJhCWQAC21pY3Jvc2Vjb" \
-                   "25kaAJiAAP8J2EGZAAGbWludXRlYQ5kAAVtb250aG" \
-                   "EGZAAGc2Vjb25kYTVkAApzdGRfb2Zmc2V0YQBkAAl" \
-                   "0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zm" \
-                   "c2V0YQBkAAR5ZWFyYgAAB-VkAAl6b25lX2FiYnJtA" \
-                   "AAAA1VUQw==",
-        "before" => nil,
-        "limit" => 50,
-      })
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
@@ -278,10 +243,7 @@ describe DuffelAPI::Services::OrderCancellationsService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({})
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
@@ -328,10 +290,7 @@ describe DuffelAPI::Services::OrderCancellationsService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({})
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end

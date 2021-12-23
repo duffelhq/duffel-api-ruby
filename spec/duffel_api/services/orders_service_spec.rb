@@ -121,10 +121,7 @@ describe DuffelAPI::Services::OrdersService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({})
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
@@ -216,10 +213,7 @@ describe DuffelAPI::Services::OrdersService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({})
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
@@ -311,23 +305,7 @@ describe DuffelAPI::Services::OrdersService do
         expect(api_response).to be_a(DuffelAPI::APIResponse)
 
         expect(api_response.headers).to eq(response_headers)
-        expect(api_response.raw_body).to be_a(String)
-        expect(api_response.parsed_body).to be_a(Hash)
         expect(api_response.status_code).to eq(200)
-        expect(api_response.meta).to eq({
-          "after" => "g3QAAAACZAACaWRtAAAAGm9yZF8wMDAwQUQ0MEZ" \
-                     "PQW1STHloRTNLWGo2ZAALaW5zZXJ0ZWRfYXR0AA" \
-                     "AADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0Z" \
-                     "VRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxl" \
-                     "bmRhci5JU09kAANkYXlhBGQABGhvdXJhEWQAC21" \
-                     "pY3Jvc2Vjb25kaAJiAAA5HGEGZAAGbWludXRlYQ" \
-                     "FkAAVtb250aGELZAAGc2Vjb25kYStkAApzdGRfb" \
-                     "2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9V" \
-                     "VENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-V" \
-                     "kAAl6b25lX2FiYnJtAAAAA1VUQw==",
-          "before" => nil,
-          "limit" => 50,
-        })
         expect(api_response.request_id).to eq(response_headers["x-request-id"])
       end
     end
@@ -446,23 +424,7 @@ describe DuffelAPI::Services::OrdersService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({
-        "after" => "g3QAAAACZAACaWRtAAAAGm9yZF8wMDAwQUQ0MEZ" \
-                   "PQW1STHloRTNLWGo2ZAALaW5zZXJ0ZWRfYXR0AA" \
-                   "AADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0Z" \
-                   "VRpbWVkAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxl" \
-                   "bmRhci5JU09kAANkYXlhBGQABGhvdXJhEWQAC21" \
-                   "pY3Jvc2Vjb25kaAJiAAA5HGEGZAAGbWludXRlYQ" \
-                   "FkAAVtb250aGELZAAGc2Vjb25kYStkAApzdGRfb" \
-                   "2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9V" \
-                   "VENkAAp1dGNfb2Zmc2V0YQBkAAR5ZWFyYgAAB-V" \
-                   "kAAl6b25lX2FiYnJtAAAAA1VUQw==",
-        "before" => nil,
-        "limit" => 50,
-      })
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
@@ -541,10 +503,7 @@ describe DuffelAPI::Services::OrdersService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({})
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end

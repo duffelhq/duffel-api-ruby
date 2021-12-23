@@ -64,15 +64,7 @@ describe DuffelAPI::Services::AirportsService do
         expect(api_response).to be_a(DuffelAPI::APIResponse)
 
         expect(api_response.headers).to eq(response_headers)
-        expect(api_response.raw_body).to be_a(String)
-        expect(api_response.parsed_body).to be_a(Hash)
         expect(api_response.status_code).to eq(200)
-        expect(api_response.meta).to eq({
-          "after" => "g3QAAAACZAACaWRtAAAACmFycF9hZGxfYXVkAARuYW1lbQAAABBBZGVsYWlkZSBB" \
-                     "aXJwb3J0",
-          "before" => nil,
-          "limit" => 50,
-        })
         expect(api_response.request_id).to eq(response_headers["x-request-id"])
       end
     end
@@ -152,15 +144,7 @@ describe DuffelAPI::Services::AirportsService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({
-        "after" => "g3QAAAACZAACaWRtAAAACmFycF9hZGxfYXVkAARuYW1lbQAAABBBZGVsYWlkZSBB" \
-                   "aXJwb3J0",
-        "before" => nil,
-        "limit" => 50,
-      })
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
@@ -206,10 +190,7 @@ describe DuffelAPI::Services::AirportsService do
       expect(api_response).to be_a(DuffelAPI::APIResponse)
 
       expect(api_response.headers).to eq(response_headers)
-      expect(api_response.raw_body).to be_a(String)
-      expect(api_response.parsed_body).to be_a(Hash)
       expect(api_response.status_code).to eq(200)
-      expect(api_response.meta).to eq({})
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
     end
   end
