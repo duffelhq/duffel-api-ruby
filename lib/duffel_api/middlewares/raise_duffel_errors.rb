@@ -5,17 +5,17 @@ require "faraday"
 module DuffelAPI
   module Middlewares
     class RaiseDuffelErrors < Faraday::Response::Middleware
-      API_ERROR_STATUSES = (501..599).freeze
-      CLIENT_ERROR_STATUSES = (400..500).freeze
+      UNEXPECTED_ERROR_STATUSES = (501..599).freeze
+      EXPECTED_ERROR_STATUSES = (400..500).freeze
 
       # rubocop:disable Metrics/AbcSize
       def on_complete(env)
-        if !json?(env) || API_ERROR_STATUSES.include?(env.status)
+        if !json?(env) || UNEXPECTED_ERROR_STATUSES.include?(env.status)
           response = Response.new(env.response)
           raise DuffelAPI::Errors::Error.new(generate_error_data(env), response)
         end
 
-        if CLIENT_ERROR_STATUSES.include?(env.status)
+        if EXPECTED_ERROR_STATUSES.include?(env.status)
           json_body ||= JSON.parse(env.body) unless env.body.empty?
           error = json_body["errors"].first
           error_type = error["type"]
