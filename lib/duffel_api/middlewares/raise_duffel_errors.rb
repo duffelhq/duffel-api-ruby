@@ -5,8 +5,8 @@ require "faraday"
 module DuffelAPI
   module Middlewares
     class RaiseDuffelErrors < Faraday::Response::Middleware
-      API_ERROR_STATUSES = (501..599).freeze
-      CLIENT_ERROR_STATUSES = (400..500).freeze
+      API_ERROR_STATUSES = (500..599).freeze
+      CLIENT_ERROR_STATUSES = (400..499).freeze
 
       # rubocop:disable Metrics/AbcSize
       def on_complete(env)
