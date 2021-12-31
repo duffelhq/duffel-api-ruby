@@ -1,5 +1,25 @@
 version: 2.1
- 
+
+commands:
+  setup_ruby:
+    steps:
+      - run:
+          name: Install bundler gem
+          command: gem install bundler --version '~> 2.2'
+      - run:
+          name: Install Ruby dependencies
+          command: bundle check || bundle install
+
+executors:
+  ruby:
+    parameters:
+      image:
+        default: "cimg/ruby:3.0"
+        type: string
+    docker:
+      - image: << parameters.image >>
+    resource_class: small
+
 orbs:
   ruby: circleci/ruby@1.2
  
@@ -8,50 +28,31 @@ jobs:
     parameters:
       ruby-image:
         type: string
-    docker:
-      - image: << parameters.ruby-image >>
-    resource_class: small
+    executor:
+      name: ruby
+      image: << parameters.ruby-image >>
     steps:
       - checkout
-      - run:
-          name: Install bundler gem
-          command: gem install bundler --version '~> 2.2'
-      - run:
-          name: Install Ruby dependencies
-          command: bundle check || bundle install
+      - setup_ruby
       - ruby/rubocop-check
       - ruby/rspec-test
   coverage:
-    docker:
-      - image: cimg/ruby:3.0
-    resource_class: small
+    executor: ruby
     environment:
       COVERAGE: true
     steps:
       - checkout
-      - run:
-          name: Install bundler gem
-          command: gem install bundler --version '~> 2.2'
-      - run:
-          name: Install Ruby dependencies
-          command: bundle check || bundle install
+      - setup_ruby
       - run:
           name: Run tests with Simplecov enabled
           command: bundle exec rspec spec
       - store_artifacts:
           path: coverage
   code_examples:
-    docker:
-      - image: cimg/ruby:3.0
-    resource_class: small
+    executor: ruby
     steps:
       - checkout
-      - run:
-          name: Install bundler gem
-          command: gem install bundler --version '~> 2.2'
-      - run:
-          name: Install Ruby dependencies
-          command: bundle check || bundle install
+      - setup_ruby
       - run:
           name: Run "search and book" example
           command: bundle exec ruby examples/search_and_book.rb
