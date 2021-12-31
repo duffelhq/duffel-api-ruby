@@ -18,7 +18,7 @@ A Ruby client library for the [Duffel API](https://duffel.com/docs/api).
 In most cases, you'll want to add `duffel_api` to your project as a dependency by listing it in your `Gemfile`, and then running `bundle`:
 
 ```ruby
-gem "duffel_api"
+gem "duffel_api", "~> 0.1.0"
 ```
 
 You can install `duffel_api` outside of the context of a project by running `gem install duffel_api` - for example if you want to play with the client library in `irb`.
