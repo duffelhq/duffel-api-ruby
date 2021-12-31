@@ -10,9 +10,7 @@ module DuffelAPI
       attr_reader :id
       attr_reader :live_mode
       attr_reader :secret
-      # TODO: The docs say that we'll return an `updated_at` timestamp, but we don't.
-      # We should fix the API and uncomment this, or fix the docs and remove this.
-      # attr_reader :updated_at
+      attr_reader :updated_at
       attr_reader :url
 
       def initialize(object, response = nil)
@@ -24,7 +22,7 @@ module DuffelAPI
         @id = object["id"]
         @live_mode = object["live_mode"]
         @secret = object["secret"]
-        # @updated_at = object["updated_at"]
+        @updated_at = object["updated_at"]
         @url = object["url"]
 
         super(object, response)

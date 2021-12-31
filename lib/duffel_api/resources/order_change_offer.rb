@@ -9,15 +9,10 @@ module DuffelAPI
       attr_reader :created_at
       attr_reader :expires_at
       attr_reader :id
-      # TODO: Add `live_mode` to the API reference - it's in the serializer but not
-      # documented
       attr_reader :live_mode
       attr_reader :new_total_amount
       attr_reader :new_total_currency
       attr_reader :order_change_id
-      # TODO: Change `penalty_amount` and `penalty_currency` in the API reference to
-      # `penalty_total_amount` and `penalty_total_currency` respectively to match what
-      # the API actually returns
       attr_reader :penalty_total_amount
       attr_reader :penalty_total_currency
       attr_reader :refund_to

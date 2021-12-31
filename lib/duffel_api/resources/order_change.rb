@@ -14,9 +14,6 @@ module DuffelAPI
       attr_reader :new_total_amount
       attr_reader :new_total_currency
       attr_reader :order_id
-      # TODO: Change `penalty_amount` and `penalty_currency` in the API reference to
-      # `penalty_total_amount` and `penalty_total_currency` respectively to match what
-      # the API actually returns
       attr_reader :penalty_total_amount
       attr_reader :penalty_total_currency
       attr_reader :refund_to
