@@ -75,7 +75,7 @@ workflows:
       - test:
           matrix:
             parameters:
-              ruby-image: ["cimg/ruby:2.6", "cimg/ruby:2.7", "cimg/ruby:3.0", "ruby:3.1.0-preview1"]
+              ruby-image: ["cimg/ruby:2.6", "cimg/ruby:2.7", "cimg/ruby:3.0", "cimg/ruby:3.1"]
       - coverage
       - code_examples:
           requires:
