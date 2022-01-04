@@ -11,7 +11,7 @@ group :development, :test do
   gem "rake", "~> 13.0"
   gem "rspec", "~> 3.10.0"
   gem "rspec-its", "~> 1.3.0"
-  gem "rspec_junit_formatter", "~> 0.4.1"
+  gem "rspec_junit_formatter", "~> 0.5.0"
   gem "rubocop", "~> 1.24.0"
   gem "rubocop-rake", "~> 0.6.0"
   gem "simplecov", "~> 0.21.2"
