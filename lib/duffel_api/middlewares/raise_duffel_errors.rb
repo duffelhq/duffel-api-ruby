@@ -4,7 +4,7 @@ require "faraday"
 
 module DuffelAPI
   module Middlewares
-    class RaiseDuffelErrors < Faraday::Response::Middleware
+    class RaiseDuffelErrors < Faraday::Middleware
       UNEXPECTED_ERROR_STATUSES = (501..599).freeze
       EXPECTED_ERROR_STATUSES = (400..500).freeze
 
