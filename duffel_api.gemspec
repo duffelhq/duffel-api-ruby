@@ -30,8 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "base16", "~> 0.0.2"
   spec.add_dependency "faraday", ">= 0.9.2", "< 3"
 
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_development_dependency "appraisal", "~> 2.4"
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html
