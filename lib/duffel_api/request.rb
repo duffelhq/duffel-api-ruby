@@ -26,8 +26,10 @@ module DuffelAPI
       end
     end
 
-    # Make the request and wrap it in a Response object
-    def request
+    # Dispatches the request and returns the result
+    #
+    # @return [Response] the response from the request
+    def call
       Response.new(make_request)
     end
 

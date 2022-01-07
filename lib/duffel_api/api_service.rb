@@ -24,7 +24,7 @@ module DuffelAPI
 
       options[:headers] ||= {}
       options[:headers] = @headers.merge(options[:headers])
-      Request.new(@connection, method, @path_prefix + path, options).request
+      Request.new(@connection, method, @path_prefix + path, options).call
     end
 
     private
