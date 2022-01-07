@@ -11,12 +11,13 @@ module DuffelAPI
     # @param path [String] the path to make the request to
     # @param options [hash] options for the request
     # @param headers [hash] headers to send with the request
-    def initialize(connection, method, path, options)
+    def initialize(connection, method, path, headers: {}, params: {}, query_params: {})
       @connection = connection
       @method = method
       @path = path
-      @headers = (options.delete(:headers) || {}).transform_keys(&:to_s)
-      @given_options = options
+      @headers = headers.transform_keys(&:to_s)
+      @params = params
+      @query_params = query_params
 
       @request_body = request_body
 
@@ -50,7 +51,7 @@ module DuffelAPI
       if @method == :get
         nil
       elsif %i[post put delete patch].include?(@method)
-        @given_options.fetch(:params, {})
+        @params
       else
         raise "Unknown request method #{@method}"
       end
@@ -59,9 +60,9 @@ module DuffelAPI
     # Get the query params to send with the request
     def request_query
       if @method == :get
-        @given_options.fetch(:params, {})
+        @params
       else
-        @given_options.fetch(:query_params, {})
+        @query_params
       end
     end
   end

@@ -5,7 +5,7 @@ require "uri"
 
 module DuffelAPI
   class APIService
-    def initialize(base_url, access_token, options = {})
+    def initialize(base_url, access_token, default_headers:)
       @base_url = base_url
       root_url, @path_prefix = unpack_url(base_url)
 
@@ -15,16 +15,16 @@ module DuffelAPI
         faraday.adapter(:net_http)
       end
 
-      @headers = options[:default_headers] || {}
-      @headers["Authorization"] = "Bearer #{access_token}"
+      @headers = default_headers.merge("Authorization" => "Bearer #{access_token}")
     end
 
+    #
     def make_request(method, path, options = {})
       raise ArgumentError, "options must be a hash" unless options.is_a?(Hash)
 
       options[:headers] ||= {}
       options[:headers] = @headers.merge(options[:headers])
-      Request.new(@connection, method, @path_prefix + path, options).call
+      Request.new(@connection, method, @path_prefix + path, **options).call
     end
 
     private

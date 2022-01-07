@@ -5,7 +5,7 @@ module DuffelAPI
     API_VERSION = "beta"
 
     def initialize(access_token:, base_url: "https://api.duffel.com")
-      @api_service = APIService.new(base_url, access_token, default_options)
+      @api_service = APIService.new(base_url, access_token, **default_options)
     end
 
     def aircraft
