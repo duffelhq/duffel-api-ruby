@@ -11,9 +11,7 @@ module DuffelAPI
 
       private
 
-      def make_request(method, path, options = {})
-        @api_service.make_request(method, path, options)
-      end
+      def_delegator :@api_service, :make_request
 
       def substitute_url_pattern(url, param_map)
         param_map.reduce(url) do |new_url, (param, value)|
