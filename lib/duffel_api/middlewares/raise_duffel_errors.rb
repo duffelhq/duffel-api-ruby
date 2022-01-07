@@ -48,8 +48,7 @@ module DuffelAPI
           "message" => "Something went wrong with this request\n" \
                        "Code: #{env.status}\n" \
                        "Headers: #{env.response_headers}\n" \
-                       "Body: #{env.body}",
-          "code" => env.status,
+                       "Body: #{env.body}"
         }
       end
 
