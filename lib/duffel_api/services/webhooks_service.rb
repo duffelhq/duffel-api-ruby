@@ -4,19 +4,29 @@ module DuffelAPI
   module Services
     class WebhooksService < BaseService
       class PingResult
+        # Returns the raw API response this resource originated from
+        #
+        # @return [APIResponse]
         attr_reader :api_response
 
         def initialize(api_response)
           @api_response = api_response
         end
 
-        # If we return a `PingResult` rather than an error, then that means that the
-        # action was successful.
+        # Returns whether the ping was successful. This is always true, because if the
+        # ping fails, we raise an error.
+        #
+        # @return [Boolean]
         def succeeded
           true
         end
       end
 
+      # Creates an webhook
+      #
+      # @option [required, Hash] :params the payload for creating the webhook
+      # @return [Resources::Webhook]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def create(options = {})
         path = "/air/webhooks"
 
@@ -36,6 +46,12 @@ module DuffelAPI
         Resources::Webhook.new(unenvelope_body(response.parsed_body), response)
       end
 
+      # Updates a webhook by ID
+      #
+      # @param [String] id
+      # @option [required, Hash] :params the payload for updating the webhook
+      # @return [Resources::Webhook]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def update(id, options = {})
         path = substitute_url_pattern("/air/webhooks/:id", "id" => id)
 
@@ -55,6 +71,11 @@ module DuffelAPI
         Resources::Webhook.new(unenvelope_body(response.parsed_body), response)
       end
 
+      # Pings a webhook by ID
+      #
+      # @param [String] id
+      # @return [PingResult]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def ping(id, options = {})
         path = substitute_url_pattern("/air/webhooks/:id/actions/ping", "id" => id)
 

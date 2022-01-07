@@ -4,12 +4,25 @@
 module DuffelAPI
   module Resources
     class OfferRequest < BaseResource
+      # @return [String, nil]
       attr_reader :cabin_class
+
+      # @return [String]
       attr_reader :created_at
+
+      # @return [String]
       attr_reader :id
+
+      # @return [Boolean]
       attr_reader :live_mode
+
+      # @return [Array<Hash>]
       attr_reader :offers
+
+      # @return [Array<Hash>]
       attr_reader :passengers
+
+      # @return [Array<Hash>]
       attr_reader :slices
 
       def initialize(object, response = nil)

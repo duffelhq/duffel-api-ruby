@@ -3,6 +3,11 @@
 module DuffelAPI
   module Services
     class PaymentsService < BaseService
+      # Creates an payment
+      #
+      # @option [required, Hash] :params the payload for creating the payment
+      # @return [Resources::Payment]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def create(options = {})
         path = "/air/payments"
 

@@ -3,6 +3,11 @@
 module DuffelAPI
   module Services
     class OrderCancellationsService < BaseService
+      # Creates an order cancellation
+      #
+      # @option [required, Hash] :params the payload for creating the order cancellation
+      # @return [Resources::OrderCancellation]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def create(options = {})
         path = "/air/order_cancellations"
 
@@ -22,6 +27,11 @@ module DuffelAPI
         Resources::OrderCancellation.new(unenvelope_body(response.parsed_body), response)
       end
 
+      # Confirms an order cancellation by ID
+      #
+      # @param [String] id
+      # @return [Resources::OrderCancellation]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def confirm(id, options = {})
         path = substitute_url_pattern("/air/order_cancellations/:id/actions/confirm",
                                       "id" => id)
@@ -42,6 +52,12 @@ module DuffelAPI
         Resources::OrderCancellation.new(unenvelope_body(response.parsed_body), response)
       end
 
+      # Lists offers, returning a single page of results.
+      #
+      # @option [Hash] :params Parameters to include in the HTTP querystring, including
+      #   any filters
+      # @return [ListResponse]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def list(options = {})
         path = "/air/order_cancellations"
 
@@ -54,6 +70,13 @@ module DuffelAPI
         )
       end
 
+      # Returns an `Enumerator` which can automatically cycle through multiple
+      # pages of `Resources;:OrderCancellation`s
+      #
+      # @param [Hash] options options passed to `#list`, for example `:params` to
+      #   send an HTTP querystring with filters
+      # @return [Enumerator]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def all(options = {})
         Paginator.new(
           service: self,
@@ -61,6 +84,11 @@ module DuffelAPI
         ).enumerator
       end
 
+      # Retrieves a single order cancellation by ID
+      #
+      # @param [String] id
+      # @return [Resources::OrderCancellation]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def get(id, options = {})
         path = substitute_url_pattern("/air/order_cancellations/:id", "id" => id)
 

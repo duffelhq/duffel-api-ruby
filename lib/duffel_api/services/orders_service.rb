@@ -3,6 +3,11 @@
 module DuffelAPI
   module Services
     class OrdersService < BaseService
+      # Creates an order
+      #
+      # @option [required, Hash] :params the payload for creating the order
+      # @return [Resources::Order]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def create(options = {})
         path = "/air/orders"
 
@@ -22,6 +27,11 @@ module DuffelAPI
         Resources::Order.new(unenvelope_body(response.parsed_body), response)
       end
 
+      # Updates an order
+      #
+      # @option [required, Hash] :params the payload for updating the order
+      # @return [Resources::Order]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def update(id, options = {})
         path = substitute_url_pattern("/air/orders/:id", "id" => id)
 
@@ -41,6 +51,12 @@ module DuffelAPI
         Resources::Order.new(unenvelope_body(response.parsed_body), response)
       end
 
+      # Lists orders, returning a single page of results.
+      #
+      # @option [Hash] :params Parameters to include in the HTTP querystring, including
+      #   any filters
+      # @return [ListResponse]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def list(options = {})
         path = "/air/orders"
 
@@ -53,6 +69,13 @@ module DuffelAPI
         )
       end
 
+      # Returns an `Enumerator` which can automatically cycle through multiple
+      # pages of `Resources;:Order`s
+      #
+      # @param [Hash] options options passed to `#list`, for example `:params` to
+      #   send an HTTP querystring with filters
+      # @return [Enumerator]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def all(options = {})
         Paginator.new(
           service: self,
@@ -60,6 +83,11 @@ module DuffelAPI
         ).enumerator
       end
 
+      # Retrieves a single order by ID
+      #
+      # @param [String] id
+      # @return [Resources::Order]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def get(id, options = {})
         path = substitute_url_pattern("/air/orders/:id", "id" => id)
 
