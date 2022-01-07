@@ -39,7 +39,5 @@ module DuffelAPI
     def normalised_headers
       headers.transform_keys(&:downcase)
     end
-
-    def json?; end
   end
 end
