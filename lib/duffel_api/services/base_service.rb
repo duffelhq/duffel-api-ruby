@@ -9,11 +9,11 @@ module DuffelAPI
         @api_service = api_service
       end
 
+      private
+
       def make_request(method, path, options = {})
         @api_service.make_request(method, path, options)
       end
-
-      private
 
       def substitute_url_pattern(url, param_map)
         param_map.reduce(url) do |new_url, (param, value)|
