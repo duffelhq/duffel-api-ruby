@@ -33,6 +33,8 @@ module DuffelAPI
       Response.new(make_request)
     end
 
+    private
+
     # Make the API request
     def make_request
       @connection.send(@method) do |request|
