@@ -3,7 +3,7 @@
 
 module DuffelAPI
   module Resources
-    class OfferRequest
+    class OfferRequest < BaseResource
       attr_reader :cabin_class
       attr_reader :created_at
       attr_reader :id
@@ -23,11 +23,7 @@ module DuffelAPI
         @passengers = object["passengers"]
         @slices = object["slices"]
 
-        @response = response
-      end
-
-      def api_response
-        APIResponse.new(@response)
+        super(object, response)
       end
     end
   end

@@ -3,7 +3,7 @@
 
 module DuffelAPI
   module Resources
-    class Airport
+    class Airport < BaseResource
       attr_reader :city
       attr_reader :city_name
       attr_reader :iata_code
@@ -29,11 +29,7 @@ module DuffelAPI
         @name = object["name"]
         @time_zone = object["time_zone"]
 
-        @response = response
-      end
-
-      def api_response
-        APIResponse.new(@response)
+        super(object, response)
       end
     end
   end

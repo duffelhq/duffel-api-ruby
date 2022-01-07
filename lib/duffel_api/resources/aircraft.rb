@@ -3,7 +3,7 @@
 
 module DuffelAPI
   module Resources
-    class Aircraft
+    class Aircraft < BaseResource
       attr_reader :iata_code
       attr_reader :id
       attr_reader :name
@@ -15,11 +15,7 @@ module DuffelAPI
         @id = object["id"]
         @name = object["name"]
 
-        @response = response
-      end
-
-      def api_response
-        APIResponse.new(@response)
+        super(object, response)
       end
     end
   end
