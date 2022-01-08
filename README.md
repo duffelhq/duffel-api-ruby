@@ -209,4 +209,31 @@ If an error has been raised, you can call `#api_response` on the exception, whic
 
 From the `APIResponse`, you can call `#headers`, `#status_code`, `#raw_body`, `#parsed_body`, `#meta` or `#request_id` to get key information from the response.
 
+## Verifying webhooks
+
+You can set up [webhooks](https://duffel.com/docs/guides/receiving-webhooks) with Duffel to receive notifications about events that happen in your Duffel account - for example, when an airline has a schedule change affecting one of your orders.
+
+These webhook events are signed with a shared secret. This allows you to be sure that a webhooks are genuinely from Duffel when you receive them.
+
+When you create a webhook, you'll set a secret. With that secret in mind, you can verify that a webhook is genuine like this:
+
+```ruby
+# In Rails, you'd get this with `request.raw_post`.
+request_body = '{"created_at":"2022-01-08T18:44:56.129339Z","data":{"changes":{},"object":{}},"id":"eve_0000AFEsrBKZAcKgGtZCnQ","live_mode":false,"object":"order","type":"order.updated"}'
+# In Rails, you'd get this with `request.headers['X-Duffel-Signature']`.
+request_signature = "t=1641667496,v1=691f25ffb1f206c0fda5bb7b1a9d60fafe42c5f42819d44a06a7cfe09486f102"
+
+# Note that this code doesn't require your access token - `DuffelAPI::WebhookEvent`
+# doesn't expect you to have a `Client` initialised
+if DuffelAPI::WebhookEvent.genuine?(
+  request_body: ,
+  request_signature: ,
+  webhook_secret: "a_secret"
+)
+  puts "This is a real webhook from Duffel 🌟"
+else
+  puts "This is a fake webhook! ☠️"
+end
+```
+
 
