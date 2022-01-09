@@ -5,8 +5,8 @@ module DuffelAPI
     class OfferPassengersService < BaseService
       # Updates an offer passenger, based on the offer ID and passenger ID
       #
-      # @param [String] offer_id
-      # @param [String] passenger_id
+      # @param offer_id [String]
+      # @param passenger_id [String]
       # @option [required, Hash] :params the payload for updating the passenger
       # @return [Resources::OfferPassenger]
       # @raise [Errors::Error] when the Duffel API returns an error

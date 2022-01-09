@@ -10,9 +10,9 @@ module DuffelAPI
     # Sets up an API service based on a base URL, access token and set of default
     # headers
     #
-    # @param [String] base_url A test or live mode access token
-    # @param [String] access_token The URL of the Duffel API
-    # @param [Hash] default_headers The headers to include by default in HTTP requests
+    # @param base_url [String] A test or live mode access token
+    # @param access_token [String] The URL of the Duffel API
+    # @param default_headers [Hash] The headers to include by default in HTTP requests
     # @return [APIService]
     def initialize(base_url, access_token, default_headers:)
       @base_url = base_url

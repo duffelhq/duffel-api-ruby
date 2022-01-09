@@ -9,7 +9,7 @@ module DuffelAPI
 
       # Sets up a resource-specific service based on an API service
       #
-      # @param [APIService] api_service
+      # @param api_service [APIService]
       # @return [BaseService]
       def initialize(api_service)
         @api_service = api_service
@@ -21,8 +21,8 @@ module DuffelAPI
 
       # Fills in variables in a patterned URL (e.g. `/widgets/:id`)
       #
-      # @param [String] url
-      # @param [Hash] param_map
+      # @param url [String]
+      # @param param_map [Hash]
       # @return [String]
       def substitute_url_pattern(url, param_map)
         param_map.reduce(url) do |new_url, (param, value)|
@@ -32,7 +32,7 @@ module DuffelAPI
 
       # Extracts the data inside the `data` envelope from an API response
       #
-      # @param [Hash] parsed_body
+      # @param parsed_body [Hash]
       # @return [Hash]
       def unenvelope_body(parsed_body)
         parsed_body["data"]

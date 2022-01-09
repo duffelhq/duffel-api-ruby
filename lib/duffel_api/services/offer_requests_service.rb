@@ -61,7 +61,7 @@ module DuffelAPI
       # Returns an `Enumerator` which can automatically cycle through multiple
       # pages of `Resources;:OfferRequest`s
       #
-      # @param [Hash] options options passed to `#list`, for example `:params` to
+      # @param options [Hash] options passed to `#list`, for example `:params` to
       #   send an HTTP querystring with filters
       # @return [Enumerator]
       # @raise [Errors::Error] when the Duffel API returns an error
@@ -74,7 +74,7 @@ module DuffelAPI
 
       # Retrieves a single offer request by ID
       #
-      # @param [String] id
+      # @param id [String]
       # @return [Resources::OfferRequest]
       # @raise [Errors::Error] when the Duffel API returns an error
       def get(id, options = {})

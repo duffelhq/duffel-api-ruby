@@ -31,7 +31,7 @@ module DuffelAPI
 
       # Retrieves a single order change request by ID
       #
-      # @param [String] id
+      # @param id [String]
       # @return [Resources::OrderChangeRequest]
       # @raise [Errors::Error] when the Duffel API returns an error
       def get(id, options = {})

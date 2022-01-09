@@ -29,7 +29,7 @@ module DuffelAPI
 
       # Retrieves a single refund by ID
       #
-      # @param [String] id
+      # @param id [String]
       # @return [Resources::Refund]
       # @raise [Errors::Error] when the Duffel API returns an error
       def get(id, options = {})

@@ -8,12 +8,12 @@ module DuffelAPI
   class Request
     # Initialize a request class, which makes calls to the API
     #
-    # @param [Faraday] connection a Faraday connection
-    # @param [Symbol] method the HTTP method to make the request with
-    # @param [String] path the path to make the request to
-    # @param [Hash] headers the HTTP request headers to send with the request
-    # @param [Hash] params Any paramters to include in the HTTP body
-    # @param [Hash] query_params Any parameters to include in the HTTP querystring
+    # @param connection [Faraday] a Faraday connection
+    # @param method [Symbol] the HTTP method to make the request with
+    # @param path [String] the path to make the request to
+    # @param headers [Hash] the HTTP request headers to send with the request
+    # @param params [Hash] Any paramters to include in the HTTP body
+    # @param query_params [Hash] Any parameters to include in the HTTP querystring
     def initialize(connection, method, path, headers: {}, params: {}, query_params: {})
       @connection = connection
       @method = method

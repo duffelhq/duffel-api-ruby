@@ -48,7 +48,7 @@ module DuffelAPI
 
       # Updates a webhook by ID
       #
-      # @param [String] id
+      # @param id [String]
       # @option [required, Hash] :params the payload for updating the webhook
       # @return [Resources::Webhook]
       # @raise [Errors::Error] when the Duffel API returns an error
@@ -73,7 +73,7 @@ module DuffelAPI
 
       # Pings a webhook by ID
       #
-      # @param [String] id
+      # @param id [String]
       # @return [PingResult]
       # @raise [Errors::Error] when the Duffel API returns an error
       def ping(id, options = {})

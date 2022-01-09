@@ -29,7 +29,7 @@ module DuffelAPI
 
       # Confirms a payment intent by ID
       #
-      # @param [String] id
+      # @param id [String]
       # @return [Resources::PaymentIntent]
       # @raise [Errors::Error] when the Duffel API returns an error
       def confirm(id, options = {})
@@ -54,7 +54,7 @@ module DuffelAPI
 
       # Retrieves a single payment intent by ID
       #
-      # @param [String] id
+      # @param id [String]
       # @return [Resources::PaymentIntent]
       # @raise [Errors::Error] when the Duffel API returns an error
       def get(id, options = {})

@@ -8,7 +8,7 @@ module DuffelAPI
     # Builds an `APIResponse` from a `Response`, the library's internal representation
     # of an HTTP response
     #
-    # @param [Response] response
+    # @param response [Response]
     # @return [APIResponse]
     def initialize(response)
       @response = response

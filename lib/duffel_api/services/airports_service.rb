@@ -24,7 +24,7 @@ module DuffelAPI
       # Returns an `Enumerator` which can automatically cycle through multiple
       # pages of `Resources;:Airport`s
       #
-      # @param [Hash] options options passed to `#list`, for example `:params` to
+      # @param options [Hash] options passed to `#list`, for example `:params` to
       #   send an HTTP querystring with filters
       # @return [Enumerator]
       # @raise [Errors::Error] when the Duffel API returns an error
@@ -37,7 +37,7 @@ module DuffelAPI
 
       # Retrieves a single airport by ID
       #
-      # @param [String] id
+      # @param id [String]
       # @return [Resources::Airport]
       # @raise [Errors::Error] when the Duffel API returns an error
       def get(id, options = {})
