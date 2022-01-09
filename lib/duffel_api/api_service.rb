@@ -29,9 +29,9 @@ module DuffelAPI
 
     # Makes a request to the API, including any defauot headers
     #
-    # @param [Symbol] method the HTTP method to make the request with
-    # @param [String] path the path to make the request to
-    # @param [Hash] options options to be passed with `Request#new`
+    # @param method [Symbol] the HTTP method to make the request with
+    # @param path [String] the path to make the request to
+    # @param options [Hash] options to be passed with `Request#new`
     # @return [Request]
     def make_request(method, path, options = {})
       raise ArgumentError, "options must be a hash" unless options.is_a?(Hash)

@@ -8,8 +8,8 @@ module DuffelAPI
 
     # Sets up the client with your access token
     #
-    # @param [String] access_token A test or live mode access token
-    # @param [String] base_url The URL of the Duffel API
+    # @param access_token [String] A test or live mode access token
+    # @param base_url [String] The URL of the Duffel API
     # @return [Client]
     def initialize(access_token:, base_url: "https://api.duffel.com")
       @api_service = APIService.new(base_url, access_token, **default_options)

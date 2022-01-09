@@ -37,17 +37,10 @@ jobs:
       - ruby/rubocop-check
       - ruby/rspec-test
   docs:
-    docker:
-      - image: cimg/ruby:3.0
-    resource_class: small
+    executor: ruby
     steps:
       - checkout
-      - run:
-          name: Install bundler gem
-          command: gem install bundler --version '~> 2.2'
-      - run:
-          name: Install Ruby dependencies
-          command: bundle check || bundle install
+      - setup_ruby
       - run:
           name: Build documentation with Yard
           command: bundle exec yard

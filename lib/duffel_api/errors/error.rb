@@ -10,8 +10,8 @@ module DuffelAPI
       # for unrecognised errors returned by the Duffel API or errors that don't
       # look like standardised Duffel API errors.
       #
-      # @param [Hash] error the parsed error data from the API
-      # @param [APIResponse, nil] response
+      # @param error [Hash] the parsed error data from the API
+      # @param response [APIResponse, nil]
       # @return [Error]
       def initialize(error, response = nil)
         raise ArgumentError, "Duffel errors expect a hash" unless error.is_a?(Hash)

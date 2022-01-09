@@ -4,8 +4,8 @@ module DuffelAPI
   # An internal class used within the library to paginated automatically thruogh results
   # from list actions that can be spread over multiple pages
   class Paginator
-    # @param [Services::BaseService] service a service which implements `#list`
-    # @param [Hash] options the options originally passed to `#all`
+    # @param service [Services::BaseService] a service which implements `#list`
+    # @param options [Hash] the options originally passed to `#all`
     def initialize(service:, options:)
       @service = service
       @options = options

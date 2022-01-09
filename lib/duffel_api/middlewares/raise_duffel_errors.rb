@@ -37,7 +37,7 @@ module DuffelAPI
       # Picks the correct error class to use for an error returned by the Duffel API
       # based on its type
       #
-      # @param [Atom] type the type returned by the API
+      # @param type [Atom] the type returned by the API
       # @return [Errors::Error]
       def error_class_for_type(type)
         {
@@ -54,7 +54,7 @@ module DuffelAPI
       # Generates error data - specifically a message - based on the `Faraday::Env` for
       # non-standard Duffel errors
       #
-      # @param [Faraday::Env] env
+      # @param env [Faraday::Env]
       # @return [Hash]
       def generate_error_data(env)
         {
@@ -67,7 +67,7 @@ module DuffelAPI
 
       # Works out if the response is a JSON response based on the `Faraday::Env`
       #
-      # @param [Faraday::Env] env
+      # @param env [Faraday::Env]
       # @return [Boolean]
       def json?(env)
         content_type = env.response_headers["Content-Type"] ||
