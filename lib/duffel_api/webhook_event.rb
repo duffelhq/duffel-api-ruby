@@ -20,10 +20,10 @@ module DuffelAPI
       # Assuming that you've kept that secret secure and only shared it with Duffel,
       # this can give you confidence that a webhook event was genuinely sent by Duffel.
       #
-      # @param [String] request_body The raw body of the received request
-      # @param [String] request_signature The signature provided with the received
+      # @param request_body [String] The raw body of the received request
+      # @param request_signature [String] The signature provided with the received
       #   request, found in the `X-Duffel-Signature` request header
-      # @param [String] webhook_secret The secret of the webhook, registered with Duffel
+      # @param webhook_secret [String] The secret of the webhook, registered with Duffel
       # @return [Boolean] whether the webhook signature matches
       def genuine?(request_body:, request_signature:, webhook_secret:)
         parsed_signature = parse_signature!(request_signature)
@@ -46,12 +46,12 @@ module DuffelAPI
       # Calculates the signature for a request body in the same way that the Duffel API
       # does it
       #
-      # @param [String] secret
-      # @param [String] payload
-      # @param [String] timestamp
-      # @return [Stringop]
+      # @param secret [String]
+      # @param payload [String]
+      # @param timestamp [String]
+      # @return [String]
       def calculate_hmac(secret:, payload:, timestamp:)
-        signed_payload = timestamp + "." + payload
+        signed_payload = %(#{timestamp}.#{payload})
         Base16.encode16(OpenSSL::HMAC.digest(SHA_256, secret,
                                              signed_payload)).strip.downcase
       end
@@ -59,7 +59,7 @@ module DuffelAPI
       # Parses a webhook signature and extracts the `v1` and `timestamp` values, if
       # available.
       #
-      # @param [String] signature a webhook event signature received in a request
+      # @param signature [String] A webhook event signature received in a request
       # @return [Hash]
       # @raise InvalidRequestSignatureError when the signature isn't valid
       def parse_signature!(signature)
@@ -76,7 +76,7 @@ module DuffelAPI
       end
 
       # Taken from `Rack::Utils`
-      # (<https://github.com/rack/rack/blob/master/lib/rack/utils.rb>).
+      # (<https://github.com/rack/rack/blob/03b4b9708f375db46ee214b219f709d08ed6eeb0/lib/rack/utils.rb#L371-L393>).
       #
       # Licensed under the MIT License
       # (<https://github.com/rack/rack/blob/master/MIT-LICENSE>).
@@ -84,8 +84,8 @@ module DuffelAPI
         # Checks if trwo strings are equal, performing a constant time string comparison
         # resistant to timing attacks.
         #
-        # @param [String] a
-        # @param [String] b
+        # @param a [String]
+        # @param b [String]
         # @return [Boolean] whether the two strings are equal
         # rubocop:disable Naming/MethodParameterName
         def secure_compare(a, b)
