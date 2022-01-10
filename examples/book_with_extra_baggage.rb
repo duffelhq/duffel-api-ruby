@@ -36,21 +36,21 @@ selected_offer = offers.first
 
 puts "Selected offer #{selected_offer.id} to book"
 
-# Send the query param return_available_services to request ancillaries such as extra baggage options
+# Send the query param return_available_services to request ancillaries (e.g. baggage)
 priced_offer = client.offers.get(selected_offer.id,
                                  params: { return_available_services: true })
 
 puts "The final price for offer #{priced_offer.id} is #{priced_offer.total_amount} " \
      "#{priced_offer.total_currency}"
 
-available_baggage = priced_offer.available_services.select{ |service| service['type'] == 'baggage' }.first
+available_baggage = priced_offer.available_services.find { |service| service["type"] == "baggage" }
 
 puts "Adding #{available_baggage['metadata']['maximum_weight_kg']}kg extra baggage for " \
      "#{available_baggage['total_amount']} " \
      "#{available_baggage['total_currency']}"
 
 total_amount = priced_offer.total_amount.to_f +
-  available_baggage['total_amount'].to_f
+  available_baggage["total_amount"].to_f
 
 order = client.orders.create(params: {
   selected_offers: [priced_offer.id],
