@@ -43,7 +43,8 @@ priced_offer = client.offers.get(selected_offer.id,
 puts "The final price for offer #{priced_offer.id} is #{priced_offer.total_amount} " \
      "#{priced_offer.total_currency}"
 
-available_baggage = priced_offer.available_services.find { |service| service["type"] == "baggage" }
+available_baggage = priced_offer.available_services.
+  find { |service| service["type"] == "baggage" }
 
 puts "Adding #{available_baggage['metadata']['maximum_weight_kg']}kg extra baggage for " \
      "#{available_baggage['total_amount']} " \
