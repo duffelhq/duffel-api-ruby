@@ -36,34 +36,26 @@ selected_offer = offers.first
 
 puts "Selected offer #{selected_offer.id} to book"
 
-priced_offer = client.offers.get(selected_offer.id)
+# Send the query param return_available_services to request ancillaries such as extra baggage options
+priced_offer = client.offers.get(selected_offer.id,
+                                 params: { return_available_services: true })
 
 puts "The final price for offer #{priced_offer.id} is #{priced_offer.total_amount} " \
      "#{priced_offer.total_currency}"
 
-seat_maps = client.seat_maps.list(params: { offer_id: priced_offer.id })
+available_baggage = priced_offer.available_services.select{ |service| service['type'] == 'baggage' }.first
 
-available_seat = seat_maps.records.first.cabins.
-  first["rows"].
-  flat_map { |row| row["sections"] }.
-  flat_map { |section| section["elements"] }.
-  find do |element|
-  element["type"] == "seat" && element["available_services"].any?
-end
-
-available_seat_service = available_seat["available_services"].first
-
-puts "Adding seat #{available_seat['designator']} costing " \
-     "#{available_seat_service['total_amount']} " \
-     "#{available_seat_service['total_currency']}"
+puts "Adding #{available_baggage['metadata']['maximum_weight_kg']}kg extra baggage for " \
+     "#{available_baggage['total_amount']} " \
+     "#{available_baggage['total_currency']}"
 
 total_amount = priced_offer.total_amount.to_f +
-  available_seat_service["total_amount"].to_f
+  available_baggage['total_amount'].to_f
 
 order = client.orders.create(params: {
   selected_offers: [priced_offer.id],
   services: [{
-    id: available_seat_service["id"],
+    id: available_baggage["id"],
     quantity: 1,
   }],
   payments: [
