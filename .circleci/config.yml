@@ -63,6 +63,9 @@ jobs:
           name: Run "exploring data" example
           command: bundle exec ruby examples/exploring_data.rb
       - run:
+          name: Run "book with extra baggage" example
+          command: bundle exec ruby examples/book_with_extra_baggage.rb
+      - run:
           name: Run "book with seat" example
           command: bundle exec ruby examples/book_with_seat.rb
       - run:
