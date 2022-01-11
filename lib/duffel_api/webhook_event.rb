@@ -81,7 +81,7 @@ module DuffelAPI
       # Licensed under the MIT License
       # (<https://github.com/rack/rack/blob/master/MIT-LICENSE>).
       if defined?(OpenSSL.fixed_length_secure_compare)
-        # Checks if trwo strings are equal, performing a constant time string comparison
+        # Checks if two strings are equal, performing a constant time string comparison
         # resistant to timing attacks.
         #
         # @param a [String]
@@ -95,7 +95,7 @@ module DuffelAPI
           OpenSSL.fixed_length_secure_compare(a, b)
         end
       else
-        # Checks if trwo strings are equal, performing a constant time string comparison
+        # Checks if two strings are equal, performing a constant time string comparison
         # resistant to timing attacks.
         #
         # @param [String] a
