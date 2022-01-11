@@ -209,7 +209,7 @@ If an error has been raised, you can call `#api_response` on the exception, whic
 
 From the `APIResponse`, you can call `#headers`, `#status_code`, `#raw_body`, `#parsed_body`, `#meta` or `#request_id` to get key information from the response.
 
-## Verifying webhooks
+### Verifying webhooks
 
 You can set up [webhooks](https://duffel.com/docs/guides/receiving-webhooks) with Duffel to receive notifications about events that happen in your Duffel account - for example, when an airline has a schedule change affecting one of your orders.
 
