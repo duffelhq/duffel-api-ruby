@@ -36,32 +36,32 @@ jobs:
       - setup_ruby
       - ruby/rubocop-check
       - ruby/rspec-test
-<<<<<<< HEAD
   docs:
-    executor: ruby
-=======
-  test-regressions:
     executor:
       name: ruby
->>>>>>> 3de6e4c (Run Appraisals in CI)
     steps:
       - checkout
       - setup_ruby
       - run:
-<<<<<<< HEAD
           name: Build documentation with Yard
           command: bundle exec yard
       - store_artifacts:
           path: doc
-=======
+  test-regressions:
+    executor:
+      name: ruby
+    steps:
+      - checkout
+      - setup_ruby
+      - run:
           name: Install dependencies per Appraisal
           command: bundle exec appraisal install
       - run:
           name: Run tests per Appraisal
           command: bundle exec appraisal rspec
->>>>>>> 3de6e4c (Run Appraisals in CI)
   coverage:
-    executor: ruby
+    executor:
+      name: ruby
     environment:
       COVERAGE: true
     steps:
@@ -73,7 +73,8 @@ jobs:
       - store_artifacts:
           path: coverage
   code_examples:
-    executor: ruby
+    executor:
+      name: ruby
     steps:
       - checkout
       - setup_ruby
