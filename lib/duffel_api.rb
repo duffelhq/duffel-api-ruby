@@ -51,5 +51,6 @@ require_relative "duffel_api/client"
 require_relative "duffel_api/list_response"
 require_relative "duffel_api/request"
 require_relative "duffel_api/response"
+require_relative "duffel_api/webhook_event"
 
 module DuffelAPI; end

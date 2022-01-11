@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "base16", "~> 0.0.2"
   spec.add_dependency "faraday", [">= 0.9.2", "< 2"]
 
   # Uncomment to register a new dependency of your gem
