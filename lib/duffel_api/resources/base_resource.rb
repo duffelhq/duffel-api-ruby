@@ -8,6 +8,9 @@ module DuffelAPI
         @response = response
       end
 
+      # Returns the raw API response where this resource originated from
+      #
+      # @return [APIResponse]
       def api_response
         APIResponse.new(@response)
       end

@@ -4,10 +4,10 @@ require "spec_helper"
 
 describe DuffelAPI::APIService do
   subject(:service) do
-    described_class.new("https://api.duffel.com", "secret_token", options)
+    described_class.new("https://api.duffel.com", "secret_token", **options)
   end
 
-  let(:options) { {} }
+  let(:options) { { default_headers: { "User-Agent" => "evil robot" } } }
 
   let(:response) do
     {

@@ -3,16 +3,35 @@
 
 module DuffelAPI
   module Resources
-    class Airport
+    class Airport < BaseResource
+      # @return [Hash, nil]
       attr_reader :city
+
+      # @return [String]
       attr_reader :city_name
+
+      # @return [String]
       attr_reader :iata_code
+
+      # @return [String]
       attr_reader :iata_country_code
+
+      # @return [String]
       attr_reader :icao_code
+
+      # @return [String]
       attr_reader :id
+
+      # @return [Float]
       attr_reader :latitude
+
+      # @return [Float]
       attr_reader :longitude
+
+      # @return [String]
       attr_reader :name
+
+      # @return [String]
       attr_reader :time_zone
 
       def initialize(object, response = nil)
@@ -29,11 +48,7 @@ module DuffelAPI
         @name = object["name"]
         @time_zone = object["time_zone"]
 
-        @response = response
-      end
-
-      def api_response
-        APIResponse.new(@response)
+        super(object, response)
       end
     end
   end

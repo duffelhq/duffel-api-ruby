@@ -9,6 +9,9 @@ module DuffelAPI
       EXPECTED_ERROR_STATUSES = (400..500).freeze
 
       # rubocop:disable Metrics/AbcSize
+      # Handles a completed (Faraday) request and raises an error, if appropriate
+      #
+      # @param [Faraday::Env] env
       def on_complete(env)
         if !json?(env) || UNEXPECTED_ERROR_STATUSES.include?(env.status)
           response = Response.new(env.response)
@@ -31,6 +34,11 @@ module DuffelAPI
 
       private
 
+      # Picks the correct error class to use for an error returned by the Duffel API
+      # based on its type
+      #
+      # @param type [Atom] the type returned by the API
+      # @return [Errors::Error]
       def error_class_for_type(type)
         {
           airline_error: DuffelAPI::Errors::AirlineError,
@@ -43,16 +51,24 @@ module DuffelAPI
         }.fetch(type.to_sym) || DuffelAPI::Errors::Error
       end
 
+      # Generates error data - specifically a message - based on the `Faraday::Env` for
+      # non-standard Duffel errors
+      #
+      # @param env [Faraday::Env]
+      # @return [Hash]
       def generate_error_data(env)
         {
           "message" => "Something went wrong with this request\n" \
                        "Code: #{env.status}\n" \
                        "Headers: #{env.response_headers}\n" \
                        "Body: #{env.body}",
-          "code" => env.status,
         }
       end
 
+      # Works out if the response is a JSON response based on the `Faraday::Env`
+      #
+      # @param env [Faraday::Env]
+      # @return [Boolean]
       def json?(env)
         content_type = env.response_headers["Content-Type"] ||
           env.response_headers["content-type"] || ""

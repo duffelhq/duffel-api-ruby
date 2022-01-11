@@ -36,6 +36,16 @@ jobs:
       - setup_ruby
       - ruby/rubocop-check
       - ruby/rspec-test
+  docs:
+    executor: ruby
+    steps:
+      - checkout
+      - setup_ruby
+      - run:
+          name: Build documentation with Yard
+          command: bundle exec yard
+      - store_artifacts:
+          path: doc
   coverage:
     executor: ruby
     environment:
@@ -83,3 +93,4 @@ workflows:
       - code_examples:
           requires:
             - test
+      - docs

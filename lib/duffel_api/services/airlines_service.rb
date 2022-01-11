@@ -3,6 +3,11 @@
 module DuffelAPI
   module Services
     class AirlinesService < BaseService
+      # Lists airports, returning a single page of results
+      #
+      # @option [Hash] :params Parameters to include in the HTTP querystring, including
+      #   any filters
+      # @raise [Errors::Error] when the Duffel API returns an error
       def list(options = {})
         path = "/air/airlines"
 
@@ -15,6 +20,13 @@ module DuffelAPI
         )
       end
 
+      # Returns an `Enumerator` which can automatically cycle through multiple
+      # pages of `Resources;:Airline`s
+      #
+      # @param options [Hash] options passed to `#list`, for example `:params` to
+      #   send an HTTP querystring with filters
+      # @return [Enumerator]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def all(options = {})
         DuffelAPI::Paginator.new(
           service: self,
@@ -22,6 +34,11 @@ module DuffelAPI
         ).enumerator
       end
 
+      # Retrieves a single airline by ID
+      #
+      # @param id [String]
+      # @return [Resources::Airline]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def get(id, options = {})
         path = substitute_url_pattern("/air/airlines/:id", "id" => id)
 

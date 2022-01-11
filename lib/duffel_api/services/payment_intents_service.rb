@@ -3,6 +3,11 @@
 module DuffelAPI
   module Services
     class PaymentIntentsService < BaseService
+      # Creates an payment intent
+      #
+      # @option [required, Hash] :params the payload for creating the payment intent
+      # @return [Resources::PaymentIntent]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def create(options = {})
         path = "/payments/payment_intents"
 
@@ -22,6 +27,11 @@ module DuffelAPI
         Resources::PaymentIntent.new(unenvelope_body(response.parsed_body), response)
       end
 
+      # Confirms a payment intent by ID
+      #
+      # @param id [String]
+      # @return [Resources::PaymentIntent]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def confirm(id, options = {})
         path = substitute_url_pattern("/payments/payment_intents/:id/actions/confirm",
                                       "id" => id)
@@ -42,6 +52,11 @@ module DuffelAPI
         Resources::PaymentIntent.new(unenvelope_body(response.parsed_body), response)
       end
 
+      # Retrieves a single payment intent by ID
+      #
+      # @param id [String]
+      # @return [Resources::PaymentIntent]
+      # @raise [Errors::Error] when the Duffel API returns an error
       def get(id, options = {})
         path = substitute_url_pattern("/payments/payment_intents/:id", "id" => id)
 

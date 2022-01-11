@@ -3,20 +3,24 @@
 require "json"
 
 module DuffelAPI
-  # A class that wraps an API request
+  # An internal class used within the library that represents a request to be made to
+  # the Duffel API, and which is able to dispatch that request
   class Request
     # Initialize a request class, which makes calls to the API
-    # @param connection
-    # @param method [Symbol] the method to make the request with
+    #
+    # @param connection [Faraday] a Faraday connection
+    # @param method [Symbol] the HTTP method to make the request with
     # @param path [String] the path to make the request to
-    # @param options [hash] options for the request
-    # @param headers [hash] headers to send with the request
-    def initialize(connection, method, path, options)
+    # @param headers [Hash] the HTTP request headers to send with the request
+    # @param params [Hash] Any paramters to include in the HTTP body
+    # @param query_params [Hash] Any parameters to include in the HTTP querystring
+    def initialize(connection, method, path, headers: {}, params: {}, query_params: {})
       @connection = connection
       @method = method
       @path = path
-      @headers = (options.delete(:headers) || {}).transform_keys(&:to_s)
-      @given_options = options
+      @headers = headers.transform_keys(&:to_s)
+      @option = params
+      @query_params = query_params
 
       @request_body = request_body
 
@@ -26,12 +30,18 @@ module DuffelAPI
       end
     end
 
-    # Make the request and wrap it in a Response object
-    def request
+    # Dispatches the request and returns the response
+    #
+    # @return [Response] the response from the request
+    def call
       Response.new(make_request)
     end
 
-    # Make the API request
+    private
+
+    # Actually makes the request to the API
+    #
+    # @return [Faraday::Response]
     def make_request
       @connection.send(@method) do |request|
         request.url @path
@@ -41,23 +51,29 @@ module DuffelAPI
       end
     end
 
-    # Fetch the body to send with the request
+    # Fetches the appropriate parameters to put into the request body, based on the HTTP
+    # method
+    #
+    # @return [Hash] the parameters to put into the request body, not yet JSON-encoded
     def request_body
       if @method == :get
         nil
       elsif %i[post put delete patch].include?(@method)
-        @given_options.fetch(:params, {})
+        @option
       else
         raise "Unknown request method #{@method}"
       end
     end
 
-    # Get the query params to send with the request
+    # Fetches the appropriate parameters to put into the request querystring, based on
+    # the HTTP method
+    #
+    # @return [Hash] the parameters to put into the request querystring
     def request_query
       if @method == :get
-        @given_options.fetch(:params, {})
+        @option
       else
-        @given_options.fetch(:query_params, {})
+        @query_params
       end
     end
   end

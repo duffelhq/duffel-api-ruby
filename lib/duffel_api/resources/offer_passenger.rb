@@ -4,11 +4,22 @@
 module DuffelAPI
   module Resources
     class OfferPassenger < BaseResource
+      # @return [String, nil]
       attr_reader :type
+
+      # @return [Array<Hash>]
       attr_reader :loyalty_programme_accounts
+
+      # @return [String]
       attr_reader :id
+
+      # @return [String, nil]
       attr_reader :given_name
+
+      # @return [String, nil]
       attr_reader :family_name
+
+      # @return [String, nil]
       attr_reader :age
 
       def initialize(object, response = nil)
