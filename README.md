@@ -1,5 +1,7 @@
 # Duffel API Ruby client library
 
+[![RubyDoc.info documentation](http://img.shields.io/badge/yard-docs-blue.svg)](https://rubydoc.info/github/duffelhq/duffel-api-ruby/main)
+
 A Ruby client library for the [Duffel API](https://duffel.com/docs/api).
 
 ## Contents
