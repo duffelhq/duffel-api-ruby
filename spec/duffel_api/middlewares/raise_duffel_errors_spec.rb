@@ -64,7 +64,7 @@ describe DuffelAPI::Middlewares::RaiseDuffelErrors do
 
     it "doesn't raise an error" do
       expect { connection.post("https://api.duffel.com/air/airports") }.
-        to_not raise_error(DuffelAPI::Errors::Error)
+        to_not raise_error
     end
   end
 

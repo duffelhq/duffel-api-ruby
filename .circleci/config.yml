@@ -37,7 +37,8 @@ jobs:
       - ruby/rubocop-check
       - ruby/rspec-test
   docs:
-    executor: ruby
+    executor:
+      name: ruby
     steps:
       - checkout
       - setup_ruby
@@ -46,8 +47,21 @@ jobs:
           command: bundle exec yard
       - store_artifacts:
           path: doc
+  test-regressions:
+    executor:
+      name: ruby
+    steps:
+      - checkout
+      - setup_ruby
+      - run:
+          name: Install dependencies per Appraisal
+          command: bundle exec appraisal install
+      - run:
+          name: Run tests per Appraisal
+          command: bundle exec appraisal rspec
   coverage:
-    executor: ruby
+    executor:
+      name: ruby
     environment:
       COVERAGE: true
     steps:
@@ -59,7 +73,8 @@ jobs:
       - store_artifacts:
           path: coverage
   code_examples:
-    executor: ruby
+    executor:
+      name: ruby
     steps:
       - checkout
       - setup_ruby
@@ -94,3 +109,4 @@ workflows:
           requires:
             - test
       - docs
+      - test-regressions
