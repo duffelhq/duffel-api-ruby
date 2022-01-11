@@ -238,4 +238,8 @@ else
 end
 ```
 
+## Learn more
+
+You can find complete documentation on the library's classes and methods in the in-code
+documentation, [published to RubyDoc.info](https://rubydoc.info/github/duffelhq/duffel-api-ruby/main).
 
