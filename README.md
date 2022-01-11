@@ -1,6 +1,6 @@
 # Duffel API Ruby client library
 
-[![RubyDoc.info documentation](http://img.shields.io/badge/yard-docs-blue.svg)](https://rubydoc.info/github/duffelhq/duffel-api-ruby/main)
+[![RubyDoc.info documentation](http://img.shields.io/badge/yard-docs-blue.svg)](https://rubydoc.info/github/duffelhq/duffel-api-ruby)
 
 A Ruby client library for the [Duffel API](https://duffel.com/docs/api).
 
@@ -240,6 +240,6 @@ end
 
 ## Learn more
 
-You can find complete documentation on the library's classes and methods in the in-code
-documentation, [published to RubyDoc.info](https://rubydoc.info/github/duffelhq/duffel-api-ruby/main).
+You can find complete documentation on this library's classes and methods in the in-code
+documentation on [RubyDoc.info](https://rubydoc.info/github/duffelhq/duffel-api-ruby).
 
