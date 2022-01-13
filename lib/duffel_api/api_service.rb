@@ -19,6 +19,7 @@ module DuffelAPI
       root_url, @path_prefix = unpack_url(base_url)
 
       @connection = Faraday.new(root_url) do |faraday|
+        faraday.request :rate_limiter
         faraday.response :raise_duffel_errors
 
         faraday.adapter(:net_http)
