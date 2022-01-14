@@ -1,12 +1,11 @@
 # frozen_string_literal: true
 
-require 'faraday'
-require 'logger'
+require "faraday"
+require "logger"
 
 module DuffelAPI
   module Middlewares
     class RateLimiter < Faraday::Middleware
-
       class << self
         attr_accessor :ratelimit_limit, :ratelimit_remaining, :ratelimit_reset
 
@@ -72,7 +71,9 @@ module DuffelAPI
         sleep_time = (RateLimiter.ratelimit_reset.to_i - Time.now.to_i) + 1
         return unless sleep_time.positive?
 
-        ::Logger.new($stdout).info "Duffel rate-limit hit. Sleeping for #{sleep_time} seconds"
+        ::Logger.new($stdout).info(
+          "Duffel rate-limit hit. Sleeping for #{sleep_time} seconds",
+        )
         Kernel.sleep(sleep_time)
       end
     end
