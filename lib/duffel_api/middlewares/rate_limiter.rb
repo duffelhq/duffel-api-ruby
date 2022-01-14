@@ -35,14 +35,9 @@ module DuffelAPI
       private
 
       # NOTE: The check for 'ratelimit-limit' vs 'Ratelimit-Limit' is required
-      # because RSpec and Rails proper handle headers differently. When running
-      # through Webmock a header will be converted to the latter style, whereas
-      # when running through Rails it will be converted to the former.
-      #
-      # We could make this a hot-swappable method, and only check for the different
-      # style _if_ we are in the `test` enviroment, but TBH the overhead is
-      # negligible and does cover the case of Duffel sending data with the alternate
-      # convention.
+      # because RSpec and Rails proper handle HTTP headers differently.
+      # WebMock converts the header to the latter style, whereas when running
+      # through Rails it will be converted to the former.
       def header_value_with_indifferent_key(headers, key)
         headers.find { |k, _v| k.casecmp(key).zero? }&.at(1)
       end

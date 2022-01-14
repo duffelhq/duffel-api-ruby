@@ -30,7 +30,7 @@ describe DuffelAPI::Middlewares::RateLimiter do
 
     it "sleeps for 1 second" do
       expect(Kernel).to receive(:sleep).with(1)
-      # NOTE: First call sets the rate limit
+      # NOTE: First call triggers the rate limit
       connection.post("https://api.duffel.com/air/airports")
       connection.post("https://api.duffel.com/air/airports")
     end
