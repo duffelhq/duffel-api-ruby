@@ -25,7 +25,6 @@ module DuffelAPI
       attr_reader :total_amount
       attr_reader :total_currency
 
-      # rubocop:disable Metrics/AbcSize
       def initialize(object, response = nil)
         @object = object
 
@@ -52,7 +51,6 @@ module DuffelAPI
 
         super(object, response)
       end
-      # rubocop:enable Metrics/AbcSize
     end
   end
 end

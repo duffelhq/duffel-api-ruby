@@ -8,7 +8,6 @@ module DuffelAPI
       UNEXPECTED_ERROR_STATUSES = (501..599).freeze
       EXPECTED_ERROR_STATUSES = (400..500).freeze
 
-      # rubocop:disable Metrics/AbcSize
       # Handles a completed (Faraday) request and raises an error, if appropriate
       #
       # @param [Faraday::Env] env
@@ -30,7 +29,6 @@ module DuffelAPI
           raise error_class.new(error, response)
         end
       end
-      # rubocop:enable Metrics/AbcSize
 
       private
 
