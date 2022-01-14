@@ -17,7 +17,6 @@ module DuffelAPI
       attr_reader :status
       attr_reader :updated_at
 
-      # rubocop:disable Metrics/AbcSize
       def initialize(object, response = nil)
         @object = object
 
@@ -36,7 +35,6 @@ module DuffelAPI
 
         super(object, response)
       end
-      # rubocop:enable Metrics/AbcSize
     end
   end
 end

@@ -19,7 +19,6 @@ module DuffelAPI
       attr_reader :refund_to
       attr_reader :slices
 
-      # rubocop:disable Metrics/AbcSize
       def initialize(object, response = nil)
         @object = object
 
@@ -40,7 +39,6 @@ module DuffelAPI
 
         super(object, response)
       end
-      # rubocop:enable Metrics/AbcSize
     end
   end
 end
