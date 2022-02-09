@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "duffel_api"
+require "bigdecimal"
 
 client = DuffelAPI::Client.new(
   access_token: ENV["DUFFEL_ACCESS_TOKEN"],
@@ -57,8 +58,9 @@ puts "Adding seat #{available_seat['designator']} costing " \
      "#{available_seat_service['total_amount']} " \
      "#{available_seat_service['total_currency']}"
 
-total_amount = priced_offer.total_amount.to_f +
-  available_seat_service["total_amount"].to_f
+total_amount = (
+  BigDecimal(priced_offer.total_amount) + BigDecimal(available_seat_service["total_amount"])
+).to_f.to_s
 
 order = client.orders.create(params: {
   selected_offers: [priced_offer.id],
