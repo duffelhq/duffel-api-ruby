@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "duffel_api"
+require "bigdecimal"
 
 client = DuffelAPI::Client.new(
   access_token: ENV["DUFFEL_ACCESS_TOKEN"],
@@ -47,7 +48,9 @@ available_service = priced_offer.available_services.first
 puts "Adding an extra bag with service #{available_service['id']}, " \
      "costing #{available_service['total_amount']} #{available_service['total_currency']}"
 
-total_amount = priced_offer.total_amount.to_f + available_service["total_amount"].to_f
+total_amount = (
+  BigDecimal(priced_offer.total_amount) + BigDecimal(available_service["total_amount"])
+).to_s("F")
 
 order = client.orders.create(params: {
   selected_offers: [priced_offer.id],
