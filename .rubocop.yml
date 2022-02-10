@@ -11,3 +11,6 @@ RSpec/ExampleLength:
 
 RSpec/MultipleExpectations:
   Enabled: false
+
+Rails:
+  Enabled: false
