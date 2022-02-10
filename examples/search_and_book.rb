@@ -50,7 +50,7 @@ puts "Adding an extra bag with service #{available_service['id']}, " \
 
 total_amount = (
   BigDecimal(priced_offer.total_amount) + BigDecimal(available_service["total_amount"])
-).to_f.to_s
+).to_s("F")
 
 order = client.orders.create(params: {
   selected_offers: [priced_offer.id],

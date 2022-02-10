@@ -53,7 +53,7 @@ puts "Adding #{available_baggage['metadata']['maximum_weight_kg']}kg extra bagga
 
 total_amount = (
   BigDecimal(priced_offer.total_amount) + BigDecimal(available_baggage["total_amount"])
-).to_f.to_s
+).to_s("F")
 
 order = client.orders.create(params: {
   selected_offers: [priced_offer.id],
