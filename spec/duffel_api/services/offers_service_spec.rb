@@ -102,33 +102,37 @@ describe DuffelAPI::Services::OffersService do
   end
 
   describe "#all" do
-    let!(:first_response_stub) do
-      stub_request(:get, "https://api.duffel.com/air/offers").
-        with(query: { "offer_request_id" => "orq_0000AEdGRPso4CyykxEIsa" }).
-        to_return(
-          body: first_page_response_body,
-          headers: response_headers,
-        )
-    end
-
     let(:first_page_response_body) { load_fixture("offers/list.json") }
 
     let(:last_page_response_body) do
       convert_list_response_to_last_page(first_page_response_body)
     end
 
+    let!(:first_response_stub) do
+      stub_request(:get, "https://api.duffel.com/air/offers").
+        with(query: expected_query_params).
+        to_return(
+          body: first_page_response_body,
+          headers: response_headers,
+        )
+    end
+
     let!(:second_response_stub) do
       stub_request(:get, "https://api.duffel.com/air/offers").
-        with(query: { "after" => "g3QAAAABZAACaWRtAAAAGm9mZl8wMDAwQUVkR1Jra2lUVHpOVHdi" \
-                                 "ZGdj",
-                      "offer_request_id" => "orq_0000AEdGRPso4CyykxEIsa" }).
+        with(query: expected_query_params.merge(
+          "after" => "g3QAAAABZAACaWRtAAAAGm9mZl8wMDAwQUVkR1Jra2lUVHpOVHdiZGdj",
+        )).
         to_return(
           body: last_page_response_body,
           headers: response_headers,
         )
     end
 
-    it "automatically makes the extra requests to load all the pages" do
+    let(:expected_query_params) do
+      { limit: 200, offer_request_id: "orq_0000AEdGRPso4CyykxEIsa" }
+    end
+
+    it "automatically makes the requests to load all pages, 200 results at a time" do
       expect(
         client.offers.
           all(params: { offer_request_id: "orq_0000AEdGRPso4CyykxEIsa" }).
@@ -196,6 +200,21 @@ describe DuffelAPI::Services::OffersService do
       expect(api_response.headers).to eq(response_headers)
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
       expect(api_response.status_code).to eq(200)
+    end
+
+    context "customising the limit per page" do
+      let(:expected_query_params) do
+        { limit: 33, offer_request_id: "orq_0000AEdGRPso4CyykxEIsa" }
+      end
+
+      it "requests the requested number of items per page from the API" do
+        client.offers.
+          all(params: { limit: 33, offer_request_id: "orq_0000AEdGRPso4CyykxEIsa" }).
+          to_a
+
+        expect(first_response_stub).to have_been_requested
+        expect(second_response_stub).to have_been_requested
+      end
     end
   end
 

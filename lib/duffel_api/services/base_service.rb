@@ -7,6 +7,9 @@ module DuffelAPI
     class BaseService
       extend Forwardable
 
+      # Default params to use with the auto-paginating `#all` method
+      DEFAULT_ALL_PARAMS = { limit: 200 }.freeze
+
       # Sets up a resource-specific service based on an API service
       #
       # @param api_service [APIService]
