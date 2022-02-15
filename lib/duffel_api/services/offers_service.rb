@@ -32,8 +32,7 @@ module DuffelAPI
       # @return [Enumerator]
       # @raise [Errors::Error] when the Duffel API returns an error
       def all(options = {})
-        options[:params] ||= {}
-        options[:params] = DEFAULT_ALL_PARAMS.merge(options[:params])
+        options[:params] = DEFAULT_ALL_PARAMS.merge(options[:params] || {})
 
         Paginator.new(
           service: self,
