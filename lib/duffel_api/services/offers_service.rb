@@ -22,7 +22,7 @@ module DuffelAPI
       end
 
       # Returns an `Enumerator` which can automatically cycle through multiple
-      # pages of `Resources;:Offers`s.
+      # pages of `Resources::Offers`s.
       #
       # By default, this will use pages of 200 results under the hood, but this
       # can be customised by specifying the `:limit` option in the `:params`.
