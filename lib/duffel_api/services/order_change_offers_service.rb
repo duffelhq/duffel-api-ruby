@@ -22,13 +22,18 @@ module DuffelAPI
       end
 
       # Returns an `Enumerator` which can automatically cycle through multiple
-      # pages of `Resources;:OrderChangeOffer`s
+      # pages of `Resources::OrderChangeOffer`s.
+      #
+      # By default, this will use pages of 200 results under the hood, but this
+      # can be customised by specifying the `:limit` option in the `:params`.
       #
       # @param options [Hash] options passed to `#list`, for example `:params` to
       #   send an HTTP querystring with filters
       # @return [Enumerator]
       # @raise [Errors::Error] when the Duffel API returns an error
       def all(options = {})
+        options[:params] = DEFAULT_ALL_PARAMS.merge(options[:params] || {})
+
         Paginator.new(
           service: self,
           options: options,

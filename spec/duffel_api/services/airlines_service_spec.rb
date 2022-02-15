@@ -86,31 +86,38 @@ describe DuffelAPI::Services::AirlinesService do
   end
 
   describe "#all" do
-    let!(:first_response_stub) do
-      stub_request(:get, "https://api.duffel.com/air/airlines").to_return(
-        body: first_page_response_body,
-        headers: response_headers,
-      )
-    end
-
     let(:first_page_response_body) { load_fixture("airlines/list.json") }
 
     let(:last_page_response_body) do
       convert_list_response_to_last_page(first_page_response_body)
     end
 
+    let(:expected_query_params) do
+      { limit: 200 }
+    end
+
+    let!(:first_response_stub) do
+      stub_request(:get, "https://api.duffel.com/air/airlines").
+        with(query: expected_query_params).
+        to_return(
+          body: first_page_response_body,
+          headers: response_headers,
+        )
+    end
+
     let!(:second_response_stub) do
       stub_request(:get, "https://api.duffel.com/air/airlines").
-        with(query: { "after" => "g3QAAAACZAACaWRtAAAAGmFybF8wMDAwOVZNRTd" \
-                                 "EQUdpSmp3b21odjM1ZAAEbmFtZW0AAAARQWZyaX" \
-                                 "FpeWFoIEFpcndheXM=" }).
+        with(query: expected_query_params.merge(
+          after: "g3QAAAACZAACaWRtAAAAGmFybF8wMDAwOVZNRTdEQUdpSmp3b21odjM1ZAAEbmFtZW0AA" \
+                 "AARQWZyaXFpeWFoIEFpcndheXM=",
+        )).
         to_return(
           body: last_page_response_body,
           headers: response_headers,
         )
     end
 
-    it "automatically makes the extra requests to load all the pages" do
+    it "automatically makes the requests to load all pages, 200 results at a time" do
       expect(client.airlines.all.to_a.length).to eq(100)
       expect(first_response_stub).to have_been_requested
       expect(second_response_stub).to have_been_requested
@@ -136,6 +143,21 @@ describe DuffelAPI::Services::AirlinesService do
       expect(api_response.headers).to eq(response_headers)
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
       expect(api_response.status_code).to eq(200)
+    end
+
+    context "customising the limit per page" do
+      let(:expected_query_params) do
+        { limit: 33 }
+      end
+
+      it "requests the requested number of items per page from the API" do
+        client.airlines.
+          all(params: { limit: 33 }).
+          to_a
+
+        expect(first_response_stub).to have_been_requested
+        expect(second_response_stub).to have_been_requested
+      end
     end
   end
 
