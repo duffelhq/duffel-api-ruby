@@ -79,26 +79,33 @@ describe DuffelAPI::Services::OrderChangeOffersService do
   end
 
   describe "#all" do
-    let!(:first_response_stub) do
-      stub_request(:get, "https://api.duffel.com/air/order_change_offers").
-        with(query: { "order_change_request_id" => "ocr_0000AEdPRxCTitEvxq8Oum" }).
-        to_return(
-          body: first_page_response_body,
-          headers: response_headers,
-        )
-    end
-
     let(:first_page_response_body) { load_fixture("order_change_offers/list.json") }
 
     let(:last_page_response_body) do
       convert_list_response_to_last_page(first_page_response_body)
     end
 
+    let(:expected_query_params) do
+      {
+        limit: 200,
+        order_change_request_id: "ocr_0000AEdPRxCTitEvxq8Oum",
+      }
+    end
+
+    let!(:first_response_stub) do
+      stub_request(:get, "https://api.duffel.com/air/order_change_offers").
+        with(query: expected_query_params).
+        to_return(
+          body: first_page_response_body,
+          headers: response_headers,
+        )
+    end
+
     let!(:second_response_stub) do
       stub_request(:get, "https://api.duffel.com/air/order_change_offers").
-        with(query: { "after" => "g3QAAAABZAACaWRtAAAAGm9mZl8wMDAwQUVkR1Jra2lUVHpOVHdi" \
-                                 "ZGdj",
-                      "order_change_request_id" => "ocr_0000AEdPRxCTitEvxq8Oum" }).
+        with(query: expected_query_params.merge(
+          after: "g3QAAAABZAACaWRtAAAAGm9mZl8wMDAwQUVkR1Jra2lUVHpOVHdiZGdj",
+        )).
         to_return(
           body: last_page_response_body,
           headers: response_headers,
@@ -149,6 +156,27 @@ describe DuffelAPI::Services::OrderChangeOffersService do
       expect(api_response.headers).to eq(response_headers)
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
       expect(api_response.status_code).to eq(200)
+    end
+
+    context "customising the limit per page" do
+      let(:expected_query_params) do
+        {
+          limit: 33,
+          order_change_request_id: "ocr_0000AEdPRxCTitEvxq8Oum",
+        }
+      end
+
+      it "requests the requested number of items per page from the API" do
+        client.order_change_offers.
+          all(params: {
+            limit: 33,
+            order_change_request_id: "ocr_0000AEdPRxCTitEvxq8Oum",
+          }).
+          to_a
+
+        expect(first_response_stub).to have_been_requested
+        expect(second_response_stub).to have_been_requested
+      end
     end
   end
 

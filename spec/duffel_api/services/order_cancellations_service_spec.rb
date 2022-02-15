@@ -137,32 +137,33 @@ describe DuffelAPI::Services::OrderCancellationsService do
   end
 
   describe "#all" do
-    let!(:first_response_stub) do
-      stub_request(:get, "https://api.duffel.com/air/order_cancellations").
-        to_return(
-          body: first_page_response_body,
-          headers: response_headers,
-        )
-    end
-
     let(:first_page_response_body) { load_fixture("order_cancellations/list.json") }
 
     let(:last_page_response_body) do
       convert_list_response_to_last_page(first_page_response_body)
     end
 
+    let(:expected_query_params) { { limit: 200 } }
+
+    let!(:first_response_stub) do
+      stub_request(:get, "https://api.duffel.com/air/order_cancellations").
+        with(query: expected_query_params).
+        to_return(
+          body: first_page_response_body,
+          headers: response_headers,
+        )
+    end
+
     let!(:second_response_stub) do
       stub_request(:get, "https://api.duffel.com/air/order_cancellations").
-        with(query: { "after" => "g3QAAAACZAACaWRtAAAAGm9yZV8wMDAwQThMNDhZT" \
-                                 "VlYVGlnVmlLZFpnZAALaW5zZXJ0ZWRfYXR0AAAADW" \
-                                 "QACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWV" \
-                                 "kAAhjYWxlbmRhcmQAE0VsaXhpci5DYWxlbmRhci5J" \
-                                 "U09kAANkYXlhEGQABGhvdXJhCWQAC21pY3Jvc2Vjb" \
-                                 "25kaAJiAAP8J2EGZAAGbWludXRlYQ5kAAVtb250aG" \
-                                 "EGZAAGc2Vjb25kYTVkAApzdGRfb2Zmc2V0YQBkAAl" \
-                                 "0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zm" \
-                                 "c2V0YQBkAAR5ZWFyYgAAB-VkAAl6b25lX2FiYnJtA" \
-                                 "AAAA1VUQw==" }).
+        with(query: expected_query_params.merge(
+          after: "g3QAAAACZAACaWRtAAAAGm9yZV8wMDAwQThMNDhZTVlYVGlnVmlLZFpnZAALaW5zZXJ" \
+                 "0ZWRfYXR0AAAADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWVkAAhjYWxlbm" \
+                 "RhcmQAE0VsaXhpci5DYWxlbmRhci5JU09kAANkYXlhEGQABGhvdXJhCWQAC21pY3Jvc" \
+                 "2Vjb25kaAJiAAP8J2EGZAAGbWludXRlYQ5kAAVtb250aGEGZAAGc2Vjb25kYTVkAApz" \
+                 "dGRfb2Zmc2V0YQBkAAl0aW1lX3pvbmVtAAAAB0V0Yy9VVENkAAp1dGNfb2Zmc2V0YQB" \
+                 "kAAR5ZWFyYgAAB-VkAAl6b25lX2FiYnJtAAAAA1VUQw==",
+        )).
         to_return(
           body: last_page_response_body,
           headers: response_headers,
@@ -201,6 +202,21 @@ describe DuffelAPI::Services::OrderCancellationsService do
       expect(api_response.headers).to eq(response_headers)
       expect(api_response.request_id).to eq(response_headers["x-request-id"])
       expect(api_response.status_code).to eq(200)
+    end
+
+    context "customising the limit per page" do
+      let(:expected_query_params) do
+        { limit: 33 }
+      end
+
+      it "requests the requested number of items per page from the API" do
+        client.order_cancellations.
+          all(params: { limit: 33 }).
+          to_a
+
+        expect(first_response_stub).to have_been_requested
+        expect(second_response_stub).to have_been_requested
+      end
     end
   end
 
