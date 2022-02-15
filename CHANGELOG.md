@@ -1,3 +1,8 @@
+## [0.3.0] - 2022-02-15
+
+- Automatically retry rate-limited requests (thanks to @ferrisoxide for the contribution!)
+- Paginate through records with `#all` 200 records at a time by default, rather than 50 records at a time
+
 ## [0.2.0] - 2022-01-11
 
 - Add `WebhookEvent.genuine?` for checking whether a webhook event was genuinely sent by Duffel
