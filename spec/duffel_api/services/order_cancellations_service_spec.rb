@@ -111,7 +111,7 @@ describe DuffelAPI::Services::OrderCancellationsService do
     end
 
     it "exposes the cursors for before and after" do
-      expect(get_list_response.before).to eq(nil)
+      expect(get_list_response.before).to be_nil
       expect(get_list_response.after).to eq("g3QAAAACZAACaWRtAAAAGm9yZV8wMDAwQThMNDhZT" \
                                             "VlYVGlnVmlLZFpnZAALaW5zZXJ0ZWRfYXR0AAAADW" \
                                             "QACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0ZVRpbWV" \

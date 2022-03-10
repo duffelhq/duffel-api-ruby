@@ -288,7 +288,7 @@ describe DuffelAPI::Services::OrdersService do
       end
 
       it "exposes the cursors for before and after" do
-        expect(get_list_response.before).to eq(nil)
+        expect(get_list_response.before).to be_nil
         expect(get_list_response.after).to eq("g3QAAAACZAACaWRtAAAAGm9yZF8wMDAwQUQ0MEZ" \
                                               "PQW1STHloRTNLWGo2ZAALaW5zZXJ0ZWRfYXR0AA" \
                                               "AADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0Z" \

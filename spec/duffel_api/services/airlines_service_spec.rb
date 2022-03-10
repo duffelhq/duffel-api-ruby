@@ -46,7 +46,7 @@ describe DuffelAPI::Services::AirlinesService do
       end
 
       it "exposes the cursors for before and after" do
-        expect(get_list_response.before).to eq(nil)
+        expect(get_list_response.before).to be_nil
         expect(get_list_response.after).to eq("g3QAAAACZAACaWRtAAAAGmFybF8wMDAwOVZNRTd" \
                                               "EQUdpSmp3b21odjM1ZAAEbmFtZW0AAAARQWZyaX" \
                                               "FpeWFoIEFpcndheXM=")

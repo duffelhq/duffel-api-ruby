@@ -2,6 +2,6 @@
 
 RSpec.describe DuffelAPI do
   it "has a version number" do
-    expect(DuffelAPI::VERSION).to_not be nil
+    expect(DuffelAPI::VERSION).to_not be_nil
   end
 end
