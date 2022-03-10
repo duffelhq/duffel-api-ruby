@@ -137,7 +137,7 @@ describe DuffelAPI::Services::OfferRequestsService do
       end
 
       it "exposes the cursors for before and after" do
-        expect(get_list_response.before).to eq(nil)
+        expect(get_list_response.before).to be_nil
         expect(get_list_response.after).to eq("g3QAAAACZAACaWRtAAAAGm9ycV8wMDAwQUVhdzE" \
                                               "yY1Nucks2NndpblkwZAALaW5zZXJ0ZWRfYXR0AA" \
                                               "AADWQACl9fc3RydWN0X19kAA9FbGl4aXIuRGF0Z" \
