@@ -4,7 +4,7 @@ require "duffel_api"
 require "bigdecimal"
 
 client = DuffelAPI::Client.new(
-  access_token: ENV["DUFFEL_ACCESS_TOKEN"],
+  access_token: ENV.fetch("DUFFEL_ACCESS_TOKEN"),
 )
 
 # 365 days from now
