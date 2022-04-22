@@ -12,7 +12,7 @@ group :development, :test do
   gem "rspec", "~> 3.11.0"
   gem "rspec-its", "~> 1.3.0"
   gem "rspec_junit_formatter", "~> 0.5.0"
-  gem "rubocop", "~> 1.26.0"
+  gem "rubocop", "~> 1.28.1"
   gem "rubocop-rake", "~> 0.6.0"
   gem "simplecov", "~> 0.21.2"
   gem "webmock", "~> 3.14.0"
