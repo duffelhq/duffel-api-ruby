@@ -7,6 +7,27 @@ on:
     branches: [ main ]
 
 jobs:
+  appraisal:
+    name: Appraisal
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: .downloaded-cache
+          key: downloaded-cache
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-3.1
+          bundler-cache: true
+          bundler: default
+      - name: Install dependencies per Appraisal
+        run: bundle exec appraisal install
+      - name: Run tests per Appraisal
+        run: bundle exec appraisal rspec
+
   coverage:
     name: Coverage
 
