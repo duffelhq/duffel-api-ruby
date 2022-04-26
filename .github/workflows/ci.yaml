@@ -25,3 +25,31 @@ jobs:
           bundler: default
       - name: Run RuboCop
         run: bundle exec rubocop
+
+  tests:
+    name: Tests
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby:
+          - ruby-2.6
+          - ruby-2.7
+          - ruby-3.0
+          - ruby-3.1
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: .downloaded-cache
+          key: downloaded-cache
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+          bundler: default
+      - name: Run RSpec tests
+        run: bundle exec rspec
