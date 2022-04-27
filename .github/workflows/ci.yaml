@@ -1,0 +1,157 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  appraisal:
+    name: Appraisal
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: .downloaded-cache
+          key: downloaded-cache
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-3.1
+          bundler-cache: true
+          bundler: default
+      - name: Install dependencies per Appraisal
+        run: bundle exec appraisal install
+      - name: Run tests per Appraisal
+        run: bundle exec appraisal rspec
+
+  code_examples:
+    name: Code Examples
+
+    runs-on: ubuntu-latest
+
+    needs: tests
+
+    env:
+      DUFFEL_ACCESS_TOKEN: ${{ secrets.DUFFEL_ACCESS_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: .downloaded-cache
+          key: downloaded-cache
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-3.1
+          bundler-cache: true
+          bundler: default
+      - name: Run "search and book" example
+        run: bundle exec ruby examples/search_and_book.rb
+      - name: Run "hold and pay later" example
+        run: bundle exec ruby examples/hold_and_pay_later.rb
+      - name: Run "exploring data" example
+        run: bundle exec ruby examples/exploring_data.rb
+      - name: Run "book with extra baggage" example
+        run: bundle exec ruby examples/book_with_extra_baggage.rb
+      - name: Run "book with seat" example
+        run: bundle exec ruby examples/book_with_seat.rb
+      - name: Run "book and change" example
+        run: bundle exec ruby examples/book_and_change.rb
+
+  coverage:
+    name: Coverage
+
+    runs-on: ubuntu-latest
+
+    needs: tests
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: .downloaded-cache
+          key: downloaded-cache
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-3.1
+          bundler-cache: true
+          bundler: default
+      - name: Run tests with SimpleCov enabled
+        env:
+          COVERAGE: true
+        run: bundle exec rspec
+      - name: Upload coverage results
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report
+          path: coverage
+
+  docs:
+    name: Docs
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: .downloaded-cache
+          key: downloaded-cache
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-3.1
+          bundler-cache: true
+          bundler: default
+      - name: Build documentation with Yard
+        run: bundle exec yard
+
+  rubocop:
+    name: RuboCop
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: .downloaded-cache
+          key: downloaded-cache
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby-3.1
+          bundler-cache: true
+          bundler: default
+      - name: Run RuboCop
+        run: bundle exec rubocop
+
+  tests:
+    name: Tests
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby:
+          - ruby-2.6
+          - ruby-2.7
+          - ruby-3.0
+          - ruby-3.1
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: .downloaded-cache
+          key: downloaded-cache
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+          bundler: default
+      - name: Run RSpec tests
+        run: bundle exec rspec
