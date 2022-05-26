@@ -6,7 +6,7 @@ source "https://rubygems.org"
 gemspec
 
 group :development, :test do
-  gem "gc_ruboconfig", "~> 3.1.0"
+  gem "gc_ruboconfig", "~> 3.2.0"
   gem "pry", "~> 0.14.1"
   gem "rake", "~> 13.0"
   gem "rspec", "~> 3.11.0"
