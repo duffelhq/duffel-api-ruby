@@ -9,4 +9,4 @@
 /tmp/
 .DS_Store
 .ruby-version
-gemfiles/.bundle/
+/gemfiles/.bundle/
