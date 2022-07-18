@@ -13,7 +13,7 @@ module DuffelAPI
       # @return [String]
       attr_reader :name
 
-      # @return [String]
+      # @return [String, nil]
       attr_reader :logo_lockup_url
 
       # @return [String]
