@@ -16,7 +16,7 @@ module DuffelAPI
       # @return [String, nil]
       attr_reader :logo_lockup_url
 
-      # @return [String]
+      # @return [String, nil]
       attr_reader :logo_symbol_url
 
       def initialize(object, response = nil)
