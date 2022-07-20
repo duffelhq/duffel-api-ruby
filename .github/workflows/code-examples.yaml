@@ -3,6 +3,9 @@ name: Code Examples
 on:
   push:
     branches: [ main ]
+  schedule:
+    # daily:
+    - cron: '0 0 * * *'
 
 jobs:
   code_examples:
