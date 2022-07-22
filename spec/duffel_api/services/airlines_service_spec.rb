@@ -43,6 +43,8 @@ describe DuffelAPI::Services::AirlinesService do
         expect(airline.iata_code).to eq("12")
         expect(airline.id).to eq("arl_00009VME7DEWSV8v1yhJgK")
         expect(airline.name).to eq("12 North")
+        expect(airline.logo_lockup_url).to eq("https://assets.duffel.com/img/airlines/for-light-background/full-color-lockup/12.svg")
+        expect(airline.logo_symbol_url).to eq("https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/12.svg")
       end
 
       it "exposes the cursors for before and after" do

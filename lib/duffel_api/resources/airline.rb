@@ -13,12 +13,20 @@ module DuffelAPI
       # @return [String]
       attr_reader :name
 
+      # @return [String, nil]
+      attr_reader :logo_lockup_url
+
+      # @return [String, nil]
+      attr_reader :logo_symbol_url
+
       def initialize(object, response = nil)
         @object = object
 
         @iata_code = object["iata_code"]
         @id = object["id"]
         @name = object["name"]
+        @logo_lockup_url = object["logo_lockup_url"]
+        @logo_symbol_url = object["logo_symbol_url"]
 
         super(object, response)
       end

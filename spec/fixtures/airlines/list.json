@@ -8,7 +8,9 @@
         {
             "name": "12 North",
             "id": "arl_00009VME7DEWSV8v1yhJgK",
-            "iata_code": "12"
+            "iata_code": "12",
+            "logo_lockup_url": "https://assets.duffel.com/img/airlines/for-light-background/full-color-lockup/12.svg",
+            "logo_symbol_url": "https://assets.duffel.com/img/airlines/for-light-background/full-color-logo/12.svg"
         },
         {
             "name": "1Time Airline",
