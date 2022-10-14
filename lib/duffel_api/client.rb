@@ -4,7 +4,7 @@ module DuffelAPI
   # A client for accessing the Duffel API, configured with a provided access token and
   # base URL, which provides access to API services
   class Client
-    API_VERSION = "beta"
+    API_VERSION = "v1"
 
     # Sets up the client with your access token
     #
