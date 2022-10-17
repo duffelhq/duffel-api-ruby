@@ -20,7 +20,7 @@ A Ruby client library for the [Duffel API](https://duffel.com/docs/api).
 In most cases, you'll want to add `duffel_api` to your project as a dependency by listing it in your `Gemfile`, and then running `bundle`:
 
 ```ruby
-gem "duffel_api", "~> 0.3.0"
+gem "duffel_api", "~> 0.4.0"
 ```
 
 You can install `duffel_api` outside of the context of a project by running `gem install duffel_api` - for example if you want to play with the client library in `irb`.
@@ -118,7 +118,7 @@ client.offers.
 
 A call to `#all` returns a Ruby [`Enumerator`](https://ruby-doc.org/core-2.6/Enumerator.html), which behaves a lot like an array - you can get the number of records with `#length`, loop through it with `#each`, etc.
 
-If you prefer, you can also page through records manually using a service's `#list` method (e.g. `client.orders.list`) which returns a `DuffelAPI::ListResponse`. 
+If you prefer, you can also page through records manually using a service's `#list` method (e.g. `client.orders.list`) which returns a `DuffelAPI::ListResponse`.
 
 The records in the page are returned by `#records` (`client.orders.list.records`) and the cursor for the next page (if there is one) can be found with `#after` (`client.orders.list.after`)
 
@@ -242,4 +242,3 @@ end
 
 You can find complete documentation on this library's classes and methods in the in-code
 documentation on [RubyDoc.info](https://rubydoc.info/github/duffelhq/duffel-api-ruby).
-
