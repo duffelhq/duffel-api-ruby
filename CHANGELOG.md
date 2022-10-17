@@ -1,3 +1,8 @@
+## [0.4.0] - 2022-02-15
+
+- Use the latest API version, `v1`
+- Add airlines' logo URL
+
 ## [0.3.0] - 2022-02-15
 
 - Automatically retry rate-limited requests (thanks to @ferrisoxide for the contribution!)
