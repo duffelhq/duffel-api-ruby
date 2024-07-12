@@ -197,16 +197,16 @@ describe DuffelAPI::Services::AirportsService do
     it "returns an Airport resource" do
       expect(get_response).to be_a(DuffelAPI::Resources::Airport)
 
-      expect(get_response.city).to be_nil
-      expect(get_response.city_name).to eq("Mogadishu")
-      expect(get_response.iata_code).to eq("MGQ")
-      expect(get_response.iata_country_code).to eq("SO")
-      expect(get_response.icao_code).to eq("HCMM")
-      expect(get_response.id).to eq("arp_mgq_so")
-      expect(get_response.latitude).to eq(2.015817)
-      expect(get_response.longitude).to eq(45.304832)
-      expect(get_response.name).to eq("Aden Adde International Airport")
-      expect(get_response.time_zone).to eq("Africa/Mogadishu")
+      expect(get_response.city).to be_a(DuffelAPI::Resources::City)
+      expect(get_response.city_name).to eq("London")
+      expect(get_response.iata_code).to eq("LHR")
+      expect(get_response.iata_country_code).to eq("GB")
+      expect(get_response.icao_code).to eq("EGLL")
+      expect(get_response.id).to eq("arp_lhr_gb")
+      expect(get_response.latitude).to eq(51.470311)
+      expect(get_response.longitude).to eq(-0.458118)
+      expect(get_response.name).to eq("Heathrow Airport")
+      expect(get_response.time_zone).to eq("Europe/London")
     end
 
     it "exposes the API response" do

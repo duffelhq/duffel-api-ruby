@@ -1,14 +1,20 @@
 {
     "data": {
-        "time_zone": "Africa/Mogadishu",
-        "name": "Aden Adde International Airport",
-        "longitude": 45.304832,
-        "latitude": 2.015817,
-        "id": "arp_mgq_so",
-        "icao_code": "HCMM",
-        "iata_country_code": "SO",
-        "iata_code": "MGQ",
-        "city_name": "Mogadishu",
-        "city": null
+        "city_name": "London",
+        "icao_code": "EGLL",
+        "iata_city_code": "LON",
+        "iata_country_code": "GB",
+        "iata_code": "LHR",
+        "latitude": 51.470311,
+        "longitude": -0.458118,
+        "city": {
+            "iata_country_code": "GB",
+            "iata_code": "LON",
+            "name": "London",
+            "id": "cit_lon_gb"
+        },
+        "time_zone": "Europe/London",
+        "name": "Heathrow Airport",
+        "id": "arp_lhr_gb"
     }
 }
