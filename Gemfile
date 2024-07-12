@@ -6,6 +6,7 @@ source "https://rubygems.org"
 gemspec
 
 group :development, :test do
+  gem "appraisal", "~> 2.4"
   gem "gc_ruboconfig", "~> 5.0.1"
   gem "pry", "~> 0.14.1"
   gem "rake", "~> 13.0"
