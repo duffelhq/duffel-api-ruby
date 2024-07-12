@@ -30,6 +30,11 @@ module DuffelAPI
       @airports ||= Services::AirportsService.new(@api_service)
     end
 
+    # @return [Services::CitiesService]
+    def cities
+      @cities ||= Services::CitiesService.new(@api_service)
+    end
+
     # @return [Services::OfferPassengersService]
     def offer_passengers
       @offer_passengers ||= Services::OfferPassengersService.new(@api_service)

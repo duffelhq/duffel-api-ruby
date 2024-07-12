@@ -1,0 +1,1801 @@
+{
+  "meta": {
+    "before": null,
+    "limit": 50,
+    "after": "g3QAAAACdwJpZG0AAAAKY2l0X2Nvc191c3cEbmFtZW0AAAAQQ29sb3JhZG8gU3ByaW5ncw=="
+  },
+  "data": [
+    {
+      "airports": [
+        {
+          "city_name": "Abilene",
+          "iata_city_code": "ABI",
+          "iata_country_code": "US",
+          "icao_code": "KABI",
+          "iata_code": "ABI",
+          "latitude": 32.411237,
+          "longitude": -99.681822,
+          "time_zone": "America/Chicago",
+          "name": "Abilene Regional Airport",
+          "id": "arp_abi_us"
+        },
+        {
+          "city_name": "Abilene",
+          "iata_city_code": "ABI",
+          "iata_country_code": "US",
+          "icao_code": "KDYS",
+          "iata_code": "DYS",
+          "latitude": 32.420799,
+          "longitude": -99.854599,
+          "time_zone": "America/Chicago",
+          "name": "Dyess Air Force Base",
+          "id": "arp_dys_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "ABI",
+      "name": "Abilene",
+      "id": "cit_abi_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Abu Dhabi",
+          "iata_city_code": "AUH",
+          "iata_country_code": "AE",
+          "icao_code": "OMAM",
+          "iata_code": "DHF",
+          "latitude": 24.249302,
+          "longitude": 54.548251,
+          "time_zone": "Asia/Dubai",
+          "name": "Al Dhafra Air Base",
+          "id": "arp_dhf_ae"
+        },
+        {
+          "city_name": "Abu Dhabi",
+          "iata_city_code": "AUH",
+          "iata_country_code": "AE",
+          "icao_code": null,
+          "iata_code": "AYM",
+          "latitude": 24.464725,
+          "longitude": 54.610182,
+          "time_zone": "Asia/Dubai",
+          "name": "Yas Island Seaplane Base Airport",
+          "id": "arp_aym_ae"
+        },
+        {
+          "city_name": "Abu Dhabi",
+          "iata_city_code": "AUH",
+          "iata_country_code": "AE",
+          "icao_code": "OMAA",
+          "iata_code": "AUH",
+          "latitude": 24.437469,
+          "longitude": 54.650586,
+          "time_zone": "Asia/Dubai",
+          "name": "Abu Dhabi International Airport",
+          "id": "arp_auh_ae"
+        },
+        {
+          "city_name": "Abu Dhabi",
+          "iata_city_code": "AUH",
+          "iata_country_code": "AE",
+          "icao_code": "OMAD",
+          "iata_code": "AZI",
+          "latitude": 24.428556,
+          "longitude": 54.457014,
+          "time_zone": "Asia/Dubai",
+          "name": "Bateen Airport",
+          "id": "arp_azi_ae"
+        }
+      ],
+      "iata_country_code": "AE",
+      "iata_code": "AUH",
+      "name": "Abu Dhabi",
+      "id": "cit_auh_ae"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Aitape",
+          "iata_city_code": "ATP",
+          "iata_country_code": "PG",
+          "icao_code": "AYAI",
+          "iata_code": "ATP",
+          "latitude": -3.143579,
+          "longitude": 142.346516,
+          "time_zone": "Pacific/Port_Moresby",
+          "name": "Aitape Airport",
+          "id": "arp_atp_pg"
+        },
+        {
+          "city_name": "Aitape",
+          "iata_city_code": "ATP",
+          "iata_country_code": "PG",
+          "icao_code": null,
+          "iata_code": "TAJ",
+          "latitude": -3.197688,
+          "longitude": 142.429805,
+          "time_zone": "Pacific/Port_Moresby",
+          "name": "Tadji Airport",
+          "id": "arp_taj_pg"
+        }
+      ],
+      "iata_country_code": "PG",
+      "iata_code": "ATP",
+      "name": "Aitape",
+      "id": "cit_atp_pg"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Akron",
+          "iata_city_code": "CAK",
+          "iata_country_code": "US",
+          "icao_code": "KCAK",
+          "iata_code": "CAK",
+          "latitude": 40.915548,
+          "longitude": -81.440739,
+          "time_zone": "America/New_York",
+          "name": "Akron–Canton Airport",
+          "id": "arp_cak_us"
+        },
+        {
+          "city_name": "Akron",
+          "iata_city_code": "CAK",
+          "iata_country_code": "US",
+          "icao_code": "KAKR",
+          "iata_code": "AKC",
+          "latitude": 41.035888,
+          "longitude": -81.467633,
+          "time_zone": "America/New_York",
+          "name": "Akron Fulton International Airport",
+          "id": "arp_akc_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "CAK",
+      "name": "Akron/Canton",
+      "id": "cit_cak_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Alamogordo",
+          "iata_city_code": "ALM",
+          "iata_country_code": "US",
+          "icao_code": "KALM",
+          "iata_code": "ALM",
+          "latitude": 32.840108,
+          "longitude": -105.9919,
+          "time_zone": "America/Denver",
+          "name": "Alamogordo White Sands Regional Airport",
+          "id": "arp_alm_us"
+        },
+        {
+          "city_name": "Alamogordo",
+          "iata_city_code": "ALM",
+          "iata_country_code": "US",
+          "icao_code": "KHMN",
+          "iata_code": "HMN",
+          "latitude": 32.852501,
+          "longitude": -106.107002,
+          "time_zone": "America/Denver",
+          "name": "Holloman Air Force Base",
+          "id": "arp_hmn_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "ALM",
+      "name": "Alamogordo",
+      "id": "cit_alm_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Alexandria",
+          "iata_city_code": "AEX",
+          "iata_country_code": "US",
+          "icao_code": "KAEX",
+          "iata_code": "AEX",
+          "latitude": 31.326149,
+          "longitude": -92.546915,
+          "time_zone": "America/Chicago",
+          "name": "Alexandria International Airport",
+          "id": "arp_aex_us"
+        },
+        {
+          "city_name": "Alexandria",
+          "iata_city_code": "AEX",
+          "iata_country_code": "US",
+          "icao_code": "KESF",
+          "iata_code": "ESF",
+          "latitude": 31.394614,
+          "longitude": -92.295764,
+          "time_zone": "America/Chicago",
+          "name": "Esler Regional Airport",
+          "id": "arp_esf_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "AEX",
+      "name": "Alexandria",
+      "id": "cit_aex_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Alexandria",
+          "iata_city_code": "ALY",
+          "iata_country_code": "EG",
+          "icao_code": "HEAX",
+          "iata_code": "ALY",
+          "latitude": 31.191435,
+          "longitude": 29.952488,
+          "time_zone": "Africa/Cairo",
+          "name": "El Nouzha Airport",
+          "id": "arp_aly_eg"
+        },
+        {
+          "city_name": "Alexandria",
+          "iata_city_code": "ALY",
+          "iata_country_code": "EG",
+          "icao_code": "HEBA",
+          "iata_code": "HBE",
+          "latitude": 30.931803,
+          "longitude": 29.69568,
+          "time_zone": "Africa/Cairo",
+          "name": "Borg El Arab Airport",
+          "id": "arp_hbe_eg"
+        }
+      ],
+      "iata_country_code": "EG",
+      "iata_code": "ALY",
+      "name": "Alexandria",
+      "id": "cit_aly_eg"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Altus",
+          "iata_city_code": "LTS",
+          "iata_country_code": "US",
+          "icao_code": "KAXS",
+          "iata_code": "AXS",
+          "latitude": 34.698416,
+          "longitude": -99.337992,
+          "time_zone": "America/Chicago",
+          "name": "Altus/Quartz Mountain Regional Airport",
+          "id": "arp_axs_us"
+        },
+        {
+          "city_name": "Altus",
+          "iata_city_code": "LTS",
+          "iata_country_code": "US",
+          "icao_code": "KLTS",
+          "iata_code": "LTS",
+          "latitude": 34.667099,
+          "longitude": -99.266701,
+          "time_zone": "America/Chicago",
+          "name": "Altus Air Force Base",
+          "id": "arp_lts_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "LTS",
+      "name": "Altus",
+      "id": "cit_lts_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Amarillo",
+          "iata_city_code": "AMA",
+          "iata_country_code": "US",
+          "icao_code": "KAMA",
+          "iata_code": "AMA",
+          "latitude": 35.219956,
+          "longitude": -101.706679,
+          "time_zone": "America/Chicago",
+          "name": "Rick Husband Amarillo International Airport",
+          "id": "arp_ama_us"
+        },
+        {
+          "city_name": "Amarillo",
+          "iata_city_code": "AMA",
+          "iata_country_code": "US",
+          "icao_code": "KTDW",
+          "iata_code": "TDW",
+          "latitude": 35.169989,
+          "longitude": -101.826954,
+          "time_zone": "America/Chicago",
+          "name": "Tradewind Airport",
+          "id": "arp_tdw_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "AMA",
+      "name": "Amarillo",
+      "id": "cit_ama_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Amman",
+          "iata_city_code": "AMM",
+          "iata_country_code": "JO",
+          "icao_code": "OJAM",
+          "iata_code": "ADJ",
+          "latitude": 31.973712,
+          "longitude": 35.987633,
+          "time_zone": "Asia/Amman",
+          "name": "Amman Civil Airport",
+          "id": "arp_adj_jo"
+        },
+        {
+          "city_name": "Amman",
+          "iata_city_code": "AMM",
+          "iata_country_code": "JO",
+          "icao_code": "OJAI",
+          "iata_code": "AMM",
+          "latitude": 31.72266,
+          "longitude": 35.992224,
+          "time_zone": "Asia/Amman",
+          "name": "Queen Alia International Airport",
+          "id": "arp_amm_jo"
+        }
+      ],
+      "iata_country_code": "JO",
+      "iata_code": "AMM",
+      "name": "Amman",
+      "id": "cit_amm_jo"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Anchorage",
+          "iata_city_code": "ANC",
+          "iata_country_code": "US",
+          "icao_code": "PAFR",
+          "iata_code": "FRN",
+          "latitude": 61.264454,
+          "longitude": -149.653852,
+          "time_zone": "America/Anchorage",
+          "name": "Bryant Army Heliport",
+          "id": "arp_frn_us"
+        },
+        {
+          "city_name": "Anchorage",
+          "iata_city_code": "ANC",
+          "iata_country_code": "US",
+          "icao_code": "PANC",
+          "iata_code": "ANC",
+          "latitude": 61.175143,
+          "longitude": -149.99304,
+          "time_zone": "America/Anchorage",
+          "name": "Ted Stevens Anchorage International Airport",
+          "id": "arp_anc_us"
+        },
+        {
+          "city_name": "Anchorage",
+          "iata_city_code": "ANC",
+          "iata_country_code": "US",
+          "icao_code": "PAED",
+          "iata_code": "EDF",
+          "latitude": 61.251878,
+          "longitude": -149.808422,
+          "time_zone": "America/Anchorage",
+          "name": "Elmendorf Air Force Base",
+          "id": "arp_edf_us"
+        },
+        {
+          "city_name": "Anchorage",
+          "iata_city_code": "ANC",
+          "iata_country_code": "US",
+          "icao_code": "PAMR",
+          "iata_code": "MRI",
+          "latitude": 61.214603,
+          "longitude": -149.843405,
+          "time_zone": "America/Anchorage",
+          "name": "Merrill Field Airport",
+          "id": "arp_mri_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "ANC",
+      "name": "Anchorage",
+      "id": "cit_anc_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Ankara",
+          "iata_city_code": "ANK",
+          "iata_country_code": "TR",
+          "icao_code": "LTAD",
+          "iata_code": "ANK",
+          "latitude": 39.949798,
+          "longitude": 32.688598,
+          "time_zone": "Europe/Istanbul",
+          "name": "Etimesgut Air Base",
+          "id": "arp_ank_tr"
+        },
+        {
+          "city_name": "Ankara",
+          "iata_city_code": "ANK",
+          "iata_country_code": "TR",
+          "icao_code": "LTAC",
+          "iata_code": "ESB",
+          "latitude": 40.12627,
+          "longitude": 32.993385,
+          "time_zone": "Europe/Istanbul",
+          "name": "Esenboğa International Airport",
+          "id": "arp_esb_tr"
+        }
+      ],
+      "iata_country_code": "TR",
+      "iata_code": "ANK",
+      "name": "Ankara",
+      "id": "cit_ank_tr"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Apia",
+          "iata_city_code": "APW",
+          "iata_country_code": "WS",
+          "icao_code": "NSFA",
+          "iata_code": "APW",
+          "latitude": -13.830224,
+          "longitude": -172.008052,
+          "time_zone": "Pacific/Apia",
+          "name": "Faleolo International Airport",
+          "id": "arp_apw_ws"
+        },
+        {
+          "city_name": "Apia",
+          "iata_city_code": "APW",
+          "iata_country_code": "WS",
+          "icao_code": "NSFI",
+          "iata_code": "FGI",
+          "latitude": -13.84844,
+          "longitude": -171.740968,
+          "time_zone": "Pacific/Apia",
+          "name": "Fagali'i Airport",
+          "id": "arp_fgi_ws"
+        }
+      ],
+      "iata_country_code": "WS",
+      "iata_code": "APW",
+      "name": "Apia",
+      "id": "cit_apw_ws"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Ardmore",
+          "iata_city_code": "ADM",
+          "iata_country_code": "US",
+          "icao_code": null,
+          "iata_code": "AHD",
+          "latitude": 34.146973,
+          "longitude": -97.122742,
+          "time_zone": "America/Chicago",
+          "name": "Ardmore Downtown Executive Airport",
+          "id": "arp_ahd_us"
+        },
+        {
+          "city_name": "Ardmore",
+          "iata_city_code": "ADM",
+          "iata_country_code": "US",
+          "icao_code": "KADM",
+          "iata_code": "ADM",
+          "latitude": 34.302418,
+          "longitude": -97.021157,
+          "time_zone": "America/Chicago",
+          "name": "Ardmore Municipal Airport",
+          "id": "arp_adm_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "ADM",
+      "name": "Ardmore",
+      "id": "cit_adm_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Atlanta",
+          "iata_city_code": "ATL",
+          "iata_country_code": "US",
+          "icao_code": "KATL",
+          "iata_code": "ATL",
+          "latitude": 33.638714,
+          "longitude": -84.4279,
+          "time_zone": "America/New_York",
+          "name": "Hartsfield-Jackson Atlanta International Airport",
+          "id": "arp_atl_us"
+        },
+        {
+          "city_name": "Atlanta",
+          "iata_city_code": "ATL",
+          "iata_country_code": "US",
+          "icao_code": "KPDK",
+          "iata_code": "PDK",
+          "latitude": 33.875583,
+          "longitude": -84.303619,
+          "time_zone": "America/New_York",
+          "name": "Dekalb Peachtree Airport",
+          "id": "arp_pdk_us"
+        },
+        {
+          "city_name": "Atlanta",
+          "iata_city_code": "ATL",
+          "iata_country_code": "US",
+          "icao_code": "KFTY",
+          "iata_code": "FTY",
+          "latitude": 33.777896,
+          "longitude": -84.521638,
+          "time_zone": "America/New_York",
+          "name": "Fulton County Airport",
+          "id": "arp_fty_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "ATL",
+      "name": "Atlanta",
+      "id": "cit_atl_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Auckland",
+          "iata_city_code": "AKL",
+          "iata_country_code": "NZ",
+          "icao_code": "NZAA",
+          "iata_code": "AKL",
+          "latitude": -37.008148,
+          "longitude": 174.789684,
+          "time_zone": "Pacific/Auckland",
+          "name": "Auckland Airport",
+          "id": "arp_akl_nz"
+        }
+      ],
+      "iata_country_code": "NZ",
+      "iata_code": "AKL",
+      "name": "Auckland",
+      "id": "cit_akl_nz"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Augusta",
+          "iata_city_code": "AGS",
+          "iata_country_code": "US",
+          "icao_code": "KDNL",
+          "iata_code": "DNL",
+          "latitude": 33.466454,
+          "longitude": -82.038534,
+          "time_zone": "America/New_York",
+          "name": "Daniel Field",
+          "id": "arp_dnl_us"
+        },
+        {
+          "city_name": "Augusta",
+          "iata_city_code": "AGS",
+          "iata_country_code": "US",
+          "icao_code": "KAGS",
+          "iata_code": "AGS",
+          "latitude": 33.370604,
+          "longitude": -81.96675,
+          "time_zone": "America/New_York",
+          "name": "Augusta Regional Airport",
+          "id": "arp_ags_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "AGS",
+      "name": "Augusta",
+      "id": "cit_ags_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Austin",
+          "iata_city_code": "AUS",
+          "iata_country_code": "US",
+          "icao_code": "KAUS",
+          "iata_code": "AUS",
+          "latitude": 30.196466,
+          "longitude": -97.667519,
+          "time_zone": "America/Chicago",
+          "name": "Austin-Bergstrom International Airport",
+          "id": "arp_aus_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "AUS",
+      "name": "Austin",
+      "id": "cit_aus_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Baku",
+          "iata_city_code": "BAK",
+          "iata_country_code": "AZ",
+          "icao_code": "UBTT",
+          "iata_code": "ZXT",
+          "latitude": 40.495968,
+          "longitude": 49.97472,
+          "time_zone": "Asia/Baku",
+          "name": "Zabrat Airport",
+          "id": "arp_zxt_az"
+        },
+        {
+          "city_name": "Baku",
+          "iata_city_code": "BAK",
+          "iata_country_code": "AZ",
+          "icao_code": "UBBB",
+          "iata_code": "GYD",
+          "latitude": 40.466321,
+          "longitude": 50.049476,
+          "time_zone": "Asia/Baku",
+          "name": "Heydar Aliyev International Airport",
+          "id": "arp_gyd_az"
+        }
+      ],
+      "iata_country_code": "AZ",
+      "iata_code": "BAK",
+      "name": "Baku",
+      "id": "cit_bak_az"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Baltimore",
+          "iata_city_code": "BWI",
+          "iata_country_code": "US",
+          "icao_code": "KMTN",
+          "iata_code": "MTN",
+          "latitude": 39.326578,
+          "longitude": -76.41708,
+          "time_zone": "America/New_York",
+          "name": "Martin State Airport",
+          "id": "arp_mtn_us"
+        },
+        {
+          "city_name": "Baltimore",
+          "iata_city_code": "BWI",
+          "iata_country_code": "US",
+          "icao_code": "KBWI",
+          "iata_code": "BWI",
+          "latitude": 39.176402,
+          "longitude": -76.668345,
+          "time_zone": "America/New_York",
+          "name": "Baltimore Washington International Thurgood Marshall Airport",
+          "id": "arp_bwi_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "BWI",
+      "name": "Baltimore",
+      "id": "cit_bwi_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Bangkok",
+          "iata_city_code": "BKK",
+          "iata_country_code": "TH",
+          "icao_code": "VTBS",
+          "iata_code": "BKK",
+          "latitude": 13.691187,
+          "longitude": 100.748128,
+          "time_zone": "Asia/Bangkok",
+          "name": "Suvarnabhumi Airport",
+          "id": "arp_bkk_th"
+        },
+        {
+          "city_name": "Bangkok",
+          "iata_city_code": "BKK",
+          "iata_country_code": "TH",
+          "icao_code": "VTBD",
+          "iata_code": "DMK",
+          "latitude": 13.912929,
+          "longitude": 100.6056,
+          "time_zone": "Asia/Bangkok",
+          "name": "Don Mueang International Airport",
+          "id": "arp_dmk_th"
+        }
+      ],
+      "iata_country_code": "TH",
+      "iata_code": "BKK",
+      "name": "Bangkok",
+      "id": "cit_bkk_th"
+    },
+    {
+      "airports": [
+        {
+          "city_name": null,
+          "iata_city_code": "EAP",
+          "iata_country_code": "FR",
+          "icao_code": "LFSB",
+          "iata_code": "BSL",
+          "latitude": 47.59409,
+          "longitude": 7.527331,
+          "time_zone": "Europe/Paris",
+          "name": "EuroAirport Basel-Mulhouse-Freiburg",
+          "id": "arp_bsl_ch"
+        },
+        {
+          "city_name": "Mulhouse/Basel",
+          "iata_city_code": "EAP",
+          "iata_country_code": "FR",
+          "icao_code": "LFSB",
+          "iata_code": "MLH",
+          "latitude": 47.59818,
+          "longitude": 7.525496,
+          "time_zone": "Europe/Paris",
+          "name": "EuroAirport Basel Mulhouse Freiburg",
+          "id": "arp_mlh_fr"
+        },
+        {
+          "city_name": "Basel",
+          "iata_city_code": "EAP",
+          "iata_country_code": "FR",
+          "icao_code": "LFSB",
+          "iata_code": "BSL",
+          "latitude": 47.59409,
+          "longitude": 7.52733,
+          "time_zone": "Europe/Paris",
+          "name": "EuroAirport Basel-Mulhouse-Freiburg",
+          "id": "arp_bsl_fr"
+        }
+      ],
+      "iata_country_code": "CH",
+      "iata_code": "EAP",
+      "name": "Basel/Mulhouse",
+      "id": "cit_eap_ch"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Beaumont",
+          "iata_city_code": "BPT",
+          "iata_country_code": "US",
+          "icao_code": "KBMT",
+          "iata_code": "BMT",
+          "latitude": 30.07052,
+          "longitude": -94.213826,
+          "time_zone": "America/Chicago",
+          "name": "Beaumont Municipal Airport",
+          "id": "arp_bmt_us"
+        },
+        {
+          "city_name": "Beaumont",
+          "iata_city_code": "BPT",
+          "iata_country_code": "US",
+          "icao_code": "KBPT",
+          "iata_code": "BPT",
+          "latitude": 29.95207,
+          "longitude": -94.021041,
+          "time_zone": "America/Chicago",
+          "name": "Jack Brooks Regional Airport",
+          "id": "arp_bpt_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "BPT",
+      "name": "Beaumont/Port Arthur",
+      "id": "cit_bpt_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Beijing",
+          "iata_city_code": "BJS",
+          "iata_country_code": "CN",
+          "icao_code": "ZBAD",
+          "iata_code": "PKX",
+          "latitude": 39.509945,
+          "longitude": 116.41092,
+          "time_zone": "Asia/Shanghai",
+          "name": "Beijing Daxing International Airport",
+          "id": "arp_pkx_cn"
+        },
+        {
+          "city_name": "Beijing",
+          "iata_city_code": "BJS",
+          "iata_country_code": "CN",
+          "icao_code": "ZBAA",
+          "iata_code": "PEK",
+          "latitude": 40.080613,
+          "longitude": 116.602404,
+          "time_zone": "Asia/Shanghai",
+          "name": "Beijing Capital International Airport",
+          "id": "arp_pek_cn"
+        },
+        {
+          "city_name": "Beijing",
+          "iata_city_code": "BJS",
+          "iata_country_code": "CN",
+          "icao_code": "ZBNY",
+          "iata_code": "NAY",
+          "latitude": 39.782699,
+          "longitude": 116.387926,
+          "time_zone": "Asia/Shanghai",
+          "name": "Beijing Nanyuan Airport",
+          "id": "arp_nay_cn"
+        }
+      ],
+      "iata_country_code": "CN",
+      "iata_code": "BJS",
+      "name": "Beijing",
+      "id": "cit_bjs_cn"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Belfast",
+          "iata_city_code": "BFS",
+          "iata_country_code": "GB",
+          "icao_code": "EGAC",
+          "iata_code": "BHD",
+          "latitude": 54.617857,
+          "longitude": -5.872165,
+          "time_zone": "Europe/London",
+          "name": "George Best Belfast City Airport",
+          "id": "arp_bhd_gb"
+        },
+        {
+          "city_name": "Belfast",
+          "iata_city_code": "BFS",
+          "iata_country_code": "GB",
+          "icao_code": "EGAA",
+          "iata_code": "BFS",
+          "latitude": 54.658279,
+          "longitude": -6.217177,
+          "time_zone": "Europe/London",
+          "name": "Belfast International Airport",
+          "id": "arp_bfs_gb"
+        }
+      ],
+      "iata_country_code": "GB",
+      "iata_code": "BFS",
+      "name": "Belfast",
+      "id": "cit_bfs_gb"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Belgrade",
+          "iata_city_code": "BEG",
+          "iata_country_code": "RS",
+          "icao_code": "LYBE",
+          "iata_code": "BEG",
+          "latitude": 44.820559,
+          "longitude": 20.292378,
+          "time_zone": "Europe/Belgrade",
+          "name": "Belgrade Nikola Tesla Airport",
+          "id": "arp_beg_rs"
+        },
+        {
+          "city_name": "Batajnica",
+          "iata_city_code": "BEG",
+          "iata_country_code": "RS",
+          "icao_code": "LYBT",
+          "iata_code": "BJY",
+          "latitude": 44.935079,
+          "longitude": 20.257138,
+          "time_zone": "Europe/Belgrade",
+          "name": "Batajnica Air Base",
+          "id": "arp_bjy_rs"
+        }
+      ],
+      "iata_country_code": "RS",
+      "iata_code": "BEG",
+      "name": "Belgrade",
+      "id": "cit_beg_rs"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Belize City",
+          "iata_city_code": "BZE",
+          "iata_country_code": "BZ",
+          "icao_code": "MZBZ",
+          "iata_code": "BZE",
+          "latitude": 17.537595,
+          "longitude": -88.308539,
+          "time_zone": "America/Belize",
+          "name": "Philip S. W. Goldson International Airport",
+          "id": "arp_bze_bz"
+        },
+        {
+          "city_name": "Belize City",
+          "iata_city_code": "BZE",
+          "iata_country_code": "BZ",
+          "icao_code": null,
+          "iata_code": "TZA",
+          "latitude": 17.516191,
+          "longitude": -88.194597,
+          "time_zone": "America/Belize",
+          "name": "Belize City Municipal Airport",
+          "id": "arp_tza_bz"
+        }
+      ],
+      "iata_country_code": "BZ",
+      "iata_code": "BZE",
+      "name": "Belize City",
+      "id": "cit_bze_bz"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Belo Horizonte",
+          "iata_city_code": "BHZ",
+          "iata_country_code": "BR",
+          "icao_code": "SBCF",
+          "iata_code": "CNF",
+          "latitude": -19.634271,
+          "longitude": -43.964763,
+          "time_zone": "America/Sao_Paulo",
+          "name": "Tancredo Neves International Airport",
+          "id": "arp_cnf_br"
+        },
+        {
+          "city_name": "Belo Horizonte",
+          "iata_city_code": "BHZ",
+          "iata_country_code": "BR",
+          "icao_code": "SBBH",
+          "iata_code": "PLU",
+          "latitude": -19.850524,
+          "longitude": -43.952745,
+          "time_zone": "America/Sao_Paulo",
+          "name": "Pierce County Airport",
+          "id": "arp_plu_br"
+        }
+      ],
+      "iata_country_code": "BR",
+      "iata_code": "BHZ",
+      "name": "Belo Horizonte",
+      "id": "cit_bhz_br"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Berlin",
+          "iata_city_code": "BER",
+          "iata_country_code": "DE",
+          "icao_code": "EDDT",
+          "iata_code": "TXL",
+          "latitude": 52.558044,
+          "longitude": 13.288889,
+          "time_zone": "Europe/Berlin",
+          "name": "Berlin Tegel Airport",
+          "id": "arp_txl_de"
+        },
+        {
+          "city_name": "Berlin",
+          "iata_city_code": "BER",
+          "iata_country_code": "DE",
+          "icao_code": null,
+          "iata_code": "BER",
+          "latitude": 52.362307,
+          "longitude": 13.504906,
+          "time_zone": "Europe/Berlin",
+          "name": "Berlin Brandenburg Airport",
+          "id": "arp_ber_de"
+        },
+        {
+          "city_name": "Berlin",
+          "iata_city_code": "BER",
+          "iata_country_code": "DE",
+          "icao_code": "EDDB",
+          "iata_code": "SXF",
+          "latitude": 52.381814,
+          "longitude": 13.522205,
+          "time_zone": "Europe/Berlin",
+          "name": "Berlin-Schönefeld Airport",
+          "id": "arp_sxf_de"
+        }
+      ],
+      "iata_country_code": "DE",
+      "iata_code": "BER",
+      "name": "Berlin",
+      "id": "cit_ber_de"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Bethel",
+          "iata_city_code": "BET",
+          "iata_country_code": "US",
+          "icao_code": "PABE",
+          "iata_code": "JBT",
+          "latitude": 60.782013,
+          "longitude": -161.743063,
+          "time_zone": "America/Anchorage",
+          "name": "Bethel Seaplane Base",
+          "id": "arp_jbt_us"
+        },
+        {
+          "city_name": "Bethel",
+          "iata_city_code": "BET",
+          "iata_country_code": "US",
+          "icao_code": "PABE",
+          "iata_code": "BET",
+          "latitude": 60.779761,
+          "longitude": -161.837887,
+          "time_zone": "America/Anchorage",
+          "name": "Bethel Airport",
+          "id": "arp_bet_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "BET",
+      "name": "Bethel",
+      "id": "cit_bet_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Blytheville",
+          "iata_city_code": "BYH",
+          "iata_country_code": "US",
+          "icao_code": "KHKA",
+          "iata_code": "HKA",
+          "latitude": 35.93796,
+          "longitude": -89.83193,
+          "time_zone": "America/Chicago",
+          "name": "Blytheville Municipal Airport",
+          "id": "arp_hka_us"
+        },
+        {
+          "city_name": "Blytheville",
+          "iata_city_code": "BYH",
+          "iata_country_code": "US",
+          "icao_code": "KBYH",
+          "iata_code": "BYH",
+          "latitude": 35.962747,
+          "longitude": -89.94529,
+          "time_zone": "America/Chicago",
+          "name": "Arkansas International Airport",
+          "id": "arp_byh_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "BYH",
+      "name": "Blytheville",
+      "id": "cit_byh_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Boston",
+          "iata_city_code": "BOS",
+          "iata_country_code": "US",
+          "icao_code": null,
+          "iata_code": "BNH",
+          "latitude": 42.352509,
+          "longitude": -71.025732,
+          "time_zone": "America/New_York",
+          "name": "Boston Harbor Seaplane Base",
+          "id": "arp_bnh_us"
+        },
+        {
+          "city_name": "Boston",
+          "iata_city_code": "BOS",
+          "iata_country_code": "US",
+          "icao_code": "KBOS",
+          "iata_code": "BOS",
+          "latitude": 42.364956,
+          "longitude": -71.007381,
+          "time_zone": "America/New_York",
+          "name": "General Edward Lawrence Logan International Airport",
+          "id": "arp_bos_us"
+        },
+        {
+          "city_name": "Portsmouth",
+          "iata_city_code": "BOS",
+          "iata_country_code": "US",
+          "icao_code": "KPSM",
+          "iata_code": "PSM",
+          "latitude": 43.079053,
+          "longitude": -70.822681,
+          "time_zone": "America/New_York",
+          "name": "Portsmouth International Airport",
+          "id": "arp_psm_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "BOS",
+      "name": "Boston",
+      "id": "cit_bos_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Brunswick",
+          "iata_city_code": "SSI",
+          "iata_country_code": "US",
+          "icao_code": "KSSI",
+          "iata_code": "SSI",
+          "latitude": 31.152689,
+          "longitude": -81.390179,
+          "time_zone": "America/New_York",
+          "name": "Malcolm McKinnon Airport",
+          "id": "arp_ssi_us"
+        },
+        {
+          "city_name": "Brunswick",
+          "iata_city_code": "SSI",
+          "iata_country_code": "US",
+          "icao_code": "KBQK",
+          "iata_code": "BQK",
+          "latitude": 31.256802,
+          "longitude": -81.466759,
+          "time_zone": "America/New_York",
+          "name": "Brunswick Golden Isles Airport",
+          "id": "arp_bqk_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "SSI",
+      "name": "Brunswick",
+      "id": "cit_ssi_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Brussels",
+          "iata_city_code": "BRU",
+          "iata_country_code": "BE",
+          "icao_code": "EBBR",
+          "iata_code": "BRU",
+          "latitude": 50.90042,
+          "longitude": 4.484052,
+          "time_zone": "Europe/Brussels",
+          "name": "Brussels Airport",
+          "id": "arp_bru_be"
+        },
+        {
+          "city_name": "Brussels",
+          "iata_city_code": "BRU",
+          "iata_country_code": "BE",
+          "icao_code": "EBCI",
+          "iata_code": "CRL",
+          "latitude": 50.46129,
+          "longitude": 4.457859,
+          "time_zone": "Europe/Brussels",
+          "name": "Brussels South Charleroi Airport",
+          "id": "arp_crl_be"
+        }
+      ],
+      "iata_country_code": "BE",
+      "iata_code": "BRU",
+      "name": "Brussels",
+      "id": "cit_bru_be"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Bucharest",
+          "iata_city_code": "BUH",
+          "iata_country_code": "RO",
+          "icao_code": "LROP",
+          "iata_code": "OTP",
+          "latitude": 44.57092,
+          "longitude": 26.084706,
+          "time_zone": "Europe/Bucharest",
+          "name": "Henri Coandă International Airport",
+          "id": "arp_otp_ro"
+        },
+        {
+          "city_name": "Bucharest",
+          "iata_city_code": "BUH",
+          "iata_country_code": "RO",
+          "icao_code": "LRBS",
+          "iata_code": "BBU",
+          "latitude": 44.502897,
+          "longitude": 26.101912,
+          "time_zone": "Europe/Bucharest",
+          "name": "Băneasa International Airport",
+          "id": "arp_bbu_ro"
+        }
+      ],
+      "iata_country_code": "RO",
+      "iata_code": "BUH",
+      "name": "Bucharest",
+      "id": "cit_buh_ro"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Buenos Aires",
+          "iata_city_code": "BUE",
+          "iata_country_code": "AR",
+          "icao_code": "SABE",
+          "iata_code": "AEP",
+          "latitude": -34.558615,
+          "longitude": -58.416304,
+          "time_zone": "America/Argentina/Buenos_Aires",
+          "name": "Jorge Newbery Airfield",
+          "id": "arp_aep_ar"
+        },
+        {
+          "city_name": "Buenos Aires",
+          "iata_city_code": "BUE",
+          "iata_country_code": "AR",
+          "icao_code": "SAEZ",
+          "iata_code": "EZE",
+          "latitude": -34.818602,
+          "longitude": -58.535314,
+          "time_zone": "America/Argentina/Buenos_Aires",
+          "name": "Ministro Pistarini International Airport",
+          "id": "arp_eze_ar"
+        }
+      ],
+      "iata_country_code": "AR",
+      "iata_code": "BUE",
+      "name": "Buenos Aires",
+      "id": "cit_bue_ar"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Cairo",
+          "iata_city_code": "CAI",
+          "iata_country_code": "GP",
+          "icao_code": null,
+          "iata_code": "CCE",
+          "latitude": 18.100423,
+          "longitude": -63.049779,
+          "time_zone": "America/Marigot",
+          "name": "Grand Case-Espérance Airport",
+          "id": "arp_cce_gp"
+        },
+        {
+          "city_name": null,
+          "iata_city_code": "CAI",
+          "iata_country_code": "GP",
+          "icao_code": null,
+          "iata_code": "CCE",
+          "latitude": 18.100423,
+          "longitude": -63.049779,
+          "time_zone": "America/Marigot",
+          "name": "Grand Case-Espérance Airport",
+          "id": "arp_cce_eg"
+        },
+        {
+          "city_name": "Cairo",
+          "iata_city_code": "CAI",
+          "iata_country_code": "EG",
+          "icao_code": "HECA",
+          "iata_code": "CAI",
+          "latitude": 30.121954,
+          "longitude": 31.40751,
+          "time_zone": "Africa/Cairo",
+          "name": "Cairo International Airport",
+          "id": "arp_cai_eg"
+        }
+      ],
+      "iata_country_code": "EG",
+      "iata_code": "CAI",
+      "name": "Cairo",
+      "id": "cit_cai_eg"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Campbell River",
+          "iata_city_code": "YBL",
+          "iata_country_code": "CA",
+          "icao_code": "CYBL",
+          "iata_code": "YBL",
+          "latitude": 49.951375,
+          "longitude": -125.270212,
+          "time_zone": "America/Vancouver",
+          "name": "Campbell River Airport",
+          "id": "arp_ybl_ca"
+        },
+        {
+          "city_name": "Campbell River",
+          "iata_city_code": "YBL",
+          "iata_country_code": "CA",
+          "icao_code": null,
+          "iata_code": "YHH",
+          "latitude": 49.949302,
+          "longitude": -125.269567,
+          "time_zone": "America/Vancouver",
+          "name": "Campbell River Harbour Airport",
+          "id": "arp_yhh_ca"
+        }
+      ],
+      "iata_country_code": "CA",
+      "iata_code": "YBL",
+      "name": "Campbell River",
+      "id": "cit_ybl_ca"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Cannes",
+          "iata_city_code": "CEQ",
+          "iata_country_code": "FR",
+          "icao_code": "LFMD",
+          "iata_code": "CEQ",
+          "latitude": 43.544633,
+          "longitude": 6.953192,
+          "time_zone": "Europe/Paris",
+          "name": "Cannes – Mandelieu Airport",
+          "id": "arp_ceq_fr"
+        }
+      ],
+      "iata_country_code": "FR",
+      "iata_code": "CEQ",
+      "name": "Cannes",
+      "id": "cit_ceq_fr"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Casablanca",
+          "iata_city_code": "CAS",
+          "iata_country_code": "MA",
+          "icao_code": "GMMN",
+          "iata_code": "CMN",
+          "latitude": 33.366389,
+          "longitude": -7.587202,
+          "time_zone": "Africa/Casablanca",
+          "name": "Mohammed V International Airport",
+          "id": "arp_cmn_ma"
+        },
+        {
+          "city_name": "Casablanca",
+          "iata_city_code": "CAS",
+          "iata_country_code": "MA",
+          "icao_code": "GMMC",
+          "iata_code": "CAS",
+          "latitude": 33.554704,
+          "longitude": -7.661528,
+          "time_zone": "Africa/Casablanca",
+          "name": "Anfa Airport",
+          "id": "arp_cas_ma"
+        }
+      ],
+      "iata_country_code": "MA",
+      "iata_code": "CAS",
+      "name": "Casablanca",
+      "id": "cit_cas_ma"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Charlotte",
+          "iata_city_code": "CLT",
+          "iata_country_code": "US",
+          "icao_code": "KCLT",
+          "iata_code": "CLT",
+          "latitude": 35.214201,
+          "longitude": -80.945207,
+          "time_zone": "America/New_York",
+          "name": "Charlotte Douglas International Airport",
+          "id": "arp_clt_us"
+        },
+        {
+          "city_name": "Charlotte",
+          "iata_city_code": "CLT",
+          "iata_country_code": "US",
+          "icao_code": null,
+          "iata_code": "QWG",
+          "latitude": 35.212095,
+          "longitude": -80.669294,
+          "time_zone": "America/New_York",
+          "name": "Wilgrove Air Park",
+          "id": "arp_qwg_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "CLT",
+      "name": "Charlotte",
+      "id": "cit_clt_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Cheyenne",
+          "iata_city_code": "CYS",
+          "iata_country_code": "US",
+          "icao_code": "KCYS",
+          "iata_code": "CYS",
+          "latitude": 41.154498,
+          "longitude": -104.81374,
+          "time_zone": "America/Denver",
+          "name": "Cheyenne Regional Airport",
+          "id": "arp_cys_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "CYS",
+      "name": "Cheyenne",
+      "id": "cit_cys_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Chicago",
+          "iata_city_code": "CHI",
+          "iata_country_code": "US",
+          "icao_code": "KORD",
+          "iata_code": "ORD",
+          "latitude": 41.976381,
+          "longitude": -87.90606,
+          "time_zone": "America/Chicago",
+          "name": "O'Hare International Airport",
+          "id": "arp_ord_us"
+        },
+        {
+          "city_name": "Chicago",
+          "iata_city_code": "CHI",
+          "iata_country_code": "US",
+          "icao_code": "KMDW",
+          "iata_code": "MDW",
+          "latitude": 41.786336,
+          "longitude": -87.750029,
+          "time_zone": "America/Chicago",
+          "name": "Chicago Midway International Airport",
+          "id": "arp_mdw_us"
+        },
+        {
+          "city_name": "Chicago",
+          "iata_city_code": "CHI",
+          "iata_country_code": "US",
+          "icao_code": "KRFD",
+          "iata_code": "RFD",
+          "latitude": 42.19732,
+          "longitude": -89.097969,
+          "time_zone": "America/Chicago",
+          "name": "Chicago Rockford International Airport",
+          "id": "arp_rfd_us"
+        },
+        {
+          "city_name": "Chicago",
+          "iata_city_code": "CHI",
+          "iata_country_code": "US",
+          "icao_code": "KPWK",
+          "iata_code": "PWK",
+          "latitude": 42.11582,
+          "longitude": -87.901879,
+          "time_zone": "America/Chicago",
+          "name": "Chicago Executive Airport",
+          "id": "arp_pwk_us"
+        },
+        {
+          "city_name": "Chicago",
+          "iata_city_code": "CHI",
+          "iata_country_code": "US",
+          "icao_code": "KDPA",
+          "iata_code": "DPA",
+          "latitude": 41.907279,
+          "longitude": -88.25084,
+          "time_zone": "America/Chicago",
+          "name": "DuPage Airport",
+          "id": "arp_dpa_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "CHI",
+      "name": "Chicago",
+      "id": "cit_chi_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Chignik Lake",
+          "iata_city_code": "KCL",
+          "iata_country_code": "US",
+          "icao_code": null,
+          "iata_code": "KCQ",
+          "latitude": 56.254971,
+          "longitude": -158.772529,
+          "time_zone": "America/Anchorage",
+          "name": "Chignik Lake Airport",
+          "id": "arp_kcq_us"
+        },
+        {
+          "city_name": "Chignik",
+          "iata_city_code": "KCL",
+          "iata_country_code": "US",
+          "icao_code": "PAJC",
+          "iata_code": "KCG",
+          "latitude": 56.310832,
+          "longitude": -158.373611,
+          "time_zone": "America/Anchorage",
+          "name": "Chignik Fisheries Airport",
+          "id": "arp_kcg_us"
+        },
+        {
+          "city_name": "Chignik",
+          "iata_city_code": "KCL",
+          "iata_country_code": "US",
+          "icao_code": "PAJC",
+          "iata_code": "KCL",
+          "latitude": 56.311175,
+          "longitude": -158.535949,
+          "time_zone": "America/Anchorage",
+          "name": "Chignik Lagoon Airport",
+          "id": "arp_kcl_us"
+        },
+        {
+          "city_name": "Chignik",
+          "iata_city_code": "KCL",
+          "iata_country_code": "US",
+          "icao_code": null,
+          "iata_code": "KBW",
+          "latitude": 56.295608,
+          "longitude": -158.40132,
+          "time_zone": "America/Anchorage",
+          "name": "Chignik Bay Airport",
+          "id": "arp_kbw_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "KCL",
+      "name": "Chignik",
+      "id": "cit_kcl_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Cincinnati",
+          "iata_city_code": "CVG",
+          "iata_country_code": "US",
+          "icao_code": "KCVG",
+          "iata_code": "CVG",
+          "latitude": 39.051038,
+          "longitude": -84.665409,
+          "time_zone": "America/New_York",
+          "name": "Cincinnati/Northern Kentucky International Airport",
+          "id": "arp_cvg_us"
+        },
+        {
+          "city_name": "Cincinnati",
+          "iata_city_code": "CVG",
+          "iata_country_code": "US",
+          "icao_code": "KLUK",
+          "iata_code": "LUK",
+          "latitude": 39.103433,
+          "longitude": -84.421367,
+          "time_zone": "America/New_York",
+          "name": "Cincinnati Municipal Airport",
+          "id": "arp_luk_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "CVG",
+      "name": "Cincinnati",
+      "id": "cit_cvg_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Cleveland",
+          "iata_city_code": "CLE",
+          "iata_country_code": "US",
+          "icao_code": "KBKL",
+          "iata_code": "BKL",
+          "latitude": 41.514519,
+          "longitude": -81.686615,
+          "time_zone": "America/New_York",
+          "name": "Cleveland Burke Lakefront Airport",
+          "id": "arp_bkl_us"
+        },
+        {
+          "city_name": "Cleveland",
+          "iata_city_code": "CLE",
+          "iata_country_code": "US",
+          "icao_code": "KCLE",
+          "iata_code": "CLE",
+          "latitude": 41.410408,
+          "longitude": -81.850364,
+          "time_zone": "America/New_York",
+          "name": "Cleveland Hopkins International Airport",
+          "id": "arp_cle_us"
+        },
+        {
+          "city_name": "Cleveland",
+          "iata_city_code": "CLE",
+          "iata_country_code": "US",
+          "icao_code": "KCGF",
+          "iata_code": "CGF",
+          "latitude": 41.565789,
+          "longitude": -81.487719,
+          "time_zone": "America/New_York",
+          "name": "Cuyahoga County Airport",
+          "id": "arp_cgf_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "CLE",
+      "name": "Cleveland",
+      "id": "cit_cle_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Clinton",
+          "iata_city_code": "CSM",
+          "iata_country_code": "US",
+          "icao_code": "KCSM",
+          "iata_code": "CSM",
+          "latitude": 35.347016,
+          "longitude": -99.198301,
+          "time_zone": "America/Chicago",
+          "name": "Clinton Sherman Airport",
+          "id": "arp_csm_us"
+        },
+        {
+          "city_name": "Clinton",
+          "iata_city_code": "CSM",
+          "iata_country_code": "US",
+          "icao_code": "KCLK",
+          "iata_code": "CLK",
+          "latitude": 35.538317,
+          "longitude": -98.932739,
+          "time_zone": "America/Chicago",
+          "name": "Clinton Regional Airport",
+          "id": "arp_clk_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "CSM",
+      "name": "Clinton",
+      "id": "cit_csm_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Clovis",
+          "iata_city_code": "CVN",
+          "iata_country_code": "US",
+          "icao_code": "KCVS",
+          "iata_code": "CVS",
+          "latitude": 34.385129,
+          "longitude": -103.320767,
+          "time_zone": "America/Denver",
+          "name": "Cannon Air Force Base",
+          "id": "arp_cvs_us"
+        },
+        {
+          "city_name": "Clovis",
+          "iata_city_code": "CVN",
+          "iata_country_code": "US",
+          "icao_code": "KCVN",
+          "iata_code": "CVN",
+          "latitude": 34.425868,
+          "longitude": -103.078707,
+          "time_zone": "America/Denver",
+          "name": "Clovis Municipal Airport",
+          "id": "arp_cvn_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "CVN",
+      "name": "Clovis",
+      "id": "cit_cvn_us"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Colombo",
+          "iata_city_code": "CMB",
+          "iata_country_code": "LK",
+          "icao_code": "VCBI",
+          "iata_code": "CMB",
+          "latitude": 7.180457,
+          "longitude": 79.884176,
+          "time_zone": "Asia/Colombo",
+          "name": "Bandaranaike International Airport",
+          "id": "arp_cmb_lk"
+        },
+        {
+          "city_name": "Colombo",
+          "iata_city_code": "CMB",
+          "iata_country_code": "LK",
+          "icao_code": "VCCC",
+          "iata_code": "RML",
+          "latitude": 6.822141,
+          "longitude": 79.88773,
+          "time_zone": "Asia/Colombo",
+          "name": "Ratmalana Airport",
+          "id": "arp_rml_lk"
+        },
+        {
+          "city_name": "Colombo",
+          "iata_city_code": "CMB",
+          "iata_country_code": "LK",
+          "icao_code": null,
+          "iata_code": "BYV",
+          "latitude": 6.92883,
+          "longitude": 79.854596,
+          "time_zone": "Asia/Colombo",
+          "name": "Beira Lake Seaplane Base Airport",
+          "id": "arp_byv_lk"
+        },
+        {
+          "city_name": "Colombo",
+          "iata_city_code": "CMB",
+          "iata_country_code": "LK",
+          "icao_code": null,
+          "iata_code": "KEZ",
+          "latitude": 6.85,
+          "longitude": 80.55,
+          "time_zone": "Asia/Colombo",
+          "name": "Kelaniya River Airport",
+          "id": "arp_kez_lk"
+        },
+        {
+          "city_name": "Colombo",
+          "iata_city_code": "CMB",
+          "iata_country_code": "LK",
+          "icao_code": null,
+          "iata_code": "DGM",
+          "latitude": 7.1079,
+          "longitude": 79.8721,
+          "time_zone": "Asia/Colombo",
+          "name": "Dandugama Seaplane Base",
+          "id": "arp_dgm_lk"
+        }
+      ],
+      "iata_country_code": "LK",
+      "iata_code": "CMB",
+      "name": "Colombo",
+      "id": "cit_cmb_lk"
+    },
+    {
+      "airports": [
+        {
+          "city_name": "Colorado Springs",
+          "iata_city_code": "COS",
+          "iata_country_code": "US",
+          "icao_code": "KAFF",
+          "iata_code": "AFF",
+          "latitude": 38.970442,
+          "longitude": -104.814704,
+          "time_zone": "America/Denver",
+          "name": "United States Air Force Academy Airfield",
+          "id": "arp_aff_us"
+        },
+        {
+          "city_name": "Colorado Springs",
+          "iata_city_code": "COS",
+          "iata_country_code": "US",
+          "icao_code": "KCOS",
+          "iata_code": "COS",
+          "latitude": 38.803756,
+          "longitude": -104.701799,
+          "time_zone": "America/Denver",
+          "name": "Colorado Springs Airport",
+          "id": "arp_cos_us"
+        },
+        {
+          "city_name": "Colorado Springs",
+          "iata_city_code": "COS",
+          "iata_country_code": "US",
+          "icao_code": "KFCS",
+          "iata_code": "FCS",
+          "latitude": 38.678398,
+          "longitude": -104.757004,
+          "time_zone": "America/Denver",
+          "name": "Butts Army Airfield",
+          "id": "arp_fcs_us"
+        }
+      ],
+      "iata_country_code": "US",
+      "iata_code": "COS",
+      "name": "Colorado Springs",
+      "id": "cit_cos_us"
+    }
+  ]
+}
