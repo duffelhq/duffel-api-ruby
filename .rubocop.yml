@@ -2,6 +2,7 @@ require: rubocop-rake
 
 inherit_gem:
   gc_ruboconfig: rubocop.yml
+
 AllCops:
   TargetRubyVersion: 2.6
   NewCops: enable
