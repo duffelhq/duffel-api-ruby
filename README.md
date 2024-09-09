@@ -1,3 +1,12 @@
+> [!WARNING] 
+> This client library is not currently being supported by Duffel due to a lack of adoption.
+> 
+> You're welcome to fork the repositories and continue maintaining them for your own use.
+>
+> If, in the future, there's sufficient demand for a particular client library, we'll reconsider our decision to officially support it.
+
+---
+
 # Duffel API Ruby client library
 
 [![RubyDoc.info documentation](http://img.shields.io/badge/yard-docs-blue.svg)](https://rubydoc.info/github/duffelhq/duffel-api-ruby)
