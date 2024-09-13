@@ -77,7 +77,7 @@ order = client.orders.create(params: {
       gender: "m",
       given_name: "Tim",
       family_name: "Rogers",
-      born_on: "#{birth_date}",
+      born_on: birth_date.to_s,
       phone_number: "+441290211999",
       email: "tim@duffel.com",
     },
