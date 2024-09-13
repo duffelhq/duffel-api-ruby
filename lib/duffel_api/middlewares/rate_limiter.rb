@@ -15,7 +15,7 @@ module DuffelAPI
       end
 
       def initialize(app, options = {})
-        super(app, options)
+        super
       end
 
       def call(env)

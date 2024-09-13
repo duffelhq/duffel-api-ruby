@@ -17,7 +17,7 @@ module DuffelAPI
         @segment_id = object["segment_id"]
         @slice_id = object["slice_id"]
 
-        super(object, response)
+        super
       end
     end
   end

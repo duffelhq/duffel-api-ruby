@@ -23,7 +23,7 @@ module DuffelAPI
         @slices = object["slices"]
         @updated_at = object["updated_at"]
 
-        super(object, response)
+        super
       end
     end
   end

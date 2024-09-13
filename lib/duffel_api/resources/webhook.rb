@@ -25,7 +25,7 @@ module DuffelAPI
         @updated_at = object["updated_at"]
         @url = object["url"]
 
-        super(object, response)
+        super
       end
     end
   end
