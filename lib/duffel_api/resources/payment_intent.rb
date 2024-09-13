@@ -43,7 +43,7 @@ module DuffelAPI
         @status = object["status"]
         @updated_at = object["updated_at"]
 
-        super(object, response)
+        super
       end
     end
   end

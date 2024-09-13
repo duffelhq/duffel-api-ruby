@@ -49,7 +49,7 @@ module DuffelAPI
         @total_amount = object["total_amount"]
         @total_currency = object["total_currency"]
 
-        super(object, response)
+        super
       end
     end
   end

@@ -37,7 +37,7 @@ module DuffelAPI
         @refund_to = object["refund_to"]
         @slices = object["slices"]
 
-        super(object, response)
+        super
       end
     end
   end

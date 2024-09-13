@@ -297,15 +297,16 @@ describe DuffelAPI::Services::OffersService do
     context "with parameters" do
       let!(:stub) do
         stub_request(:get, "https://api.duffel.com/air/offers/off_0000AEdGRhtp5AUUdJqMxo").
-          with(query: { "return_available_services" => true })
-        to_return(
-          body: response_body,
-          headers: response_headers,
-        )
-        it "makes the expected request to the Duffel API" do
-          client.offers.get(id, params: { return_available_services: true })
-          expect(stub).to have_been_requested
-        end
+          with(query: { "return_available_services" => true }).
+          to_return(
+            body: response_body,
+            headers: response_headers,
+          )
+      end
+
+      it "makes the expected request to the Duffel API" do
+        client.offers.get(id, params: { return_available_services: true })
+        expect(stub).to have_been_requested
       end
     end
   end

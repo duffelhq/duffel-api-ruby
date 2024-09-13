@@ -51,7 +51,7 @@ module DuffelAPI
         @total_emissions_kg = object["total_emissions_kg"]
         @updated_at = object["updated_at"]
 
-        super(object, response)
+        super
       end
     end
   end

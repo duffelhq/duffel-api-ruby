@@ -27,7 +27,7 @@ module DuffelAPI
         @refund_currency = object["refund_currency"]
         @refund_to = object["refund_to"]
 
-        super(object, response)
+        super
       end
     end
   end
