@@ -188,7 +188,6 @@ describe DuffelAPI::Services::CitiesService do
       expect(get_response.iata_country_code).to eq("GB")
       expect(get_response.id).to eq("cit_lon_gb")
       expect(get_response.name).to eq("London")
-
     end
 
     it "exposes the API response" do
