@@ -36,7 +36,7 @@ module DuffelAPI
         @passengers = object["passengers"]
         @slices = object["slices"]
 
-        super(object, response)
+        super
       end
     end
   end

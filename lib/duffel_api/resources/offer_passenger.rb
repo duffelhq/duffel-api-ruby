@@ -32,7 +32,7 @@ module DuffelAPI
         @family_name = object["family_name"]
         @age = object["age"]
 
-        super(object, response)
+        super
       end
     end
   end

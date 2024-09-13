@@ -28,7 +28,7 @@ module DuffelAPI
         @logo_lockup_url = object["logo_lockup_url"]
         @logo_symbol_url = object["logo_symbol_url"]
 
-        super(object, response)
+        super
       end
     end
   end

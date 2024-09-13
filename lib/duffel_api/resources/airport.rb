@@ -48,7 +48,7 @@ module DuffelAPI
         @name = object["name"]
         @time_zone = object["time_zone"]
 
-        super(object, response)
+        super
       end
     end
   end
