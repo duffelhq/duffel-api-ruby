@@ -4,7 +4,7 @@
 module DuffelAPI
   module Resources
     class Airport < BaseResource
-      # @return [Hash, nil]
+      # @return [DuffelAPI::Resources::City, nil]
       attr_reader :city
 
       # @return [String]
@@ -37,7 +37,7 @@ module DuffelAPI
       def initialize(object, response = nil)
         @object = object
 
-        @city = object["city"]
+        @city = object["city"].nil? ? object["city"] : City.new(object["city"])
         @city_name = object["city_name"]
         @iata_code = object["iata_code"]
         @iata_country_code = object["iata_country_code"]
@@ -48,7 +48,7 @@ module DuffelAPI
         @name = object["name"]
         @time_zone = object["time_zone"]
 
-        super(object, response)
+        super
       end
     end
   end

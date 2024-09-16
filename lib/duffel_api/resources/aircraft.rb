@@ -20,7 +20,7 @@ module DuffelAPI
         @id = object["id"]
         @name = object["name"]
 
-        super(object, response)
+        super
       end
     end
   end

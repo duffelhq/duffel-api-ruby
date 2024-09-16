@@ -9,10 +9,15 @@ client = DuffelAPI::Client.new(
 # 365 days from now
 departure_date = (Time.now + (60 * 60 * 24 * 365)).strftime("%Y-%m-%d")
 
+birth_date = Date.parse("1993-04-01")
+current_date = Date.today
+age = current_date.year - birth_date.year
+age += 1 if current_date.yday > birth_date.yday
+
 offer_request = client.offer_requests.create(params: {
   cabin_class: "economy",
   passengers: [{
-    age: 28,
+    age: age,
   }],
   slices: [{
     # We use a non-sensical route to make sure we get speedy, reliable Duffel Airways
@@ -52,7 +57,7 @@ order = client.orders.create(params: {
       gender: "m",
       given_name: "Tim",
       family_name: "Rogers",
-      born_on: "1993-04-01",
+      born_on: birth_date.to_s,
       phone_number: "+441290211999",
       email: "tim@duffel.com",
     },

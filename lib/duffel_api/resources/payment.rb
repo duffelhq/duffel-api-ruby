@@ -19,7 +19,7 @@ module DuffelAPI
         @id = object["id"]
         @type = object["type"]
 
-        super(object, response)
+        super
       end
     end
   end

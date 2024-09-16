@@ -1,0 +1,94 @@
+{
+  "data": {
+    "airports": [
+      {
+        "city_name": "London",
+        "icao_code": "EGLL",
+        "iata_city_code": "LON",
+        "iata_country_code": "GB",
+        "iata_code": "LHR",
+        "latitude": 51.470311,
+        "longitude": -0.458118,
+        "time_zone": "Europe/London",
+        "name": "Heathrow Airport",
+        "id": "arp_lhr_gb"
+      },
+      {
+        "city_name": "London",
+        "icao_code": "EGKB",
+        "iata_city_code": "LON",
+        "iata_country_code": "GB",
+        "iata_code": "BQH",
+        "latitude": 51.331399,
+        "longitude": 0.030782,
+        "time_zone": "Europe/London",
+        "name": "London Biggin Hill Airport",
+        "id": "arp_bqh_gb"
+      },
+      {
+        "city_name": "London",
+        "icao_code": "EGGW",
+        "iata_city_code": "LON",
+        "iata_country_code": "GB",
+        "iata_code": "LTN",
+        "latitude": 51.875482,
+        "longitude": -0.37004,
+        "time_zone": "Europe/London",
+        "name": "London Luton Airport",
+        "id": "arp_ltn_gb"
+      },
+      {
+        "city_name": "London",
+        "icao_code": "EGLC",
+        "iata_city_code": "LON",
+        "iata_country_code": "GB",
+        "iata_code": "LCY",
+        "latitude": 51.505071,
+        "longitude": 0.052398,
+        "time_zone": "Europe/London",
+        "name": "London City Airport",
+        "id": "arp_lcy_gb"
+      },
+      {
+        "city_name": "London",
+        "icao_code": "EGMC",
+        "iata_city_code": "LON",
+        "iata_country_code": "GB",
+        "iata_code": "SEN",
+        "latitude": 51.571075,
+        "longitude": 0.697117,
+        "time_zone": "Europe/London",
+        "name": "London Southend Airport",
+        "id": "arp_sen_gb"
+      },
+      {
+        "city_name": "London",
+        "icao_code": "EGKK",
+        "iata_city_code": "LON",
+        "iata_country_code": "GB",
+        "iata_code": "LGW",
+        "latitude": 51.150882,
+        "longitude": -0.18617,
+        "time_zone": "Europe/London",
+        "name": "Gatwick Airport",
+        "id": "arp_lgw_gb"
+      },
+      {
+        "city_name": "London",
+        "icao_code": "EGSS",
+        "iata_city_code": "LON",
+        "iata_country_code": "GB",
+        "iata_code": "STN",
+        "latitude": 51.885508,
+        "longitude": 0.236933,
+        "time_zone": "Europe/London",
+        "name": "London Stansted Airport",
+        "id": "arp_stn_gb"
+      }
+    ],
+    "iata_country_code": "GB",
+    "iata_code": "LON",
+    "name": "London",
+    "id": "cit_lon_gb"
+  }
+}
